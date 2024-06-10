@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		346162FD2C17945700146576 /* notes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346162FB2C17945700146576 /* notes.storyboard */; };
+		3461A0E12C13C5EA00D6088A /* mainmenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3461A0DF2C13C5EA00D6088A /* mainmenu.storyboard */; };
+		3461A0E32C14DE1A00D6088A /* website.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3461A0E22C14DE1A00D6088A /* website.swift */; };
+		3461A0E72C14E04900D6088A /* mainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3461A0E62C14E04900D6088A /* mainMenuViewController.swift */; };
 		34B65B842C050F8C0032D422 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B65B832C050F8C0032D422 /* AppDelegate.swift */; };
 		34B65B862C050F8C0032D422 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B65B852C050F8C0032D422 /* SceneDelegate.swift */; };
 		34B65B882C050F8C0032D422 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B65B872C050F8C0032D422 /* ViewController.swift */; };
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		346162FC2C17945700146576 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Blessing Prayer/Base.lproj/notes.storyboard"; sourceTree = "<group>"; };
+		3461A0E02C13C5EA00D6088A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Blessing Prayer/Base.lproj/mainmenu.storyboard"; sourceTree = "<group>"; };
+		3461A0E22C14DE1A00D6088A /* website.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = website.swift; sourceTree = "<group>"; };
+		3461A0E62C14E04900D6088A /* mainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainMenuViewController.swift; sourceTree = "<group>"; };
 		34B65B802C050F8C0032D422 /* Blessing Prayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blessing Prayer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34B65B832C050F8C0032D422 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34B65B852C050F8C0032D422 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +87,9 @@
 		34B65B772C050F8C0032D422 = {
 			isa = PBXGroup;
 			children = (
+				346162FB2C17945700146576 /* notes.storyboard */,
+				3461A0DF2C13C5EA00D6088A /* mainmenu.storyboard */,
+				3461A0E62C14E04900D6088A /* mainMenuViewController.swift */,
 				34B65B822C050F8C0032D422 /* Blessing Prayer */,
 				34B65B992C050F8E0032D422 /* Blessing PrayerTests */,
 				34B65BA32C050F8E0032D422 /* Blessing PrayerUITests */,
@@ -103,6 +114,7 @@
 				34B65B852C050F8C0032D422 /* SceneDelegate.swift */,
 				34B65B872C050F8C0032D422 /* ViewController.swift */,
 				34B65B892C050F8C0032D422 /* Main.storyboard */,
+				3461A0E22C14DE1A00D6088A /* website.swift */,
 				34B65B8C2C050F8D0032D422 /* Assets.xcassets */,
 				34B65B8E2C050F8D0032D422 /* LaunchScreen.storyboard */,
 				34B65B912C050F8D0032D422 /* Info.plist */,
@@ -231,8 +243,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3461A0E12C13C5EA00D6088A /* mainmenu.storyboard in Resources */,
 				34B65B8D2C050F8D0032D422 /* Assets.xcassets in Resources */,
 				34B65B902C050F8D0032D422 /* Base in Resources */,
+				346162FD2C17945700146576 /* notes.storyboard in Resources */,
 				34B65B8B2C050F8C0032D422 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +275,8 @@
 				34B65B882C050F8C0032D422 /* ViewController.swift in Sources */,
 				34B65B842C050F8C0032D422 /* AppDelegate.swift in Sources */,
 				34B65B862C050F8C0032D422 /* SceneDelegate.swift in Sources */,
+				3461A0E32C14DE1A00D6088A /* website.swift in Sources */,
+				3461A0E72C14E04900D6088A /* mainMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +313,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		346162FB2C17945700146576 /* notes.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				346162FC2C17945700146576 /* Base */,
+			);
+			name = notes.storyboard;
+			sourceTree = "<group>";
+		};
+		3461A0DF2C13C5EA00D6088A /* mainmenu.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3461A0E02C13C5EA00D6088A /* Base */,
+			);
+			name = mainmenu.storyboard;
+			sourceTree = "<group>";
+		};
 		34B65B892C050F8C0032D422 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -445,6 +477,8 @@
 				DEVELOPMENT_TEAM = B8C453N3ZW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Blessing Prayer/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Blessing Prayer";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -473,6 +507,8 @@
 				DEVELOPMENT_TEAM = B8C453N3ZW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Blessing Prayer/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Blessing Prayer";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

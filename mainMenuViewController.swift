@@ -15,7 +15,20 @@ class mainMenuViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func authorPage(_ sender: Any) {
+        if let url = URL(string: "https://www.amazon.com/stores/Charles-Michael/author/B07SMB94PD?ref=ap_rdr&store_ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true") {
+              UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
+    }
+    
+    
+    @IBAction func website(_ sender: Any) {
+        if let url = URL(string: "https://giftedbookstore.com") {
+              UIApplication.shared.open(url, options: [:], completionHandler: nil)
+      
+    }
+    }
+    
     /*
     // MARK: - Navigation
 

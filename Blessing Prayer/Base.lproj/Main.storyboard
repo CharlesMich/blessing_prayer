@@ -1,24 +1,341 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Pz-ZW-dcg">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Tab Bar Controller-->
+        <scene sceneID="pvw-fh-yUo">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tabBarController id="7Pz-ZW-dcg" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oJ3-kJ-D77">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="tab_background"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" name="tab_background"/>
+                        <color key="selectedImageTintColor" name="stack_background"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="gDw-iF-DEf" kind="relationship" relationship="viewControllers" id="j7D-aZ-Pii"/>
+                        <segue destination="xfF-iz-Agb" kind="relationship" relationship="viewControllers" id="M6X-Ps-tMe"/>
+                        <segue destination="icZ-JR-GON" kind="relationship" relationship="viewControllers" id="HyU-P8-udA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HyE-W7-EeW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-876" y="-415"/>
+        </scene>
+        <!--Prayer-->
+        <scene sceneID="NtU-mN-SEM">
+            <objects>
+                <navigationController id="xfF-iz-Agb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Prayer" id="wbP-w1-mWD"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lrf-gP-Asz">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ax8-JL-zOn" kind="relationship" relationship="rootViewController" id="1BG-Nc-MHl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DqW-e8-3cM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1801" y="404"/>
+        </scene>
+        <!--Blessing Prayer-->
+        <scene sceneID="Biz-1S-3wX">
+            <objects>
+                <viewController id="Ax8-JL-zOn" customClass="ViewController" customModule="Blessing_Prayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rb0-wz-w3P">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nlg-Rb-NOe">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="tE3-td-ljm">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="589"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mvQ-uV-RFK">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQd-By-GOh">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="60"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Praise and Worship">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                            <color key="baseForegroundColor" name="title_text"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstItem="LQd-By-GOh" firstAttribute="leading" secondItem="mvQ-uV-RFK" secondAttribute="leading" constant="10" id="FO1-dO-0pn"/>
+                                                    <constraint firstAttribute="bottom" secondItem="LQd-By-GOh" secondAttribute="bottom" id="U5k-U4-DdZ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="LQd-By-GOh" secondAttribute="trailing" constant="10" id="WcC-zu-8Oa"/>
+                                                    <constraint firstAttribute="height" constant="60" id="xlc-ir-hoT"/>
+                                                    <constraint firstItem="LQd-By-GOh" firstAttribute="top" secondItem="mvQ-uV-RFK" secondAttribute="top" id="yiS-FU-dwN"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b7Q-Rz-pV2">
+                                                <rect key="frame" x="0.0" y="61" width="393" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eM4-AF-xyb">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="60"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Thanksgiving">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                            <color key="baseForegroundColor" name="title_text"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="eM4-AF-xyb" secondAttribute="trailing" constant="10" id="Pal-PL-Gf7"/>
+                                                    <constraint firstAttribute="bottom" secondItem="eM4-AF-xyb" secondAttribute="bottom" id="QKN-ou-MJI"/>
+                                                    <constraint firstItem="eM4-AF-xyb" firstAttribute="leading" secondItem="b7Q-Rz-pV2" secondAttribute="leading" constant="10" id="WeZ-0T-WF4"/>
+                                                    <constraint firstAttribute="height" constant="60" id="ee1-Kx-Ocj"/>
+                                                    <constraint firstItem="eM4-AF-xyb" firstAttribute="top" secondItem="b7Q-Rz-pV2" secondAttribute="top" id="mo6-b7-RU9"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="26o-dZ-G3v">
+                                                <rect key="frame" x="0.0" y="122" width="393" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BkW-R6-Vm5">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="60"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Repentance of Sins">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                            <color key="baseForegroundColor" name="title_text"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstItem="BkW-R6-Vm5" firstAttribute="leading" secondItem="26o-dZ-G3v" secondAttribute="leading" constant="10" id="9wC-3t-gPc"/>
+                                                    <constraint firstAttribute="height" constant="60" id="HvU-50-MfW"/>
+                                                    <constraint firstAttribute="trailing" secondItem="BkW-R6-Vm5" secondAttribute="trailing" constant="10" id="MFl-os-PDB"/>
+                                                    <constraint firstAttribute="bottom" secondItem="BkW-R6-Vm5" secondAttribute="bottom" id="N9g-RM-3t9"/>
+                                                    <constraint firstItem="BkW-R6-Vm5" firstAttribute="top" secondItem="26o-dZ-G3v" secondAttribute="top" id="mun-J1-fcf"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6OZ-7o-Lda">
+                                                <rect key="frame" x="0.0" y="183" width="393" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OhZ-Kg-UD9">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="60"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Forgiveness">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                                            <color key="baseForegroundColor" name="title_text"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstItem="OhZ-Kg-UD9" firstAttribute="top" secondItem="6OZ-7o-Lda" secondAttribute="top" id="MxO-RM-vgy"/>
+                                                    <constraint firstItem="OhZ-Kg-UD9" firstAttribute="leading" secondItem="6OZ-7o-Lda" secondAttribute="leading" constant="10" id="QuB-9a-UbS"/>
+                                                    <constraint firstAttribute="trailing" secondItem="OhZ-Kg-UD9" secondAttribute="trailing" constant="10" id="bfL-YT-IWx"/>
+                                                    <constraint firstAttribute="height" constant="60" id="cQ0-2u-vMN"/>
+                                                    <constraint firstAttribute="bottom" secondItem="OhZ-Kg-UD9" secondAttribute="bottom" id="fYl-YW-Lbr"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t2v-Vl-VkO">
+                                                <rect key="frame" x="0.0" y="244" width="393" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPy-Vc-vT4">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="60"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Protection">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                            <color key="baseForegroundColor" name="title_text"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="zPy-Vc-vT4" secondAttribute="trailing" constant="10" id="Hfq-5C-CU6"/>
+                                                    <constraint firstItem="zPy-Vc-vT4" firstAttribute="leading" secondItem="t2v-Vl-VkO" secondAttribute="leading" constant="10" id="K9U-SE-efV"/>
+                                                    <constraint firstAttribute="bottom" secondItem="zPy-Vc-vT4" secondAttribute="bottom" id="Mmy-I7-ta0"/>
+                                                    <constraint firstItem="zPy-Vc-vT4" firstAttribute="top" secondItem="t2v-Vl-VkO" secondAttribute="top" id="Q3X-HT-bN1"/>
+                                                    <constraint firstAttribute="height" constant="60" id="tGI-QB-CoH"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GEn-mC-ukQ">
+                                                <rect key="frame" x="0.0" y="305" width="393" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sW2-z4-Tgw">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="60"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Intercession">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                            <color key="baseForegroundColor" name="title_text"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="sW2-z4-Tgw" secondAttribute="bottom" id="OCg-Mc-JSj"/>
+                                                    <constraint firstItem="sW2-z4-Tgw" firstAttribute="leading" secondItem="GEn-mC-ukQ" secondAttribute="leading" constant="10" id="Tgh-bH-4dA"/>
+                                                    <constraint firstAttribute="trailing" secondItem="sW2-z4-Tgw" secondAttribute="trailing" constant="10" id="UKD-VY-3b5"/>
+                                                    <constraint firstItem="sW2-z4-Tgw" firstAttribute="top" secondItem="GEn-mC-ukQ" secondAttribute="top" id="laB-Yi-5pP"/>
+                                                    <constraint firstAttribute="height" constant="60" id="sF7-St-uXh"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M4G-OV-vny">
+                                                <rect key="frame" x="0.0" y="366" width="393" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phR-YG-vl9">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="60"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Washing in Jesus' Blood">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                            <color key="baseForegroundColor" name="title_text"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="1rS-ZK-h0C"/>
+                                                    <constraint firstAttribute="trailing" secondItem="phR-YG-vl9" secondAttribute="trailing" constant="10" id="Hox-4R-qty"/>
+                                                    <constraint firstItem="phR-YG-vl9" firstAttribute="top" secondItem="M4G-OV-vny" secondAttribute="top" id="hah-5z-y6f"/>
+                                                    <constraint firstItem="phR-YG-vl9" firstAttribute="leading" secondItem="M4G-OV-vny" secondAttribute="leading" constant="10" id="kf0-qb-fcc"/>
+                                                    <constraint firstAttribute="bottom" secondItem="phR-YG-vl9" secondAttribute="bottom" id="yJ0-yz-Ic9"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YvL-Rh-F9O">
+                                                <rect key="frame" x="0.0" y="427" width="393" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Fo-V1-LFx">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="60"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Petition">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                            <color key="baseForegroundColor" name="title_text"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstItem="3Fo-V1-LFx" firstAttribute="top" secondItem="YvL-Rh-F9O" secondAttribute="top" id="81N-cT-26B"/>
+                                                    <constraint firstAttribute="bottom" secondItem="3Fo-V1-LFx" secondAttribute="bottom" id="B0I-zd-ij6"/>
+                                                    <constraint firstItem="3Fo-V1-LFx" firstAttribute="leading" secondItem="YvL-Rh-F9O" secondAttribute="leading" constant="10" id="EZ9-9K-xGc"/>
+                                                    <constraint firstAttribute="trailing" secondItem="3Fo-V1-LFx" secondAttribute="trailing" constant="10" id="UGd-Pu-pTi"/>
+                                                    <constraint firstAttribute="height" constant="60" id="q0a-2r-LtI"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5aZ-ng-CyJ">
+                                                <rect key="frame" x="0.0" y="488" width="393" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzx-f1-t5l">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="60"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Rosary and God's Word">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                            <color key="baseForegroundColor" name="title_text"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstItem="uzx-f1-t5l" firstAttribute="leading" secondItem="5aZ-ng-CyJ" secondAttribute="leading" constant="10" id="CPg-g8-0wB"/>
+                                                    <constraint firstItem="uzx-f1-t5l" firstAttribute="top" secondItem="5aZ-ng-CyJ" secondAttribute="top" id="FhG-OU-YmR"/>
+                                                    <constraint firstAttribute="height" constant="60" id="TFs-JW-RqT"/>
+                                                    <constraint firstAttribute="bottom" secondItem="uzx-f1-t5l" secondAttribute="bottom" id="bfk-DE-2I2"/>
+                                                    <constraint firstAttribute="trailing" secondItem="uzx-f1-t5l" secondAttribute="trailing" constant="10" id="oUd-y4-mf9"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z0f-De-YBC">
+                                                <rect key="frame" x="0.0" y="549" width="393" height="40"/>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="bRP-B7-Mcj"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" name="stack_background"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="body_background"/>
+                                <constraints>
+                                    <constraint firstItem="tE3-td-ljm" firstAttribute="leading" secondItem="Nlg-Rb-NOe" secondAttribute="leading" id="1Zs-XP-hwx"/>
+                                    <constraint firstItem="tE3-td-ljm" firstAttribute="top" secondItem="Nlg-Rb-NOe" secondAttribute="top" id="3gl-IE-9Og"/>
+                                    <constraint firstItem="tE3-td-ljm" firstAttribute="width" secondItem="Nlg-Rb-NOe" secondAttribute="width" id="QFe-Qu-NO1"/>
+                                    <constraint firstAttribute="trailing" secondItem="tE3-td-ljm" secondAttribute="trailing" id="Rgt-BK-qHA"/>
+                                    <constraint firstAttribute="bottom" secondItem="tE3-td-ljm" secondAttribute="bottom" id="cf2-Gf-NM8"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2p4-hV-fSp"/>
+                        <color key="backgroundColor" name="nav_background"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2p4-hV-fSp" firstAttribute="bottom" secondItem="Nlg-Rb-NOe" secondAttribute="bottom" id="DL3-Mv-Uk9"/>
+                            <constraint firstItem="2p4-hV-fSp" firstAttribute="trailing" secondItem="Nlg-Rb-NOe" secondAttribute="trailing" id="LdT-zr-oXw"/>
+                            <constraint firstItem="Nlg-Rb-NOe" firstAttribute="leading" secondItem="2p4-hV-fSp" secondAttribute="leading" id="f04-1c-HB6"/>
+                            <constraint firstItem="Nlg-Rb-NOe" firstAttribute="top" secondItem="2p4-hV-fSp" secondAttribute="top" id="yhj-wh-6rr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Blessing Prayer" largeTitleDisplayMode="always" id="yQm-3u-z4S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a3k-ga-Eea" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1802" y="1074"/>
+        </scene>
+        <!--mainmenu-->
+        <scene sceneID="ou2-Kx-cOg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="mainmenu" id="gDw-iF-DEf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="TTU-VG-JoK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="INg-LZ-UsS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1811" y="-1269"/>
+        </scene>
+        <!--UINavigationController-FDU-Sw-siW-->
+        <scene sceneID="HxL-XE-4Cf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="notes" referencedIdentifier="UINavigationController-FDU-Sw-siW" id="icZ-JR-GON" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="VUn-FS-OWP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UvR-Or-fIH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44" y="404"/>
+        </scene>
+        <!--UIViewController-e9E-ys-4Qa-->
+        <scene sceneID="EuE-80-rMO">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="UIViewController-e9E-ys-4Qa" storyboardName="notes" referencedIdentifier="UIViewController-e9E-ys-4Qa" id="57o-wH-WIQ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q2f-zS-U6l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941" y="404"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="body_background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="nav_background">
+            <color red="0.17647058823529413" green="0.45882352941176469" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="stack_background">
+            <color red="0.17647058823529413" green="0.45882352941176469" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="tab_background">
+            <color red="0.99607843137254903" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="title_text">
+            <color red="0.17647058823529413" green="0.45882352941176469" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

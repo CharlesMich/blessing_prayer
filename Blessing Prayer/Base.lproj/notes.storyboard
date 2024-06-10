@@ -1,0 +1,1262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notes-->
+        <scene sceneID="zQl-bB-ojx">
+            <objects>
+                <navigationController storyboardIdentifier="UINavigationController-FDU-Sw-siW" id="FDU-Sw-siW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Notes" id="e46-6Q-8ci"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wJD-Cw-Hyr">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1Er-n4-C2C" kind="relationship" relationship="rootViewController" id="dCd-Hu-PRV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fMo-Sb-rQe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44" y="404"/>
+        </scene>
+        <!--Notes-->
+        <scene sceneID="2KR-En-p3d">
+            <objects>
+                <viewController storyboardIdentifier="UIViewController-e9E-ys-4Qa" title="Notes" id="1Er-n4-C2C" customClass="ViewController" customModule="Blessing_Prayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zei-i3-3zv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2r0-DC-OTC">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="0ZL-Cq-85S">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="711"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Onv-No-6pa">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNz-Bb-Blf">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="60"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="How to use the prayers in the App">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                            <color key="baseForegroundColor" name="title_text"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="fHN-Kh-yKR" kind="show" id="WVy-dF-ht4"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="RNz-Bb-Blf" secondAttribute="trailing" constant="10" id="74u-o3-1cM"/>
+                                                    <constraint firstItem="RNz-Bb-Blf" firstAttribute="top" secondItem="Onv-No-6pa" secondAttribute="top" id="LRG-VY-9h7"/>
+                                                    <constraint firstAttribute="bottom" secondItem="RNz-Bb-Blf" secondAttribute="bottom" id="eJ5-Jf-Z7i"/>
+                                                    <constraint firstAttribute="height" constant="60" id="hTn-kM-Xph"/>
+                                                    <constraint firstItem="RNz-Bb-Blf" firstAttribute="leading" secondItem="Onv-No-6pa" secondAttribute="leading" constant="10" id="zEU-k4-6M9"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="43Q-QI-yqv">
+                                                <rect key="frame" x="0.0" y="61" width="393" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GfU-bX-4z1">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="60"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Why do we praise?">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                            <color key="baseForegroundColor" name="title_text"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="5hZ-0D-fmu" kind="show" id="skf-f7-cdD"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="GfU-bX-4z1" secondAttribute="trailing" constant="10" id="4I7-kL-ZUv"/>
+                                                    <constraint firstItem="GfU-bX-4z1" firstAttribute="top" secondItem="43Q-QI-yqv" secondAttribute="top" id="Ayk-f6-dLH"/>
+                                                    <constraint firstAttribute="height" constant="60" id="FYp-do-epU"/>
+                                                    <constraint firstItem="GfU-bX-4z1" firstAttribute="leading" secondItem="43Q-QI-yqv" secondAttribute="leading" constant="10" id="He4-07-6xA"/>
+                                                    <constraint firstAttribute="bottom" secondItem="GfU-bX-4z1" secondAttribute="bottom" id="kCw-Im-ij4"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4JU-6c-6FP">
+                                                <rect key="frame" x="0.0" y="122" width="393" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8c-Ta-YwZ">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="60"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Why do we thank God?">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                            <color key="baseForegroundColor" name="title_text"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstItem="F8c-Ta-YwZ" firstAttribute="leading" secondItem="4JU-6c-6FP" secondAttribute="leading" constant="10" id="Ikt-QR-fhs"/>
+                                                    <constraint firstAttribute="height" constant="60" id="VsZ-Va-wgE"/>
+                                                    <constraint firstAttribute="bottom" secondItem="F8c-Ta-YwZ" secondAttribute="bottom" id="ZCA-RS-Mgd"/>
+                                                    <constraint firstItem="F8c-Ta-YwZ" firstAttribute="top" secondItem="4JU-6c-6FP" secondAttribute="top" id="cJc-UC-0G8"/>
+                                                    <constraint firstAttribute="trailing" secondItem="F8c-Ta-YwZ" secondAttribute="trailing" constant="10" id="yAG-Or-XyJ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iJz-Qh-coF">
+                                                <rect key="frame" x="0.0" y="183" width="393" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RfE-dV-Bqf">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="60"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Why do we forgive?">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                            <color key="baseForegroundColor" name="title_text"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="GXn-kI-9I4"/>
+                                                    <constraint firstAttribute="trailing" secondItem="RfE-dV-Bqf" secondAttribute="trailing" constant="10" id="Sut-Cs-CTX"/>
+                                                    <constraint firstAttribute="bottom" secondItem="RfE-dV-Bqf" secondAttribute="bottom" id="Ugz-CL-IlA"/>
+                                                    <constraint firstItem="RfE-dV-Bqf" firstAttribute="top" secondItem="iJz-Qh-coF" secondAttribute="top" id="nlc-nh-Hh5"/>
+                                                    <constraint firstItem="RfE-dV-Bqf" firstAttribute="leading" secondItem="iJz-Qh-coF" secondAttribute="leading" constant="10" id="xlX-hV-oYf"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NqF-de-AOt">
+                                                <rect key="frame" x="0.0" y="244" width="393" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JrC-fg-ekd">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="60"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Why do we repent?">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                                            <color key="baseForegroundColor" name="title_text"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstItem="JrC-fg-ekd" firstAttribute="top" secondItem="NqF-de-AOt" secondAttribute="top" id="3za-Ut-6JC"/>
+                                                    <constraint firstAttribute="trailing" secondItem="JrC-fg-ekd" secondAttribute="trailing" constant="10" id="D1U-hP-CSu"/>
+                                                    <constraint firstAttribute="height" constant="60" id="hbL-tY-3HY"/>
+                                                    <constraint firstAttribute="bottom" secondItem="JrC-fg-ekd" secondAttribute="bottom" id="jEp-Mm-Uy1"/>
+                                                    <constraint firstItem="JrC-fg-ekd" firstAttribute="leading" secondItem="NqF-de-AOt" secondAttribute="leading" constant="10" id="o8k-dM-Q3n"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4XW-JF-gfE">
+                                                <rect key="frame" x="0.0" y="305" width="393" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmn-oK-xwz">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="60"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Why do we pray for others?">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                            <color key="baseForegroundColor" name="title_text"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="Bmn-oK-xwz" secondAttribute="trailing" constant="10" id="7KU-Wh-9fj"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Bmn-oK-xwz" secondAttribute="bottom" id="PQw-Wd-dNb"/>
+                                                    <constraint firstItem="Bmn-oK-xwz" firstAttribute="leading" secondItem="4XW-JF-gfE" secondAttribute="leading" constant="10" id="Qai-ju-oxE"/>
+                                                    <constraint firstAttribute="height" constant="60" id="Wr8-jD-n6d"/>
+                                                    <constraint firstItem="Bmn-oK-xwz" firstAttribute="top" secondItem="4XW-JF-gfE" secondAttribute="top" id="rOH-8Y-AwX"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bup-Dz-9nL">
+                                                <rect key="frame" x="0.0" y="366" width="393" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hpp-oa-j4X">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="60"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="How should we handle money">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                            <color key="baseForegroundColor" name="title_text"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstItem="Hpp-oa-j4X" firstAttribute="top" secondItem="bup-Dz-9nL" secondAttribute="top" id="Egw-H6-1hc"/>
+                                                    <constraint firstAttribute="height" constant="60" id="FYm-yT-ojh"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Hpp-oa-j4X" secondAttribute="bottom" id="MjS-3w-zKX"/>
+                                                    <constraint firstItem="Hpp-oa-j4X" firstAttribute="leading" secondItem="bup-Dz-9nL" secondAttribute="leading" constant="10" id="QId-yJ-anK"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Hpp-oa-j4X" secondAttribute="trailing" constant="10" id="Tox-45-l3J"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uEa-31-amV">
+                                                <rect key="frame" x="0.0" y="427" width="393" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xis-YD-HhV">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="60"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Why should we tithe?">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                            <color key="baseForegroundColor" name="title_text"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstItem="xis-YD-HhV" firstAttribute="leading" secondItem="uEa-31-amV" secondAttribute="leading" constant="10" id="2gj-Fo-rJ9"/>
+                                                    <constraint firstAttribute="height" constant="60" id="JbE-TM-p6L"/>
+                                                    <constraint firstItem="xis-YD-HhV" firstAttribute="top" secondItem="uEa-31-amV" secondAttribute="top" id="TZR-xQ-lKL"/>
+                                                    <constraint firstAttribute="bottom" secondItem="xis-YD-HhV" secondAttribute="bottom" id="Xd9-t0-IEA"/>
+                                                    <constraint firstAttribute="trailing" secondItem="xis-YD-HhV" secondAttribute="trailing" constant="10" id="bdO-L9-MCf"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KBB-5G-Prm">
+                                                <rect key="frame" x="0.0" y="488" width="393" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mD2-lb-yo3">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="60"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Dangers of love of Money">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                            <color key="baseForegroundColor" name="title_text"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="mD2-lb-yo3" secondAttribute="trailing" constant="10" id="6vm-xJ-9MK"/>
+                                                    <constraint firstItem="mD2-lb-yo3" firstAttribute="top" secondItem="KBB-5G-Prm" secondAttribute="top" id="FlA-ME-Zza"/>
+                                                    <constraint firstAttribute="bottom" secondItem="mD2-lb-yo3" secondAttribute="bottom" id="ceU-g2-Cl5"/>
+                                                    <constraint firstAttribute="height" constant="60" id="gBu-MW-0G8"/>
+                                                    <constraint firstItem="mD2-lb-yo3" firstAttribute="leading" secondItem="KBB-5G-Prm" secondAttribute="leading" constant="10" id="hEb-8i-Rhm"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yE6-21-xug">
+                                                <rect key="frame" x="0.0" y="549" width="393" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZH4-Fv-enX">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="60"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Causes of financial problems">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                            <color key="baseForegroundColor" name="title_text"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="9XS-O1-iJG"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ZH4-Fv-enX" secondAttribute="bottom" id="BvW-AA-mJa"/>
+                                                    <constraint firstItem="ZH4-Fv-enX" firstAttribute="leading" secondItem="yE6-21-xug" secondAttribute="leading" constant="10" id="UQt-HD-ZV8"/>
+                                                    <constraint firstItem="ZH4-Fv-enX" firstAttribute="top" secondItem="yE6-21-xug" secondAttribute="top" id="fWv-eg-V0B"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ZH4-Fv-enX" secondAttribute="trailing" constant="10" id="z9X-8S-pFl"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFB-rd-nGz">
+                                                <rect key="frame" x="0.0" y="610" width="393" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hk3-gR-AK7">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="60"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="How to be financially blessed">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                            <color key="baseForegroundColor" name="title_text"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstItem="Hk3-gR-AK7" firstAttribute="leading" secondItem="PFB-rd-nGz" secondAttribute="leading" constant="10" id="4dc-7J-DZ2"/>
+                                                    <constraint firstAttribute="height" constant="60" id="CJd-iS-gmz"/>
+                                                    <constraint firstItem="Hk3-gR-AK7" firstAttribute="top" secondItem="PFB-rd-nGz" secondAttribute="top" id="FgE-MR-DWH"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Hk3-gR-AK7" secondAttribute="trailing" constant="10" id="H5C-mZ-Fh7"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Hk3-gR-AK7" secondAttribute="bottom" id="pOw-t4-2pg"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q39-vf-HFf">
+                                                <rect key="frame" x="0.0" y="671" width="393" height="40"/>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="9lp-tJ-9wD"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" name="stack_background"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="body_background"/>
+                                <constraints>
+                                    <constraint firstItem="0ZL-Cq-85S" firstAttribute="leading" secondItem="2r0-DC-OTC" secondAttribute="leading" id="2Yz-ws-UBf"/>
+                                    <constraint firstAttribute="bottom" secondItem="0ZL-Cq-85S" secondAttribute="bottom" id="6In-y8-utU"/>
+                                    <constraint firstItem="0ZL-Cq-85S" firstAttribute="top" secondItem="2r0-DC-OTC" secondAttribute="top" id="AN9-Yw-z2a"/>
+                                    <constraint firstAttribute="trailing" secondItem="0ZL-Cq-85S" secondAttribute="trailing" id="cO1-dq-nbE"/>
+                                    <constraint firstItem="0ZL-Cq-85S" firstAttribute="width" secondItem="2r0-DC-OTC" secondAttribute="width" id="wOL-kU-Ud7"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yDP-f1-G7a"/>
+                        <color key="backgroundColor" name="nav_background"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2r0-DC-OTC" firstAttribute="leading" secondItem="yDP-f1-G7a" secondAttribute="leading" id="4NC-hT-uS9"/>
+                            <constraint firstItem="yDP-f1-G7a" firstAttribute="trailing" secondItem="2r0-DC-OTC" secondAttribute="trailing" id="fSt-Uv-TiV"/>
+                            <constraint firstItem="yDP-f1-G7a" firstAttribute="bottom" secondItem="2r0-DC-OTC" secondAttribute="bottom" id="tkM-w4-m9j"/>
+                            <constraint firstItem="2r0-DC-OTC" firstAttribute="top" secondItem="yDP-f1-G7a" secondAttribute="top" id="xcj-Up-ljj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Notes" largeTitleDisplayMode="always" id="pH7-4V-97T"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lu6-ua-Naz" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941" y="404"/>
+        </scene>
+        <!--How to use this App-->
+        <scene sceneID="1EH-zO-Cs8">
+            <objects>
+                <viewController title="How to use this App" id="fHN-Kh-yKR" customClass="ViewController" customModule="Blessing_Prayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CgO-xL-UWI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sMF-eg-poo">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="93B-jv-aMa">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1166.3333333333333"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w1j-sk-yll">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="20"/>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="jK3-9b-f84"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K8g-6b-SKp">
+                                                <rect key="frame" x="0.0" y="20" width="393" height="80"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to use the prayers in this App" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfO-SI-JcR">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="80"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                        <color key="textColor" red="0.1764705882" green="0.45882352939999999" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstItem="sfO-SI-JcR" firstAttribute="top" secondItem="K8g-6b-SKp" secondAttribute="top" id="8hf-os-ERy"/>
+                                                    <constraint firstItem="sfO-SI-JcR" firstAttribute="leading" secondItem="K8g-6b-SKp" secondAttribute="leading" constant="10" id="Tot-nn-6kF"/>
+                                                    <constraint firstAttribute="bottom" secondItem="sfO-SI-JcR" secondAttribute="bottom" id="V7L-zW-S7G"/>
+                                                    <constraint firstAttribute="trailing" secondItem="sfO-SI-JcR" secondAttribute="trailing" constant="10" id="h2h-fK-Ggj"/>
+                                                    <constraint firstAttribute="height" constant="80" id="qpG-Mt-t8k"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wTi-k4-bnB">
+                                                <rect key="frame" x="0.0" y="100" width="393" height="1026.3333333333333"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ue4-nu-5hs">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="1026.3333333333333"/>
+                                                        <string key="text">•	The prayers given in this app is one continuous prayer. It begins with praise and ends with petition prayer. The whole process will take less than 30 minutes each day
+
+•	There is also an optional scriptural Rosary with verses that speak about money and finances. It is optional.
+
+•	If you are seeking a financial breakthrough for yourself or your family, It is recommended that the prayers be prayed everyday or whenever possible. 
+
+•	This app can be used in situations such as job loss, unable to land a job, credit card debts, loans, inability to save money, etc.
+
+•	If a family is going through financial problems, it is suggested that all the family members come together and pray. Jesus said that when two of us agree on earth about anything we ask, it will be done for us by our father in heaven ( Matt 18:19)
+
+•	The first time, you use this app, read the notes about each section of the prayer. Why we should forgive or why we should repent before seeking any kind of blessing from God is mentioned in the notes section of this app. 
+
+•	Pray in the order given in the app. For example, it is important that we begin with praise and worship because it is the biblical way. We enter God’s presence through praising him (Ps 100:4, Ps 22:3). 
+
+•	In addition to using this app, attend daily mass if possible, and go for confession regularly</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="textColor" red="0.1764705882" green="0.45882352939999999" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="8KF-TW-2sS"/>
+                                                    <constraint firstItem="ue4-nu-5hs" firstAttribute="leading" secondItem="wTi-k4-bnB" secondAttribute="leading" constant="10" id="T1Z-w0-agw"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ue4-nu-5hs" secondAttribute="bottom" id="bHT-RW-BaH"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ue4-nu-5hs" secondAttribute="trailing" constant="10" id="eGb-y0-aJE"/>
+                                                    <constraint firstItem="ue4-nu-5hs" firstAttribute="top" secondItem="wTi-k4-bnB" secondAttribute="top" id="qvP-cc-LWM"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="knR-za-kgW">
+                                                <rect key="frame" x="0.0" y="1126.3333333333333" width="393" height="40"/>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="7kH-8o-RDP"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" name="stack_background"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="body_background"/>
+                                <constraints>
+                                    <constraint firstItem="93B-jv-aMa" firstAttribute="leading" secondItem="sMF-eg-poo" secondAttribute="leading" id="CrY-On-A9i"/>
+                                    <constraint firstAttribute="bottom" secondItem="93B-jv-aMa" secondAttribute="bottom" id="IQy-xQ-clq"/>
+                                    <constraint firstItem="93B-jv-aMa" firstAttribute="width" secondItem="sMF-eg-poo" secondAttribute="width" id="KUY-dP-bHA"/>
+                                    <constraint firstAttribute="trailing" secondItem="93B-jv-aMa" secondAttribute="trailing" id="aMt-oJ-ZnU"/>
+                                    <constraint firstItem="93B-jv-aMa" firstAttribute="top" secondItem="sMF-eg-poo" secondAttribute="top" id="v1d-Fm-qlT"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DVz-rw-lPG"/>
+                        <color key="backgroundColor" name="nav_background"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DVz-rw-lPG" firstAttribute="bottom" secondItem="sMF-eg-poo" secondAttribute="bottom" id="CYY-dJ-H9L"/>
+                            <constraint firstItem="sMF-eg-poo" firstAttribute="top" secondItem="DVz-rw-lPG" secondAttribute="top" id="LJQ-iH-3Ft"/>
+                            <constraint firstItem="sMF-eg-poo" firstAttribute="leading" secondItem="DVz-rw-lPG" secondAttribute="leading" id="Wdu-ki-ywi"/>
+                            <constraint firstItem="DVz-rw-lPG" firstAttribute="trailing" secondItem="sMF-eg-poo" secondAttribute="trailing" id="nsh-mE-kR1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="How to use this App" largeTitleDisplayMode="always" id="R7o-qC-LuB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lbu-h5-xhO" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1677" y="404"/>
+        </scene>
+        <!--why do we praise-->
+        <scene sceneID="LaN-Lj-4kI">
+            <objects>
+                <viewController storyboardIdentifier="UIViewController-3f1-mX-3Ts" title="why do we praise" id="5hZ-0D-fmu" customClass="ViewController" customModule="family_prayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="164-qz-g8D">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F4Q-kq-qJf">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UZ0-1C-L0V">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="3081.6666666666665"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eNu-Pj-jBL">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="68.666666666666671"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Why do we praise God?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBH-W2-gmX">
+                                                        <rect key="frame" x="10" y="20" width="373" height="28.666666666666671"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                                        <color key="textColor" name="title_text"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="3p2-tS-d6T"/>
+                                                    <constraint firstItem="MBH-W2-gmX" firstAttribute="leading" secondItem="eNu-Pj-jBL" secondAttribute="leading" constant="10" id="FCd-92-XI6"/>
+                                                    <constraint firstAttribute="bottom" secondItem="MBH-W2-gmX" secondAttribute="bottom" constant="20" id="JO0-T0-teY"/>
+                                                    <constraint firstAttribute="trailing" secondItem="MBH-W2-gmX" secondAttribute="trailing" constant="10" id="pvi-e7-bbq"/>
+                                                    <constraint firstItem="MBH-W2-gmX" firstAttribute="top" secondItem="eNu-Pj-jBL" secondAttribute="top" constant="20" id="xa2-lX-bzz"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eyc-TU-2Rh">
+                                                <rect key="frame" x="0.0" y="68.666666666666657" width="393" height="64.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Praise brings us into the presence of God" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNP-u3-ey0">
+                                                        <rect key="frame" x="10" y="2" width="373" height="52.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="UNP-u3-ey0" secondAttribute="bottom" constant="10" id="98o-VR-fkl"/>
+                                                    <constraint firstItem="UNP-u3-ey0" firstAttribute="top" secondItem="eyc-TU-2Rh" secondAttribute="top" constant="2" id="A6c-5O-Y7f"/>
+                                                    <constraint firstAttribute="trailing" secondItem="UNP-u3-ey0" secondAttribute="trailing" constant="10" id="I8h-iD-F2V"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="oNz-IK-2VT"/>
+                                                    <constraint firstItem="UNP-u3-ey0" firstAttribute="leading" secondItem="eyc-TU-2Rh" secondAttribute="leading" constant="10" id="trK-Rp-vf5"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XYF-N9-o59">
+                                                <rect key="frame" x="0.0" y="133.33333333333334" width="393" height="83.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Enter his gates with thanksgiving, his courts with praise, and acknowledge him. Bless his name. (Ps 100:4)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3Z-K2-8Bm">
+                                                        <rect key="frame" x="10" y="2" width="373" height="71.666666666666671"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="p3Z-K2-8Bm" secondAttribute="bottom" constant="10" id="3Ms-es-laA"/>
+                                                    <constraint firstAttribute="trailing" secondItem="p3Z-K2-8Bm" secondAttribute="trailing" constant="10" id="GQP-my-t9H"/>
+                                                    <constraint firstItem="p3Z-K2-8Bm" firstAttribute="leading" secondItem="XYF-N9-o59" secondAttribute="leading" constant="10" id="WWx-mK-ENa"/>
+                                                    <constraint firstItem="p3Z-K2-8Bm" firstAttribute="top" secondItem="XYF-N9-o59" secondAttribute="top" constant="2" id="u0O-oY-IzG"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="vJr-rI-3Ud"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="knj-pb-ELe">
+                                                <rect key="frame" x="0.0" y="217" width="393" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxL-db-ad6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="nle-6e-srz"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="yxL-db-ad6" secondAttribute="bottom" id="Ecm-Cb-v40"/>
+                                                    <constraint firstItem="yxL-db-ad6" firstAttribute="leading" secondItem="knj-pb-ELe" secondAttribute="leading" id="JtY-4X-Yan"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="RI1-WB-ty0"/>
+                                                    <constraint firstAttribute="trailing" secondItem="yxL-db-ad6" secondAttribute="trailing" id="oDe-RP-AyY"/>
+                                                    <constraint firstItem="yxL-db-ad6" firstAttribute="top" secondItem="knj-pb-ELe" secondAttribute="top" id="oe3-WH-mY1"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k9f-M7-9FP">
+                                                <rect key="frame" x="0.0" y="257" width="393" height="64.666666666666686"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Praise and worship fills us with joy and lifts our spirit" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMp-Vg-ssk">
+                                                        <rect key="frame" x="10" y="2" width="373" height="52.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="NMp-Vg-ssk" secondAttribute="trailing" constant="10" id="7Ng-Xf-nb2"/>
+                                                    <constraint firstAttribute="bottom" secondItem="NMp-Vg-ssk" secondAttribute="bottom" constant="10" id="DqQ-Uy-X21"/>
+                                                    <constraint firstItem="NMp-Vg-ssk" firstAttribute="leading" secondItem="k9f-M7-9FP" secondAttribute="leading" constant="10" id="SDp-22-fX4"/>
+                                                    <constraint firstItem="NMp-Vg-ssk" firstAttribute="top" secondItem="k9f-M7-9FP" secondAttribute="top" constant="2" id="sWm-N1-cda"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="sdJ-sr-Baf"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMo-Eq-kCF">
+                                                <rect key="frame" x="0.0" y="321.66666666666663" width="393" height="274.66666666666663"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFd-9J-aXE">
+                                                        <rect key="frame" x="10" y="2" width="373" height="262.66666666666669"/>
+                                                        <string key="text">My lips will shout for joy, when I sing to you, and also my soul, which you have redeemed. (Ps 71:23)
+
+They will arrive and give praise on Mount Zion. Then the virgin will rejoice with singing, the young and the old together, and I will turn their mourning into gladness, and I will console them and gladden them after their sorrow. (Jer 31:12-13)</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="CFd-9J-aXE" secondAttribute="bottom" constant="10" id="AdN-og-G9q"/>
+                                                    <constraint firstAttribute="trailing" secondItem="CFd-9J-aXE" secondAttribute="trailing" constant="10" id="BS6-X6-XoW"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="ZrS-j6-XLG"/>
+                                                    <constraint firstItem="CFd-9J-aXE" firstAttribute="top" secondItem="fMo-Eq-kCF" secondAttribute="top" constant="2" id="ejy-k9-JT5"/>
+                                                    <constraint firstItem="CFd-9J-aXE" firstAttribute="leading" secondItem="fMo-Eq-kCF" secondAttribute="leading" constant="10" id="hKO-JK-SfW"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tKg-77-c9d">
+                                                <rect key="frame" x="0.0" y="596.33333333333337" width="393" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yf-Xg-Udy">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="mhU-xD-QL0"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="6yf-Xg-Udy" secondAttribute="bottom" id="Mwe-vF-SXM"/>
+                                                    <constraint firstItem="6yf-Xg-Udy" firstAttribute="leading" secondItem="tKg-77-c9d" secondAttribute="leading" id="OWT-t1-vWX"/>
+                                                    <constraint firstAttribute="trailing" secondItem="6yf-Xg-Udy" secondAttribute="trailing" id="cCr-jC-jz7"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="jJx-nD-1ig"/>
+                                                    <constraint firstItem="6yf-Xg-Udy" firstAttribute="top" secondItem="tKg-77-c9d" secondAttribute="top" id="q2b-xe-zgB"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VwB-0F-1Sj">
+                                                <rect key="frame" x="0.0" y="636.33333333333337" width="393" height="38.333333333333371"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Praise heals our inner wounds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soI-GM-awZ">
+                                                        <rect key="frame" x="10" y="2" width="373" height="26.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="soI-GM-awZ" firstAttribute="top" secondItem="VwB-0F-1Sj" secondAttribute="top" constant="2" id="Be0-nP-AhB"/>
+                                                    <constraint firstItem="soI-GM-awZ" firstAttribute="leading" secondItem="VwB-0F-1Sj" secondAttribute="leading" constant="10" id="IfY-fH-Ehh"/>
+                                                    <constraint firstAttribute="bottom" secondItem="soI-GM-awZ" secondAttribute="bottom" constant="10" id="Wgx-P6-7Kp"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="lAZ-WR-que"/>
+                                                    <constraint firstAttribute="trailing" secondItem="soI-GM-awZ" secondAttribute="trailing" constant="10" id="sgo-C2-CEH"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J82-fd-LVC">
+                                                <rect key="frame" x="0.0" y="674.66666666666663" width="393" height="107.66666666666663"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZT0-TV-vDe">
+                                                        <rect key="frame" x="10" y="2" width="373" height="95.666666666666671"/>
+                                                        <string key="text">Why are you sad, my soul? And why do you disquiet me? Hope in God, for I will again praise him: the salvation of my countenance. (Ps 41:5)</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="A5q-Uw-GFT"/>
+                                                    <constraint firstItem="ZT0-TV-vDe" firstAttribute="leading" secondItem="J82-fd-LVC" secondAttribute="leading" constant="10" id="i0G-3M-ssh"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ZT0-TV-vDe" secondAttribute="bottom" constant="10" id="jw3-Me-UWM"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ZT0-TV-vDe" secondAttribute="trailing" constant="10" id="oEK-OY-67d"/>
+                                                    <constraint firstItem="ZT0-TV-vDe" firstAttribute="top" secondItem="J82-fd-LVC" secondAttribute="top" constant="2" id="s03-oL-ruK"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eew-ZG-UO2">
+                                                <rect key="frame" x="0.0" y="782.33333333333337" width="393" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3B-eJ-96z">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="7pq-a4-UYJ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="b3B-eJ-96z" firstAttribute="top" secondItem="Eew-ZG-UO2" secondAttribute="top" id="4BQ-Mj-LzM"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="7NG-Cj-67D"/>
+                                                    <constraint firstAttribute="trailing" secondItem="b3B-eJ-96z" secondAttribute="trailing" id="Xci-dI-j6u"/>
+                                                    <constraint firstItem="b3B-eJ-96z" firstAttribute="leading" secondItem="Eew-ZG-UO2" secondAttribute="leading" id="bHS-Rf-iaf"/>
+                                                    <constraint firstAttribute="bottom" secondItem="b3B-eJ-96z" secondAttribute="bottom" id="jaI-S7-sYC"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ruU-pd-XkH">
+                                                <rect key="frame" x="0.0" y="822.33333333333337" width="393" height="64.666666666666629"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="We acknowledge God’s hand in everything by praising him" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pk3-jr-1LX">
+                                                        <rect key="frame" x="10" y="2" width="373" height="52.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="pk3-jr-1LX" secondAttribute="trailing" constant="10" id="9wj-DO-ezz"/>
+                                                    <constraint firstItem="pk3-jr-1LX" firstAttribute="top" secondItem="ruU-pd-XkH" secondAttribute="top" constant="2" id="Zai-vE-Yvw"/>
+                                                    <constraint firstItem="pk3-jr-1LX" firstAttribute="leading" secondItem="ruU-pd-XkH" secondAttribute="leading" constant="10" id="ogQ-6x-ANw"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="sCQ-9C-SKg"/>
+                                                    <constraint firstAttribute="bottom" secondItem="pk3-jr-1LX" secondAttribute="bottom" constant="10" id="uPS-X3-pUX"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EW1-0s-hr7">
+                                                <rect key="frame" x="0.0" y="887" width="393" height="107.66666666666663"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7E6-rm-sTF">
+                                                        <rect key="frame" x="10" y="2" width="373" height="95.666666666666671"/>
+                                                        <string key="text">Bless the Lord, O my soul, and do not forget all his benefits—who forgives all your iniquity, who heals all your diseases. (Ps 103:2-3, NRSVCE)</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="99H-SD-W18"/>
+                                                    <constraint firstAttribute="bottom" secondItem="7E6-rm-sTF" secondAttribute="bottom" constant="10" id="9f7-sH-rqq"/>
+                                                    <constraint firstAttribute="trailing" secondItem="7E6-rm-sTF" secondAttribute="trailing" constant="10" id="E6N-mz-z3K"/>
+                                                    <constraint firstItem="7E6-rm-sTF" firstAttribute="leading" secondItem="EW1-0s-hr7" secondAttribute="leading" constant="10" id="GZ6-n5-CYK"/>
+                                                    <constraint firstItem="7E6-rm-sTF" firstAttribute="top" secondItem="EW1-0s-hr7" secondAttribute="top" constant="2" id="Hh9-gH-3Na"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aqg-uF-Rd1">
+                                                <rect key="frame" x="0.0" y="994.66666666666674" width="393" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nb-z2-S0d">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="Bab-gA-qCy"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="0nb-z2-S0d" secondAttribute="trailing" id="0rf-9o-kzd"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="UUs-be-MEm"/>
+                                                    <constraint firstItem="0nb-z2-S0d" firstAttribute="leading" secondItem="Aqg-uF-Rd1" secondAttribute="leading" id="X6d-Xd-Qq9"/>
+                                                    <constraint firstAttribute="bottom" secondItem="0nb-z2-S0d" secondAttribute="bottom" id="a7O-iP-FSb"/>
+                                                    <constraint firstItem="0nb-z2-S0d" firstAttribute="top" secondItem="Aqg-uF-Rd1" secondAttribute="top" id="y2P-fz-oQ9"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbg-5F-NWy">
+                                                <rect key="frame" x="0.0" y="1034.6666666666667" width="393" height="38.333333333333258"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Praise lifts our prayers to God" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkN-WE-HFs">
+                                                        <rect key="frame" x="10" y="2" width="373" height="26.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="xkN-WE-HFs" firstAttribute="leading" secondItem="hbg-5F-NWy" secondAttribute="leading" constant="10" id="IYO-fx-Hig"/>
+                                                    <constraint firstAttribute="bottom" secondItem="xkN-WE-HFs" secondAttribute="bottom" constant="10" id="Vrm-A7-QDz"/>
+                                                    <constraint firstItem="xkN-WE-HFs" firstAttribute="top" secondItem="hbg-5F-NWy" secondAttribute="top" constant="2" id="aZB-uu-2Ex"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="dem-RY-gG4"/>
+                                                    <constraint firstAttribute="trailing" secondItem="xkN-WE-HFs" secondAttribute="trailing" constant="10" id="ulI-xJ-Cda"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mMQ-yw-bB4">
+                                                <rect key="frame" x="0.0" y="1073" width="393" height="131.66666666666674"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hmd-wj-m31">
+                                                        <rect key="frame" x="10" y="2" width="373" height="119.66666666666667"/>
+                                                        <string key="text">I will praise your name unceasingly, and I will praise it with thanksgiving, for my prayer was heeded. And you freed me from perdition, and you rescued me from the time of iniquity. (Sir 51:11)</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Hmd-wj-m31" firstAttribute="top" secondItem="mMQ-yw-bB4" secondAttribute="top" constant="2" id="ISD-7z-e70"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Hmd-wj-m31" secondAttribute="bottom" constant="10" id="YN0-qh-yeC"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Hmd-wj-m31" secondAttribute="trailing" constant="10" id="aUA-l7-1nh"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="umZ-VX-ZxL"/>
+                                                    <constraint firstItem="Hmd-wj-m31" firstAttribute="leading" secondItem="mMQ-yw-bB4" secondAttribute="leading" constant="10" id="wv1-UF-3X4"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="032-e8-roO">
+                                                <rect key="frame" x="0.0" y="1204.6666666666667" width="393" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aG4-Qu-4qM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="4Gc-Ss-4bd"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="aG4-Qu-4qM" secondAttribute="trailing" id="9vu-Al-fMT"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="dQO-q1-NQ7"/>
+                                                    <constraint firstItem="aG4-Qu-4qM" firstAttribute="top" secondItem="032-e8-roO" secondAttribute="top" id="kH3-LQ-sKk"/>
+                                                    <constraint firstAttribute="bottom" secondItem="aG4-Qu-4qM" secondAttribute="bottom" id="krN-yJ-L0i"/>
+                                                    <constraint firstItem="aG4-Qu-4qM" firstAttribute="leading" secondItem="032-e8-roO" secondAttribute="leading" id="zAX-Lq-iH2"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W28-gT-iNa">
+                                                <rect key="frame" x="0.0" y="1244.6666666666667" width="393" height="64.666666666666742"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Praise is a demonstration of our faith (praise releases our faith)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKQ-Ge-piK">
+                                                        <rect key="frame" x="10" y="2" width="373" height="52.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="JEY-X3-nTx"/>
+                                                    <constraint firstAttribute="trailing" secondItem="OKQ-Ge-piK" secondAttribute="trailing" constant="10" id="Mt0-kL-BCT"/>
+                                                    <constraint firstItem="OKQ-Ge-piK" firstAttribute="top" secondItem="W28-gT-iNa" secondAttribute="top" constant="2" id="NPe-oc-cET"/>
+                                                    <constraint firstItem="OKQ-Ge-piK" firstAttribute="leading" secondItem="W28-gT-iNa" secondAttribute="leading" constant="10" id="agI-iv-2lJ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="OKQ-Ge-piK" secondAttribute="bottom" constant="10" id="ivD-2b-9GZ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yKe-iz-1M9">
+                                                <rect key="frame" x="0.0" y="1309.3333333333333" width="393" height="203"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZc-SW-Im5">
+                                                        <rect key="frame" x="10" y="2" width="373" height="191"/>
+                                                        <string key="text">They were walking in the midst of the flame, praising God and blessing the Lord. Then Azariah, while standing, prayed in this manner, and opening his mouth in the midst of the fire, he said: “Blessed are you, O Lord, the God of our fathers, and your name is praiseworthy and glorious for all ages. (Dan 3:24-26)</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="258-nL-cdH"/>
+                                                    <constraint firstItem="eZc-SW-Im5" firstAttribute="top" secondItem="yKe-iz-1M9" secondAttribute="top" constant="2" id="j8u-Ql-xUC"/>
+                                                    <constraint firstAttribute="bottom" secondItem="eZc-SW-Im5" secondAttribute="bottom" constant="10" id="lf7-4G-dYO"/>
+                                                    <constraint firstItem="eZc-SW-Im5" firstAttribute="leading" secondItem="yKe-iz-1M9" secondAttribute="leading" constant="10" id="rkg-Gn-x09"/>
+                                                    <constraint firstAttribute="trailing" secondItem="eZc-SW-Im5" secondAttribute="trailing" constant="10" id="uO8-M9-NqZ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1dy-7b-IeP">
+                                                <rect key="frame" x="0.0" y="1512.3333333333333" width="393" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXj-9K-Nwt">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="dsq-Yc-93d"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="JXj-9K-Nwt" secondAttribute="trailing" id="AUP-S6-Qnz"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="H1E-1x-NRq"/>
+                                                    <constraint firstItem="JXj-9K-Nwt" firstAttribute="leading" secondItem="1dy-7b-IeP" secondAttribute="leading" id="O7g-Vz-Eps"/>
+                                                    <constraint firstAttribute="bottom" secondItem="JXj-9K-Nwt" secondAttribute="bottom" id="OUi-WD-qoS"/>
+                                                    <constraint firstItem="JXj-9K-Nwt" firstAttribute="top" secondItem="1dy-7b-IeP" secondAttribute="top" id="eFh-fO-Utv"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mOU-k1-1a7">
+                                                <rect key="frame" x="0.0" y="1552.3333333333333" width="393" height="64.666666666666742"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="The Holy Spirit comes upon us when we praise God" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuX-2A-CNk">
+                                                        <rect key="frame" x="10" y="2" width="373" height="52.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="YuX-2A-CNk" secondAttribute="bottom" constant="10" id="PDE-QS-yUI"/>
+                                                    <constraint firstAttribute="trailing" secondItem="YuX-2A-CNk" secondAttribute="trailing" constant="10" id="bl0-pT-M4N"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="jnF-oF-CUP"/>
+                                                    <constraint firstItem="YuX-2A-CNk" firstAttribute="top" secondItem="mOU-k1-1a7" secondAttribute="top" constant="2" id="k9h-0s-7rj"/>
+                                                    <constraint firstItem="YuX-2A-CNk" firstAttribute="leading" secondItem="mOU-k1-1a7" secondAttribute="leading" constant="10" id="qI0-n6-KgA"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBl-Zf-hdZ">
+                                                <rect key="frame" x="0.0" y="1617" width="393" height="60"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="While the musician was playing, the power of the Lord came on him. (2 Kgs 3:15)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlD-pL-I4N">
+                                                        <rect key="frame" x="10" y="2" width="373" height="48"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="PlD-pL-I4N" secondAttribute="bottom" constant="10" id="0eg-Oa-rdS"/>
+                                                    <constraint firstAttribute="trailing" secondItem="PlD-pL-I4N" secondAttribute="trailing" constant="10" id="Bhm-V2-ExT"/>
+                                                    <constraint firstItem="PlD-pL-I4N" firstAttribute="leading" secondItem="bBl-Zf-hdZ" secondAttribute="leading" constant="10" id="NkJ-OW-EZd"/>
+                                                    <constraint firstItem="PlD-pL-I4N" firstAttribute="top" secondItem="bBl-Zf-hdZ" secondAttribute="top" constant="2" id="fR4-df-dnH"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="sku-ef-3Vi"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wDE-1w-tBO">
+                                                <rect key="frame" x="0.0" y="1677" width="393" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8P-u8-PcX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="4uQ-51-dVP"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="A8P-u8-PcX" firstAttribute="leading" secondItem="wDE-1w-tBO" secondAttribute="leading" id="Nmz-lo-dsY"/>
+                                                    <constraint firstAttribute="trailing" secondItem="A8P-u8-PcX" secondAttribute="trailing" id="YpC-po-zmy"/>
+                                                    <constraint firstItem="A8P-u8-PcX" firstAttribute="top" secondItem="wDE-1w-tBO" secondAttribute="top" id="i6E-gp-8OM"/>
+                                                    <constraint firstAttribute="bottom" secondItem="A8P-u8-PcX" secondAttribute="bottom" id="mXt-gF-d4s"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="zgn-bk-Cfy"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cyb-1S-FQk">
+                                                <rect key="frame" x="0.0" y="1717" width="393" height="38.333333333333258"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Praise removes obstacles in our lives" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9w-fh-Xt2">
+                                                        <rect key="frame" x="10" y="2" width="373" height="26.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="J9w-fh-Xt2" firstAttribute="top" secondItem="Cyb-1S-FQk" secondAttribute="top" constant="2" id="Y2Q-UX-0FW"/>
+                                                    <constraint firstAttribute="bottom" secondItem="J9w-fh-Xt2" secondAttribute="bottom" constant="10" id="atb-5I-BEC"/>
+                                                    <constraint firstItem="J9w-fh-Xt2" firstAttribute="leading" secondItem="Cyb-1S-FQk" secondAttribute="leading" constant="10" id="n07-Uo-N2T"/>
+                                                    <constraint firstAttribute="trailing" secondItem="J9w-fh-Xt2" secondAttribute="trailing" constant="10" id="pKt-Ra-u3f"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="rqa-9f-1H1"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oPm-N4-Y65">
+                                                <rect key="frame" x="0.0" y="1755.3333333333333" width="393" height="131.66666666666674"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnx-DN-wmK">
+                                                        <rect key="frame" x="10" y="2" width="373" height="119.66666666666667"/>
+                                                        <string key="text">With all the people shouting, and the trumpets blaring, after the voice and the sound increased in the ears of the multitude, the walls promptly fell to ruin. (Josh 6:1-20)</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="cnx-DN-wmK" secondAttribute="trailing" constant="10" id="WfK-Pi-K4c"/>
+                                                    <constraint firstAttribute="bottom" secondItem="cnx-DN-wmK" secondAttribute="bottom" constant="10" id="ZYG-Wx-W3c"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="jKh-Ob-5YV"/>
+                                                    <constraint firstItem="cnx-DN-wmK" firstAttribute="top" secondItem="oPm-N4-Y65" secondAttribute="top" constant="2" id="s0z-7G-0Ew"/>
+                                                    <constraint firstItem="cnx-DN-wmK" firstAttribute="leading" secondItem="oPm-N4-Y65" secondAttribute="leading" constant="10" id="ugL-Yb-QkD"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Raj-U7-yy0">
+                                                <rect key="frame" x="0.0" y="1887" width="393" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBk-wj-woK">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="mTE-aU-hRR"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="JBk-wj-woK" firstAttribute="leading" secondItem="Raj-U7-yy0" secondAttribute="leading" id="BOh-7E-sBb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="JBk-wj-woK" secondAttribute="trailing" id="D6b-wG-buX"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="Slh-Gy-r6I"/>
+                                                    <constraint firstItem="JBk-wj-woK" firstAttribute="top" secondItem="Raj-U7-yy0" secondAttribute="top" id="dJ4-pk-psL"/>
+                                                    <constraint firstAttribute="bottom" secondItem="JBk-wj-woK" secondAttribute="bottom" id="yYp-uK-Fz9"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xe7-f1-9ps">
+                                                <rect key="frame" x="0.0" y="1927" width="393" height="38.333333333333258"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Praise delivers us from evil" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P93-jq-54H">
+                                                        <rect key="frame" x="10" y="2" width="373" height="26.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="P93-jq-54H" firstAttribute="top" secondItem="Xe7-f1-9ps" secondAttribute="top" constant="2" id="0WG-C3-Qxd"/>
+                                                    <constraint firstItem="P93-jq-54H" firstAttribute="leading" secondItem="Xe7-f1-9ps" secondAttribute="leading" constant="10" id="Cw2-Zq-g0v"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="G86-6c-yz0"/>
+                                                    <constraint firstAttribute="trailing" secondItem="P93-jq-54H" secondAttribute="trailing" constant="10" id="ISA-sV-Z5R"/>
+                                                    <constraint firstAttribute="bottom" secondItem="P93-jq-54H" secondAttribute="bottom" constant="10" id="yL6-uj-90y"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qrz-rm-3Wj">
+                                                <rect key="frame" x="0.0" y="1965.3333333333335" width="393" height="60"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Praising, I will call upon the Lord. And I will be saved from my enemies. (Ps 18:3)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9N-yA-Vcz">
+                                                        <rect key="frame" x="10" y="2" width="373" height="48"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="y9N-yA-Vcz" secondAttribute="bottom" constant="10" id="OgE-CC-eJK"/>
+                                                    <constraint firstItem="y9N-yA-Vcz" firstAttribute="leading" secondItem="Qrz-rm-3Wj" secondAttribute="leading" constant="10" id="VNa-Wf-NQO"/>
+                                                    <constraint firstItem="y9N-yA-Vcz" firstAttribute="top" secondItem="Qrz-rm-3Wj" secondAttribute="top" constant="2" id="aFn-v6-8qa"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="hrE-fp-6Cz"/>
+                                                    <constraint firstAttribute="trailing" secondItem="y9N-yA-Vcz" secondAttribute="trailing" constant="10" id="msM-2D-nKj"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fqD-ub-Ufm">
+                                                <rect key="frame" x="0.0" y="2025.3333333333335" width="393" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVr-2a-riO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="e9M-Rj-uTf"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="RVr-2a-riO" secondAttribute="bottom" id="37W-rH-DD6"/>
+                                                    <constraint firstItem="RVr-2a-riO" firstAttribute="leading" secondItem="fqD-ub-Ufm" secondAttribute="leading" id="QGV-KB-F7h"/>
+                                                    <constraint firstItem="RVr-2a-riO" firstAttribute="top" secondItem="fqD-ub-Ufm" secondAttribute="top" id="oZZ-9q-g4f"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="okg-Uq-lkB"/>
+                                                    <constraint firstAttribute="trailing" secondItem="RVr-2a-riO" secondAttribute="trailing" id="omi-yR-QYm"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uYO-oE-tGv">
+                                                <rect key="frame" x="0.0" y="2065.3333333333335" width="393" height="64.666666666666515"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Healings take place when God is praised" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFx-CH-Sba">
+                                                        <rect key="frame" x="10" y="2" width="373" height="52.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="xFx-CH-Sba" firstAttribute="leading" secondItem="uYO-oE-tGv" secondAttribute="leading" constant="10" id="3dv-ed-Yei"/>
+                                                    <constraint firstAttribute="bottom" secondItem="xFx-CH-Sba" secondAttribute="bottom" constant="10" id="Hjr-oz-4mW"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="OG1-tV-O11"/>
+                                                    <constraint firstItem="xFx-CH-Sba" firstAttribute="top" secondItem="uYO-oE-tGv" secondAttribute="top" constant="2" id="iaD-v6-WCM"/>
+                                                    <constraint firstAttribute="trailing" secondItem="xFx-CH-Sba" secondAttribute="trailing" constant="10" id="mFu-3Z-MgH"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w8Z-rn-Rsh">
+                                                <rect key="frame" x="0.0" y="2130" width="393" height="83.666666666666515"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Heal me, O Lord, and I will be healed. Save me, and I will be saved. For you are my praise. (Jer 17:14)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFH-KH-fmt">
+                                                        <rect key="frame" x="10" y="2" width="373" height="71.666666666666671"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="oFH-KH-fmt" secondAttribute="bottom" constant="10" id="5tY-g0-9b4"/>
+                                                    <constraint firstAttribute="trailing" secondItem="oFH-KH-fmt" secondAttribute="trailing" constant="10" id="WDY-5p-zcA"/>
+                                                    <constraint firstItem="oFH-KH-fmt" firstAttribute="leading" secondItem="w8Z-rn-Rsh" secondAttribute="leading" constant="10" id="dh3-kJ-PXh"/>
+                                                    <constraint firstItem="oFH-KH-fmt" firstAttribute="top" secondItem="w8Z-rn-Rsh" secondAttribute="top" constant="2" id="lzl-d5-3vk"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="tCa-fS-WZr"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NMX-9h-78Q">
+                                                <rect key="frame" x="0.0" y="2213.6666666666665" width="393" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aA-tc-mP9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="6NA-ie-FID"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="644-Du-2JB"/>
+                                                    <constraint firstAttribute="trailing" secondItem="4aA-tc-mP9" secondAttribute="trailing" id="FKc-Vn-XdJ"/>
+                                                    <constraint firstItem="4aA-tc-mP9" firstAttribute="top" secondItem="NMX-9h-78Q" secondAttribute="top" id="S5p-RZ-s4d"/>
+                                                    <constraint firstAttribute="bottom" secondItem="4aA-tc-mP9" secondAttribute="bottom" id="gng-OC-Dqy"/>
+                                                    <constraint firstItem="4aA-tc-mP9" firstAttribute="leading" secondItem="NMX-9h-78Q" secondAttribute="leading" id="x6r-Iz-OGN"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d57-3l-6iy">
+                                                <rect key="frame" x="0.0" y="2253.6666666666665" width="393" height="91"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="God intervenes when we Praise Him (miracles, wonders, healings, and blessings)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJF-j3-Xe3">
+                                                        <rect key="frame" x="10" y="2" width="373" height="79"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="KJF-j3-Xe3" secondAttribute="bottom" constant="10" id="NAa-pQ-Ric"/>
+                                                    <constraint firstItem="KJF-j3-Xe3" firstAttribute="leading" secondItem="d57-3l-6iy" secondAttribute="leading" constant="10" id="WFw-gL-2nQ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="KJF-j3-Xe3" secondAttribute="trailing" constant="10" id="eaC-Xt-GAd"/>
+                                                    <constraint firstItem="KJF-j3-Xe3" firstAttribute="top" secondItem="d57-3l-6iy" secondAttribute="top" constant="2" id="m13-El-aOL"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="ufQ-8m-CoI"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HLA-d7-nHG">
+                                                <rect key="frame" x="0.0" y="2344.6666666666665" width="393" height="227"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUh-Lo-loU">
+                                                        <rect key="frame" x="10" y="2" width="373" height="215"/>
+                                                        <string key="text">In the middle of the night, Paul and Silas were praying and praising God. And those who were also in custody were listening to them. Yet truly, there was a sudden earthquake, so great that the foundations of the prison were moved. And immediately all the doors were opened, and the bindings of everyone were released. (Acts 16:25-26)</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="vUh-Lo-loU" firstAttribute="top" secondItem="HLA-d7-nHG" secondAttribute="top" constant="2" id="BlI-Po-Xec"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="kJU-Hq-MdK"/>
+                                                    <constraint firstItem="vUh-Lo-loU" firstAttribute="leading" secondItem="HLA-d7-nHG" secondAttribute="leading" constant="10" id="uAZ-VG-34X"/>
+                                                    <constraint firstAttribute="bottom" secondItem="vUh-Lo-loU" secondAttribute="bottom" constant="10" id="uPU-kr-LTV"/>
+                                                    <constraint firstAttribute="trailing" secondItem="vUh-Lo-loU" secondAttribute="trailing" constant="10" id="yCw-XO-fKu"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tQX-Wv-ptT">
+                                                <rect key="frame" x="0.0" y="2571.6666666666665" width="393" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWS-rz-Xm9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="Vtc-zs-LES"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="rWS-rz-Xm9" secondAttribute="trailing" id="I4T-A1-HJG"/>
+                                                    <constraint firstAttribute="bottom" secondItem="rWS-rz-Xm9" secondAttribute="bottom" id="ITs-SX-kKi"/>
+                                                    <constraint firstItem="rWS-rz-Xm9" firstAttribute="leading" secondItem="tQX-Wv-ptT" secondAttribute="leading" id="Z3w-wg-PCZ"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="h98-4k-haJ"/>
+                                                    <constraint firstItem="rWS-rz-Xm9" firstAttribute="top" secondItem="tQX-Wv-ptT" secondAttribute="top" id="jcz-Tx-2gJ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KSK-FS-cM7">
+                                                <rect key="frame" x="0.0" y="2611.6666666666665" width="393" height="64.666666666666515"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Praise brings comfort in times of suffering" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ul-bF-R9S">
+                                                        <rect key="frame" x="10" y="2" width="373" height="52.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="66a-jO-Hdq"/>
+                                                    <constraint firstItem="9Ul-bF-R9S" firstAttribute="leading" secondItem="KSK-FS-cM7" secondAttribute="leading" constant="10" id="ME3-xa-JBd"/>
+                                                    <constraint firstAttribute="trailing" secondItem="9Ul-bF-R9S" secondAttribute="trailing" constant="10" id="UGQ-ap-KaX"/>
+                                                    <constraint firstAttribute="bottom" secondItem="9Ul-bF-R9S" secondAttribute="bottom" constant="10" id="cui-YL-wDx"/>
+                                                    <constraint firstItem="9Ul-bF-R9S" firstAttribute="top" secondItem="KSK-FS-cM7" secondAttribute="top" constant="2" id="ttc-4z-6cz"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R3o-7R-RGN">
+                                                <rect key="frame" x="0.0" y="2676.3333333333335" width="393" height="131.66666666666652"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bE-Tr-5nd">
+                                                        <rect key="frame" x="10" y="2" width="373" height="119.66666666666667"/>
+                                                        <string key="text">Give praise, O heavens! And exult, O earth! Let the mountains give praise with jubilation! For the Lord has consoled his people, and he will take pity on his suffering ones. (Is 49:13)</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="8bE-Tr-5nd" firstAttribute="top" secondItem="R3o-7R-RGN" secondAttribute="top" constant="2" id="2PC-a9-Jxj"/>
+                                                    <constraint firstAttribute="trailing" secondItem="8bE-Tr-5nd" secondAttribute="trailing" constant="10" id="7gk-gu-HIa"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="Jdg-Uo-EvS"/>
+                                                    <constraint firstAttribute="bottom" secondItem="8bE-Tr-5nd" secondAttribute="bottom" constant="10" id="Xnz-d0-TDf"/>
+                                                    <constraint firstItem="8bE-Tr-5nd" firstAttribute="leading" secondItem="R3o-7R-RGN" secondAttribute="leading" constant="10" id="pSq-ou-81n"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VSi-D2-9aT">
+                                                <rect key="frame" x="0.0" y="2808" width="393" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwu-H9-ykG">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="abA-0Z-96F"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="wwu-H9-ykG" secondAttribute="bottom" id="3ge-iQ-qnI"/>
+                                                    <constraint firstItem="wwu-H9-ykG" firstAttribute="top" secondItem="VSi-D2-9aT" secondAttribute="top" id="8My-ly-m7a"/>
+                                                    <constraint firstItem="wwu-H9-ykG" firstAttribute="leading" secondItem="VSi-D2-9aT" secondAttribute="leading" id="IJO-on-y9I"/>
+                                                    <constraint firstAttribute="trailing" secondItem="wwu-H9-ykG" secondAttribute="trailing" id="koB-eU-ian"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="m8c-WT-I7R"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uya-V8-H1R">
+                                                <rect key="frame" x="0.0" y="2848" width="393" height="38.333333333333485"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Praise strengthens us" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53a-Ax-tp1">
+                                                        <rect key="frame" x="10" y="2" width="373" height="26.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="53a-Ax-tp1" secondAttribute="bottom" constant="10" id="14e-av-JAN"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="K4t-6v-ZQE"/>
+                                                    <constraint firstItem="53a-Ax-tp1" firstAttribute="leading" secondItem="Uya-V8-H1R" secondAttribute="leading" constant="10" id="Wvc-3U-G7Y"/>
+                                                    <constraint firstAttribute="trailing" secondItem="53a-Ax-tp1" secondAttribute="trailing" constant="10" id="vGU-n8-SPc"/>
+                                                    <constraint firstItem="53a-Ax-tp1" firstAttribute="top" secondItem="Uya-V8-H1R" secondAttribute="top" constant="2" id="wZR-Cb-kkt"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JkF-B5-cXi">
+                                                <rect key="frame" x="0.0" y="2886.3333333333335" width="393" height="155.33333333333348"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4m-Gp-QcT">
+                                                        <rect key="frame" x="10" y="2" width="373" height="143.33333333333334"/>
+                                                        <string key="text">Then they all together praised  the merciful Lord, and were strengthened in their souls, being prepared to break through not only men, but also the most ferocious beasts and walls of iron. (2 Mac 11:9)</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="R4m-Gp-QcT" secondAttribute="bottom" constant="10" id="IL4-j1-cml"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="MfX-tF-Nla"/>
+                                                    <constraint firstAttribute="trailing" secondItem="R4m-Gp-QcT" secondAttribute="trailing" constant="10" id="VeY-ec-wVY"/>
+                                                    <constraint firstItem="R4m-Gp-QcT" firstAttribute="top" secondItem="JkF-B5-cXi" secondAttribute="top" constant="2" id="cT0-do-jv0"/>
+                                                    <constraint firstItem="R4m-Gp-QcT" firstAttribute="leading" secondItem="JkF-B5-cXi" secondAttribute="leading" constant="10" id="x9a-0u-J6C"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="12n-m5-7qX">
+                                                <rect key="frame" x="0.0" y="3041.6666666666665" width="393" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXn-Rt-VHc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="kra-fK-WTE"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="EXn-Rt-VHc" firstAttribute="leading" secondItem="12n-m5-7qX" secondAttribute="leading" id="53F-Aa-DoH"/>
+                                                    <constraint firstAttribute="trailing" secondItem="EXn-Rt-VHc" secondAttribute="trailing" id="U5R-Hv-GVM"/>
+                                                    <constraint firstItem="EXn-Rt-VHc" firstAttribute="top" secondItem="12n-m5-7qX" secondAttribute="top" id="WD2-Y1-4e8"/>
+                                                    <constraint firstAttribute="bottom" secondItem="EXn-Rt-VHc" secondAttribute="bottom" id="krs-Bm-Bgj"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="ugs-ca-n1M"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="body_background"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="UZ0-1C-L0V" secondAttribute="bottom" id="FY6-hV-pFo"/>
+                                    <constraint firstItem="UZ0-1C-L0V" firstAttribute="top" secondItem="F4Q-kq-qJf" secondAttribute="top" id="V5U-lK-cvD"/>
+                                    <constraint firstAttribute="trailing" secondItem="UZ0-1C-L0V" secondAttribute="trailing" id="YQY-tg-h5H"/>
+                                    <constraint firstItem="UZ0-1C-L0V" firstAttribute="leading" secondItem="F4Q-kq-qJf" secondAttribute="leading" id="eoF-vf-tDH"/>
+                                    <constraint firstItem="UZ0-1C-L0V" firstAttribute="width" secondItem="F4Q-kq-qJf" secondAttribute="width" id="xUZ-EN-jM4"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pRC-xJ-IBZ"/>
+                        <color key="backgroundColor" name="nav_background"/>
+                        <constraints>
+                            <constraint firstItem="F4Q-kq-qJf" firstAttribute="top" secondItem="pRC-xJ-IBZ" secondAttribute="top" id="46S-W5-HcY"/>
+                            <constraint firstItem="F4Q-kq-qJf" firstAttribute="leading" secondItem="pRC-xJ-IBZ" secondAttribute="leading" id="H1t-qJ-fs6"/>
+                            <constraint firstItem="F4Q-kq-qJf" firstAttribute="trailing" secondItem="pRC-xJ-IBZ" secondAttribute="trailing" id="Lu3-lI-vAB"/>
+                            <constraint firstItem="pRC-xJ-IBZ" firstAttribute="bottom" secondItem="F4Q-kq-qJf" secondAttribute="bottom" id="Rix-zp-rO6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Importance of Praise" id="SLi-YV-D5p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="294-x7-mDa" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2405" y="404"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="body_background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="nav_background">
+            <color red="0.17647058823529413" green="0.45882352941176469" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="stack_background">
+            <color red="0.17647058823529413" green="0.45882352941176469" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="title_text">
+            <color red="0.17647058823529413" green="0.45882352941176469" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

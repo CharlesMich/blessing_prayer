@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,10 +12,43 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OcU-0B-x0B">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blessing Prayer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVj-Uv-yex">
+                                        <rect key="frame" x="113.00000000000001" y="365.66666666666669" width="167.33333333333337" height="28"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prayer_white" translatesAutoresizingMaskIntoConstraints="NO" id="HQy-iL-Kcm">
+                                        <rect key="frame" x="76" y="211.66666666666669" width="240" height="120.00000000000006"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="OnF-3l-5UC"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1764705882" green="0.45882352939999999" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="HQy-iL-Kcm" secondAttribute="trailing" constant="77" id="E5R-c6-cWj"/>
+                                    <constraint firstItem="kVj-Uv-yex" firstAttribute="centerX" secondItem="OcU-0B-x0B" secondAttribute="centerX" id="Iln-xc-4gS"/>
+                                    <constraint firstItem="kVj-Uv-yex" firstAttribute="top" secondItem="HQy-iL-Kcm" secondAttribute="bottom" constant="33.670000000000002" id="Lf9-zD-vPZ"/>
+                                    <constraint firstItem="HQy-iL-Kcm" firstAttribute="leading" secondItem="OcU-0B-x0B" secondAttribute="leading" constant="76" id="O1z-A8-VvX"/>
+                                    <constraint firstItem="kVj-Uv-yex" firstAttribute="centerY" secondItem="OcU-0B-x0B" secondAttribute="centerY" id="opc-1a-TJl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.1764705882" green="0.45882352939999999" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OcU-0B-x0B" secondAttribute="trailing" id="Ei7-hn-8Ov"/>
+                            <constraint firstItem="OcU-0B-x0B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HlN-fb-Euh"/>
+                            <constraint firstItem="OcU-0B-x0B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OSa-I3-zxz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OcU-0B-x0B" secondAttribute="bottom" id="OzK-lS-3Qg"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -22,4 +56,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="prayer_white" width="341.33334350585938" height="341.33334350585938"/>
+    </resources>
 </document>
