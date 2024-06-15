@@ -13,11 +13,12 @@
         <scene sceneID="zQl-bB-ojx">
             <objects>
                 <navigationController storyboardIdentifier="UINavigationController-FDU-Sw-siW" id="FDU-Sw-siW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Notes" id="e46-6Q-8ci"/>
+                    <tabBarItem key="tabBarItem" title="Notes" image="pencil.circle.fill" catalog="system" id="e46-6Q-8ci"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wJD-Cw-Hyr">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" name="nav_background"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -42,7 +43,7 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="0ZL-Cq-85S">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="711"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="772"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Onv-No-6pa">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="60"/>
@@ -308,8 +309,32 @@
                                                     <constraint firstAttribute="bottom" secondItem="Hk3-gR-AK7" secondAttribute="bottom" id="pOw-t4-2pg"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LFU-MN-6va">
+                                                <rect key="frame" x="0.0" y="671" width="393" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4BQ-Oz-BGu">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="60"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="God and Money">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                            <color key="baseForegroundColor" name="title_text"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="UUH-i6-19U" kind="show" id="wZp-Lc-OtA"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstItem="4BQ-Oz-BGu" firstAttribute="top" secondItem="LFU-MN-6va" secondAttribute="top" id="3f7-Gt-dtI"/>
+                                                    <constraint firstItem="4BQ-Oz-BGu" firstAttribute="leading" secondItem="LFU-MN-6va" secondAttribute="leading" constant="10" id="e5U-fZ-xOJ"/>
+                                                    <constraint firstAttribute="height" constant="60" id="eBH-Bj-JKw"/>
+                                                    <constraint firstAttribute="trailing" secondItem="4BQ-Oz-BGu" secondAttribute="trailing" constant="10" id="nFD-9O-pOp"/>
+                                                    <constraint firstAttribute="bottom" secondItem="4BQ-Oz-BGu" secondAttribute="bottom" id="u0l-19-iyg"/>
+                                                </constraints>
+                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q39-vf-HFf">
-                                                <rect key="frame" x="0.0" y="671" width="393" height="40"/>
+                                                <rect key="frame" x="0.0" y="732" width="393" height="40"/>
                                                 <color key="backgroundColor" name="body_background"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="9lp-tJ-9wD"/>
@@ -4906,7 +4931,7 @@ Exo 34:26, Num 15:19-21, Deut 16:19</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7eZ-9H-gbQ">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715.00000000000023"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FZQ-0q-7iA">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="8647"/>
@@ -4952,7 +4977,7 @@ Exo 34:26, Num 15:19-21, Deut 16:19</string>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otU-eK-fjn">
                                                         <rect key="frame" x="10" y="2" width="373" height="1002.6666666666666"/>
-                                                        <mutableString key="text">Those who want to become rich fall into temptation and into the snare of the devil and into many useless and harmful desires, which submerge men in destruction and in perdition. The love of money is the root of all evils. Some persons, hungering in this way, have strayed from the faith and have entangled themselves in many sorrows. (1 Tim 6:9-10)
+                                                        <string key="text">Those who want to become rich fall into temptation and into the snare of the devil and into many useless and harmful desires, which submerge men in destruction and in perdition. The love of money is the root of all evils. Some persons, hungering in this way, have strayed from the faith and have entangled themselves in many sorrows. (1 Tim 6:9-10)
 
 Whoever trusts in his riches will fall. But the just shall spring up like a green leaf. (Pro 11:28)
 
@@ -4964,7 +4989,7 @@ Amen, I say to you, it will be hard for a wealthy person to enter into the kingd
 
 Likewise, they lie in ambush against their own blood, and they undertake deceits against their own souls. Thus, the ways of all those who are greedy seize the souls of those who possess. (Pro 1:18-19)
 
-Better is a little with the fear of the Lord, than great treasures and dissatisfaction. (Pro 15:16)</mutableString>
+Better is a little with the fear of the Lord, than great treasures and dissatisfaction. (Pro 15:16)</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -5022,11 +5047,11 @@ Better is a little with the fear of the Lord, than great treasures and dissatisf
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hE7-xX-r63">
                                                         <rect key="frame" x="10" y="2" width="373" height="477.66666666666669"/>
-                                                        <mutableString key="text">There is one who is enriched by spending sparingly, and this is the extent of his reward. About this, he says: “I have found rest for myself, and now I alone will eat from my goods.” But he does not know how much time will pass before death approaches, and then he must leave everything behind to others and die. (Sir 11:18-20)
+                                                        <string key="text">There is one who is enriched by spending sparingly, and this is the extent of his reward. About this, he says: “I have found rest for myself, and now I alone will eat from my goods.” But he does not know how much time will pass before death approaches, and then he must leave everything behind to others and die. (Sir 11:18-20)
 
 The foolish and the senseless will perish together. And they will leave their riches to strangers. (Ps 49:10)
 
-Do not be afraid, when a man will have been made rich, and when the glory of his house will have been multiplied. For when he dies, he will take nothing away, and his glory will not descend with him. (Ps 49:16-17)</mutableString>
+Do not be afraid, when a man will have been made rich, and when the glory of his house will have been multiplied. For when he dies, he will take nothing away, and his glory will not descend with him. (Ps 49:16-17)</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -5551,7 +5576,7 @@ The wage of the righteous leads to life, the gain of the wicked to sin. (Pro 10:
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aD-Zf-0on">
                                                         <rect key="frame" x="10" y="2" width="373" height="453.66666666666669"/>
-                                                        <mutableString key="text">Do not choose to rely on your wealth, and you should not say: “I have all I need in life.” (Sir 5:1)
+                                                        <string key="text">Do not choose to rely on your wealth, and you should not say: “I have all I need in life.” (Sir 5:1)
 
 Command the wealthy of this age not to be haughty, nor to hope in the uncertainty of riches, but in the living God, who provides us everything in abundance to enjoy. (1 Tim 6:17)
 
@@ -5559,7 +5584,7 @@ Whoever trusts in his riches will fall. But the just shall spring up like a gree
 
 The wealth of the rich is the city of his strength, and it is like a strong wall encircling him. (Pro 18:11)
 
-Ps 49:6, Eze 7:19</mutableString>
+Ps 49:6, Eze 7:19</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -5617,7 +5642,7 @@ Ps 49:6, Eze 7:19</mutableString>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LH-sH-6iE">
                                                         <rect key="frame" x="10" y="2" width="373" height="644.66666666666663"/>
-                                                        <mutableString key="text">Do not be willing to labor so that you may be enriched. But set limits by your prudence. Do not raise your eyes toward wealth that you are not able to have. (Pro 23:4-5)
+                                                        <string key="text">Do not be willing to labor so that you may be enriched. But set limits by your prudence. Do not raise your eyes toward wealth that you are not able to have. (Pro 23:4-5)
 
 Be cautious and wary of all greed. For a person’s life is not found in the abundance of the things that he possesses. (Luk 12:15)
 
@@ -5628,7 +5653,7 @@ A faithful man shall be greatly praised. But whoever rushes to become rich will 
 
 Substance obtained in haste will be diminished. But what is collected by hand, little by little, shall be multiplied. (Pro 13:11)
 
-When an inheritance is obtained hastily in the beginning, in the end it will be without a blessing. (Pro 20:21)</mutableString>
+When an inheritance is obtained hastily in the beginning, in the end it will be without a blessing. (Pro 20:21)</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -5686,7 +5711,7 @@ When an inheritance is obtained hastily in the beginning, in the end it will be 
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLY-3h-l2G">
                                                         <rect key="frame" x="10" y="2" width="373" height="811.66666666666663"/>
-                                                        <mutableString key="text">The bread of deceit is sweet to a man. But afterwards, his mouth will be filled with pebbles. (Pro 20:17)
+                                                        <string key="text">The bread of deceit is sweet to a man. But afterwards, his mouth will be filled with pebbles. (Pro 20:17)
 
 A partridge has hatched eggs that she did not lay; a man has gathered riches, but without judgment. In the midst of his days, he will leave it all behind, and he will be foolish concerning his very end. (Jer 17:11)
 
@@ -5699,7 +5724,7 @@ Treasures of impiety will profit nothing. (Pro 10:2)
 
 Not so great is the fault when someone has stolen. For he steals so as to satisfy a hungry soul. Also, if he is apprehended, he shall repay sevenfold and hand over all the substance of his house. (Pro 6:30-31)
 
-Do not choose to be anxious for unjust wealth. For these things will not benefit you in the day of darkness and retribution. (Sir 5:8)</mutableString>
+Do not choose to be anxious for unjust wealth. For these things will not benefit you in the day of darkness and retribution. (Sir 5:8)</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -5757,7 +5782,7 @@ Do not choose to be anxious for unjust wealth. For these things will not benefit
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSL-Si-Y9R">
                                                         <rect key="frame" x="10" y="2" width="373" height="1122"/>
-                                                        <mutableString key="text">Godliness with contentment is great gain. For we brought nothing into this world, and there is no doubt that we can take nothing away. But, having food and clothing, we should be content with these. (1 Tim 6:6-8)
+                                                        <string key="text">Godliness with contentment is great gain. For we brought nothing into this world, and there is no doubt that we can take nothing away. But, having food and clothing, we should be content with these. (1 Tim 6:6-8)
 
 Keep your lives free from the love of money; be content with what you are offered. For he himself has said, “I will not abandon you, and I will not neglect you.” (Heb 13:5)
 
@@ -5773,7 +5798,7 @@ The primary need in a man’s life is water and bread, and clothing, and a house
 
 A handful with rest is better than both hands filled with labors and with affliction of the soul. (Eccl 4:6)
 
-A little is better to the just than the many riches of sinners. (Ps 37:16)</mutableString>
+A little is better to the just than the many riches of sinners. (Ps 37:16)</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -6127,11 +6152,11 @@ Eccl 2:26</string>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ype-iN-YhQ">
                                                         <rect key="frame" x="10" y="2" width="373" height="1050.3333333333333"/>
-                                                        <mutableString key="text">So then, if you will listen to the voice of the Lord your God, so as to keep and do all of his commandments, which I instruct to you this day, the Lord your God will cause you to be more exalted than all the nations which exist upon the earth. And all these blessings shall come to you and take hold of you, but only if you listen to his precepts. Blessed shall you be in the city, and blessed in the field. Blessed shall be the fruit of your loins, and the fruit of your land, and the fruit of your cattle, the droves of your herds, and the folds of your sheep. Blessed shall be your barns, and blessed your storehouses. Blessed shall you be entering and departing. (Deut 28:1-6)
+                                                        <string key="text">So then, if you will listen to the voice of the Lord your God, so as to keep and do all of his commandments, which I instruct to you this day, the Lord your God will cause you to be more exalted than all the nations which exist upon the earth. And all these blessings shall come to you and take hold of you, but only if you listen to his precepts. Blessed shall you be in the city, and blessed in the field. Blessed shall be the fruit of your loins, and the fruit of your land, and the fruit of your cattle, the droves of your herds, and the folds of your sheep. Blessed shall be your barns, and blessed your storehouses. Blessed shall you be entering and departing. (Deut 28:1-6)
 
 The Lord will raise you up as a holy people for himself, just as he swore to you, if you will keep the commandments of the Lord your God, and walk in his ways. And all the peoples of the earth shall see that the name of the Lord has been invoked over you, and they shall fear you. The Lord will cause you to be abundant in every good thing: in the fruit of your womb, and in the fruit of your cattle, and in the fruit of your land, which the Lord swore to your fathers that he would give to you. The Lord will open his excellent treasury, the heavens, so that it may distribute rain in due time. And he will bless all the works of your hands. And you shall lend to many nations, but you yourself will borrow nothing from anyone. And the Lord will appoint you as the head, and not as the tail. And you shall be always above, and not beneath. But only if you will listen to the commandments of the Lord your God, which I entrust to you this day, and will keep and do them. (Deut 28:9-13)
 
-Pro 3:1, Deut 30:9-10</mutableString>
+Pro 3:1, Deut 30:9-10</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -6189,7 +6214,7 @@ Pro 3:1, Deut 30:9-10</mutableString>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yk0-tg-qtQ">
                                                         <rect key="frame" x="10" y="2" width="373" height="907"/>
-                                                        <mutableString key="text">The intentions of the robust continually bring forth abundance. But all the lazy are continually in need. (Pro 21:5)
+                                                        <string key="text">The intentions of the robust continually bring forth abundance. But all the lazy are continually in need. (Pro 21:5)
 
 He who gathers the harvest is prudent. But he who snores in warm weather is a son of confusion. (Pro 10:5)
 
@@ -6203,7 +6228,7 @@ Laziness sends one into a deep sleep, and a dissolute soul will go hungry. (Pro 
 
 Do not love sleep, lest deprivation oppress you. Open your eyes and be satisfied with bread. (Pro 20:13)
 
-Do not be willing to be in the feasts of great drinkers, nor in the carousings of those who gather to feed on flesh. For those who waste time drinking, and who surrender themselves to symbols, will be consumed. And those who sleep will be clothed in rags. (Pro 23:20-21)</mutableString>
+Do not be willing to be in the feasts of great drinkers, nor in the carousings of those who gather to feed on flesh. For those who waste time drinking, and who surrender themselves to symbols, will be consumed. And those who sleep will be clothed in rags. (Pro 23:20-21)</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -6613,7 +6638,7 @@ Evil pursues sinners. And good things shall be distributed to the just. The good
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YfE-Rk-buV">
                                                         <rect key="frame" x="10" y="2" width="373" height="1480"/>
-                                                        <mutableString key="text">The house of the just has very great treasure. but trouble befalls the income of the impious. (Pro 15:6)
+                                                        <string key="text">The house of the just has very great treasure. but trouble befalls the income of the impious. (Pro 15:6)
 
 For what reason shall I continue to strike you, as you increase transgressions? The entire head is feeble, and the entire heart is grieving. From the sole of the foot, even to the top of the head, there is no soundness within. Wounds and bruises and swelling sores: these are not bandaged, nor treated with medicine, nor soothed with oil. Your land is desolate. Your cities have been set ablaze. Foreigners devour your countryside in your sight, and it will become desolate, as if devastated by enemies. (Is 1:5-7)
 
@@ -6629,7 +6654,7 @@ They have not said in their heart: ‘Let us dread the Lord our God, who gives u
 
 Your riches and your treasures I will give over to be freely despoiled, because of all your sins, even throughout all your borders. (Jer 15:13)
 
-Sir 5:8-10, Lev 26:16, Lev 26:20, Lev 26:21-22</mutableString>
+Sir 5:8-10, Lev 26:16, Lev 26:20, Lev 26:21-22</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -6687,11 +6712,11 @@ Sir 5:8-10, Lev 26:16, Lev 26:20, Lev 26:21-22</mutableString>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGE-8Z-unL">
                                                         <rect key="frame" x="10" y="2" width="373" height="429.66666666666669"/>
-                                                        <mutableString key="text">Whoever loves a feast will be in deprivation. Whoever loves wine and fatness will not be enriched. (Pro 21:17)
+                                                        <string key="text">Whoever loves a feast will be in deprivation. Whoever loves wine and fatness will not be enriched. (Pro 21:17)
 
 Woe to you who rise up in the morning to pursue drunkenness, and to drink even until evening, so as to be inflamed with wine. Harp and lyre and timbrel and pipe, as well as wine, are at your feasts. But you do not respect the work of the Lord, nor do you consider the works of his hands. Because of this, my people have been led away as captives, for they did not have knowledge, and their nobles have passed away from famine, and their multitudes have dried up from thirst. (Is 5:11-13)
 
-Jer 17:3, Sir 18:32, Jer 15:17</mutableString>
+Jer 17:3, Sir 18:32, Jer 15:17</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -7100,11 +7125,11 @@ The fruit of humility is the fear of the Lord, riches and glory and life. (Pro 2
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ax-AC-dkd">
                                                         <rect key="frame" x="10" y="2" width="373" height="477.66666666666669"/>
-                                                        <mutableString key="text">If you will walk in my precepts, and observe my commandments, and accomplish them, I will give to you rain in its time, and the ground shall bring forth its seedlings, and the trees shall be filled again with fruit. The threshing of the harvest shall last until the vintage, and the vintage shall overtake the sowing. And you shall eat your bread to fullness, and you shall live in your land without fear. (Lev 26:3-5)
+                                                        <string key="text">If you will walk in my precepts, and observe my commandments, and accomplish them, I will give to you rain in its time, and the ground shall bring forth its seedlings, and the trees shall be filled again with fruit. The threshing of the harvest shall last until the vintage, and the vintage shall overtake the sowing. And you shall eat your bread to fullness, and you shall live in your land without fear. (Lev 26:3-5)
 
 He clung to the Lord, and he did not withdraw from his footsteps, and he carried out his commandments, which the Lord had instructed to Moses. Therefore, the Lord was also with him. wherever he went, he prospered (2 Kgs 18:6-7)
 
-Deut 11:13</mutableString>
+Deut 11:13</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -7454,7 +7479,7 @@ Is 59:1-2</string>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Hh-dT-42E">
                                                         <rect key="frame" x="10" y="2" width="373" height="716.33333333333337"/>
-                                                        <mutableString key="text">I have been young, and now I am old; and I have not seen the just forsaken, nor his offspring seeking bread. He shows compassion and lends, all day long, and his offspring will be in blessing. (Ps 37:25-26)
+                                                        <string key="text">I have been young, and now I am old; and I have not seen the just forsaken, nor his offspring seeking bread. He shows compassion and lends, all day long, and his offspring will be in blessing. (Ps 37:25-26)
 
 Some distribute their goods freely, and they become wealthier. Others withhold unduly, and they are always in need. (Pro 11:24)
 
@@ -7464,7 +7489,7 @@ Give liberally and be ungrudging, so that the Lord your God may bless you, at al
 
 Whoever gives to the poor shall not be in need. Whoever despises his petition will suffer scarcity. (Pro 28:27)
 
-Dan 4:27</mutableString>
+Dan 4:27</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -7643,10 +7668,632 @@ See with your own eyes how I have labored only a little, and have found much res
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="74g-Jk-S1t" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9584" y="-151"/>
+            <point key="canvasLocation" x="8873" y="404"/>
+        </scene>
+        <!--God and Money-->
+        <scene sceneID="IDr-8W-N1s">
+            <objects>
+                <viewController title="God and Money" id="UUH-i6-19U" customClass="ViewController" customModule="Blessing_Prayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DCR-uM-gh8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jbz-5v-Nom">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ESc-3R-B0d">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="4953.333333333333"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YMh-XZ-5yF">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="68.666666666666671"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="God and Money" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cwh-qo-bey">
+                                                        <rect key="frame" x="10" y="20" width="373" height="28.666666666666671"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                                        <color key="textColor" name="title_text"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Cwh-qo-bey" firstAttribute="top" secondItem="YMh-XZ-5yF" secondAttribute="top" constant="20" id="M5l-x3-Val"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Cwh-qo-bey" secondAttribute="trailing" constant="10" id="Sn0-pe-H2o"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="U8H-vc-arb"/>
+                                                    <constraint firstItem="Cwh-qo-bey" firstAttribute="leading" secondItem="YMh-XZ-5yF" secondAttribute="leading" constant="10" id="beQ-hP-IvC"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Cwh-qo-bey" secondAttribute="bottom" constant="20" id="w9e-uc-LeN"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XNH-h7-YMl">
+                                                <rect key="frame" x="0.0" y="68.666666666666657" width="393" height="64.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="God is not against wealth or wealthy people" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgu-vm-NpS">
+                                                        <rect key="frame" x="10" y="2" width="373" height="52.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="xgu-vm-NpS" secondAttribute="trailing" constant="10" id="BoY-cF-3xs"/>
+                                                    <constraint firstItem="xgu-vm-NpS" firstAttribute="leading" secondItem="XNH-h7-YMl" secondAttribute="leading" constant="10" id="FQV-al-xSq"/>
+                                                    <constraint firstAttribute="bottom" secondItem="xgu-vm-NpS" secondAttribute="bottom" constant="10" id="RON-bx-z4p"/>
+                                                    <constraint firstItem="xgu-vm-NpS" firstAttribute="top" secondItem="XNH-h7-YMl" secondAttribute="top" constant="2" id="bub-Um-nPx"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="cqE-va-xTO"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oi5-RW-nTb">
+                                                <rect key="frame" x="0.0" y="133.33333333333334" width="393" height="298.66666666666663"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kg8-J5-Gp9">
+                                                        <rect key="frame" x="10" y="2" width="373" height="286.66666666666669"/>
+                                                        <string key="text">Abram ascended from Egypt, he and his wife, and all that he had, and Lot with him, toward the southern region. But he was very wealthy by the possession of gold and silver. (Gen 13:1-2)
+
+I will cause you to increase very greatly, and I will set you among the nations, and kings will come forth from you. (Gen 17:6)
+
+Gen 13:5, Gen 24:1, Gen 24:34, Gen 26:12-13</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="kg8-J5-Gp9" firstAttribute="leading" secondItem="oi5-RW-nTb" secondAttribute="leading" constant="10" id="1GN-i3-G4d"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="Qkl-AV-oG4"/>
+                                                    <constraint firstAttribute="trailing" secondItem="kg8-J5-Gp9" secondAttribute="trailing" constant="10" id="VzJ-Pj-7XH"/>
+                                                    <constraint firstAttribute="bottom" secondItem="kg8-J5-Gp9" secondAttribute="bottom" constant="10" id="jAi-c9-bgc"/>
+                                                    <constraint firstItem="kg8-J5-Gp9" firstAttribute="top" secondItem="oi5-RW-nTb" secondAttribute="top" constant="2" id="lSd-dd-8t7"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NWm-b4-nRC">
+                                                <rect key="frame" x="0.0" y="432" width="393" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jg-Tw-Abh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="9Ez-vX-qb6"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="2Jg-Tw-Abh" firstAttribute="top" secondItem="NWm-b4-nRC" secondAttribute="top" id="2vD-IK-4ib"/>
+                                                    <constraint firstItem="2Jg-Tw-Abh" firstAttribute="leading" secondItem="NWm-b4-nRC" secondAttribute="leading" id="CP8-Y0-nCi"/>
+                                                    <constraint firstAttribute="trailing" secondItem="2Jg-Tw-Abh" secondAttribute="trailing" id="E6a-Q0-Tiv"/>
+                                                    <constraint firstAttribute="bottom" secondItem="2Jg-Tw-Abh" secondAttribute="bottom" id="cFo-0M-hiF"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="sjv-Al-Zj5"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l4m-2f-Ulk">
+                                                <rect key="frame" x="0.0" y="472" width="393" height="38.333333333333314"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Wealth is a gift from God" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfi-PA-7BD">
+                                                        <rect key="frame" x="10" y="2" width="373" height="26.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="2wv-qf-n5V"/>
+                                                    <constraint firstItem="lfi-PA-7BD" firstAttribute="top" secondItem="l4m-2f-Ulk" secondAttribute="top" constant="2" id="CVp-24-85w"/>
+                                                    <constraint firstAttribute="bottom" secondItem="lfi-PA-7BD" secondAttribute="bottom" constant="10" id="PPQ-Z1-Sak"/>
+                                                    <constraint firstItem="lfi-PA-7BD" firstAttribute="leading" secondItem="l4m-2f-Ulk" secondAttribute="leading" constant="10" id="syl-kd-MSM"/>
+                                                    <constraint firstAttribute="trailing" secondItem="lfi-PA-7BD" secondAttribute="trailing" constant="10" id="vQW-GT-alG"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qje-mk-KAf">
+                                                <rect key="frame" x="0.0" y="510.33333333333337" width="393" height="1396.333333333333"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bs-lt-KUi">
+                                                        <rect key="frame" x="10" y="2" width="373" height="1384.3333333333333"/>
+                                                        <mutableString key="text">Isaac sowed in that land, and he reaped, in that same year, one hundredfold. And the Lord blessed him.  And the man was enriched, and he continued prospering as well as increasing, until he became very wealthy. (Gen 26:12-13)
+
+The Lord was with him, and he was a man who prospered in everything that he did. And he lived in the house of his lord, who knew very well that the Lord was with him, and that all the things that were done by him were directed by his hand. (Gen 39:2-3)
+
+What do you have that you have not received? But if you have received it, why do you glory, as if you had not received it? (1 Cor 4:7)
+
+See, I have delivered it to you. Enter and possess that which the Lord swore to your fathers, Abraham, Isaac, and Jacob, that he would give it to them, and to their offspring after them. (Deut 1:8)
+
+May the Lord, the God of your fathers, add to this number many thousands more, and may he bless you, just as he has said. (Deut 1:11)
+
+Gaze upon the land that the Lord your God gives to you. Ascend and possess it, just as the Lord our God has spoken to your fathers. Do not be afraid, and do not become terrified by anything. (Deut 1:21)
+
+The land that the Lord our God will give to us is good. (Deut 1:25)
+
+The blessing of the Lord causes riches. Affliction will not be a companion to them. (Pro 10:22)
+
+The gift of God remains with the just man, and his advancement will have success unto eternity. (Sir 11:17)
+
+The Lord has been zealous for his land, and he has spared his people. And the Lord responded, and he said to his people: “Behold, I will send you grain and wine and oil, and you will again be filled with them. And I will no longer give you disgrace among the Gentiles.” (Joel 2:18-19)
+
+Deut 2:36, Is 54:11-12, Sir 2:3, Gen 39:23, Ps 68:6, Ps 68:9-10, Deut 8:18</mutableString>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="9Bs-lt-KUi" firstAttribute="leading" secondItem="qje-mk-KAf" secondAttribute="leading" constant="10" id="2eG-RM-WBf"/>
+                                                    <constraint firstItem="9Bs-lt-KUi" firstAttribute="top" secondItem="qje-mk-KAf" secondAttribute="top" constant="2" id="FlK-Hh-U1H"/>
+                                                    <constraint firstAttribute="bottom" secondItem="9Bs-lt-KUi" secondAttribute="bottom" constant="10" id="SOt-um-3qd"/>
+                                                    <constraint firstAttribute="trailing" secondItem="9Bs-lt-KUi" secondAttribute="trailing" constant="10" id="rBY-gt-bQ7"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="zbQ-er-kmx"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f6h-Iz-0fu">
+                                                <rect key="frame" x="0.0" y="1906.6666666666667" width="393" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pS4-uw-lH7">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="hqa-Lg-mGg"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="C2L-mq-6Y9"/>
+                                                    <constraint firstItem="pS4-uw-lH7" firstAttribute="top" secondItem="f6h-Iz-0fu" secondAttribute="top" id="Qdx-PM-pZD"/>
+                                                    <constraint firstItem="pS4-uw-lH7" firstAttribute="leading" secondItem="f6h-Iz-0fu" secondAttribute="leading" id="gMn-UU-Lse"/>
+                                                    <constraint firstAttribute="trailing" secondItem="pS4-uw-lH7" secondAttribute="trailing" id="on6-58-DYC"/>
+                                                    <constraint firstAttribute="bottom" secondItem="pS4-uw-lH7" secondAttribute="bottom" id="vR2-6g-bDf"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ryK-0e-7nW">
+                                                <rect key="frame" x="0.0" y="1946.6666666666665" width="393" height="64.666666666666742"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Lack of money and poverty should not be seen as a curse from God " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xL-qv-Pco">
+                                                        <rect key="frame" x="10" y="2" width="373" height="52.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="7xL-qv-Pco" secondAttribute="trailing" constant="10" id="8OH-L4-Njq"/>
+                                                    <constraint firstAttribute="bottom" secondItem="7xL-qv-Pco" secondAttribute="bottom" constant="10" id="Jx7-KL-Suc"/>
+                                                    <constraint firstItem="7xL-qv-Pco" firstAttribute="top" secondItem="ryK-0e-7nW" secondAttribute="top" constant="2" id="szj-8e-GMO"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="tHg-xN-eiE"/>
+                                                    <constraint firstItem="7xL-qv-Pco" firstAttribute="leading" secondItem="ryK-0e-7nW" secondAttribute="leading" constant="10" id="ynY-7v-env"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fd0-UW-xpp">
+                                                <rect key="frame" x="0.0" y="2011.3333333333337" width="393" height="131.66666666666674"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Nb-Zq-H2v">
+                                                        <rect key="frame" x="10" y="2" width="373" height="119.66666666666667"/>
+                                                        <string key="text">In good times, be joyful, but beware of an evil time. For just as God has established the one, so also the other, in order that man may not find any just complaint against him.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="7Nb-Zq-H2v" firstAttribute="leading" secondItem="fd0-UW-xpp" secondAttribute="leading" constant="10" id="6RK-DG-JWt"/>
+                                                    <constraint firstItem="7Nb-Zq-H2v" firstAttribute="top" secondItem="fd0-UW-xpp" secondAttribute="top" constant="2" id="Lad-wC-oBd"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="eHE-ZT-NbF"/>
+                                                    <constraint firstAttribute="bottom" secondItem="7Nb-Zq-H2v" secondAttribute="bottom" constant="10" id="lod-oB-LAn"/>
+                                                    <constraint firstAttribute="trailing" secondItem="7Nb-Zq-H2v" secondAttribute="trailing" constant="10" id="rT5-8N-fmJ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sgH-r6-d85">
+                                                <rect key="frame" x="0.0" y="2143" width="393" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3q-ly-TqQ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="KVV-Tu-sCw"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="H3q-ly-TqQ" firstAttribute="top" secondItem="sgH-r6-d85" secondAttribute="top" id="ZP3-6d-avD"/>
+                                                    <constraint firstAttribute="trailing" secondItem="H3q-ly-TqQ" secondAttribute="trailing" id="ec0-gQ-CFa"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="lNB-8l-ygS"/>
+                                                    <constraint firstAttribute="bottom" secondItem="H3q-ly-TqQ" secondAttribute="bottom" id="tjz-CT-ajb"/>
+                                                    <constraint firstItem="H3q-ly-TqQ" firstAttribute="leading" secondItem="sgH-r6-d85" secondAttribute="leading" id="vBT-rL-4VO"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="52j-RT-Yck">
+                                                <rect key="frame" x="0.0" y="2183" width="393" height="64.666666666666515"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="When God blesses with wealth, there will be peace with it" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ukz-iP-X8M">
+                                                        <rect key="frame" x="10" y="2" width="373" height="52.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Ukz-iP-X8M" firstAttribute="top" secondItem="52j-RT-Yck" secondAttribute="top" constant="2" id="4HG-cy-5jr"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Ukz-iP-X8M" secondAttribute="bottom" constant="10" id="C0y-hp-cfT"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Ukz-iP-X8M" secondAttribute="trailing" constant="10" id="JbO-Rl-HLe"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="cxu-7H-2Qg"/>
+                                                    <constraint firstItem="Ukz-iP-X8M" firstAttribute="leading" secondItem="52j-RT-Yck" secondAttribute="leading" constant="10" id="jof-4t-nE6"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aNb-PK-PHg">
+                                                <rect key="frame" x="0.0" y="2247.6666666666665" width="393" height="203"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLj-IM-0zs">
+                                                        <rect key="frame" x="10" y="2" width="373" height="191"/>
+                                                        <string key="text">This is a gift from God: that every man to whom God has given wealth and resources, and to whom he has granted the ability to consume these, may enjoy his portion, and may find joy in his labors. And then he will not fully remember the days of his life, because God occupies his heart with delights. (Eccl 5:19-20)</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="KMH-1M-noM"/>
+                                                    <constraint firstItem="PLj-IM-0zs" firstAttribute="leading" secondItem="aNb-PK-PHg" secondAttribute="leading" constant="10" id="RB3-Ec-sdQ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="PLj-IM-0zs" secondAttribute="bottom" constant="10" id="kMu-9k-XQE"/>
+                                                    <constraint firstItem="PLj-IM-0zs" firstAttribute="top" secondItem="aNb-PK-PHg" secondAttribute="top" constant="2" id="oHs-Yg-ILa"/>
+                                                    <constraint firstAttribute="trailing" secondItem="PLj-IM-0zs" secondAttribute="trailing" constant="10" id="rGB-tO-VLU"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yqb-YQ-TmV">
+                                                <rect key="frame" x="0.0" y="2450.6666666666665" width="393" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGP-Ce-sIo">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="o9a-Xf-ink"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="oGP-Ce-sIo" secondAttribute="trailing" id="F9o-ia-qSF"/>
+                                                    <constraint firstAttribute="bottom" secondItem="oGP-Ce-sIo" secondAttribute="bottom" id="MjE-O8-L0H"/>
+                                                    <constraint firstItem="oGP-Ce-sIo" firstAttribute="top" secondItem="yqb-YQ-TmV" secondAttribute="top" id="Q1z-QE-wPp"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="TeD-UO-Flt"/>
+                                                    <constraint firstItem="oGP-Ce-sIo" firstAttribute="leading" secondItem="yqb-YQ-TmV" secondAttribute="leading" id="sEi-a0-zNs"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pxh-ZF-Zg5">
+                                                <rect key="frame" x="0.0" y="2490.6666666666665" width="393" height="38.333333333333485"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="God knows all our financial needs" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2t-QM-IPY">
+                                                        <rect key="frame" x="10" y="2" width="373" height="26.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="8w7-1Z-ymI"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Z2t-QM-IPY" secondAttribute="trailing" constant="10" id="Gpr-Lj-HTU"/>
+                                                    <constraint firstItem="Z2t-QM-IPY" firstAttribute="top" secondItem="Pxh-ZF-Zg5" secondAttribute="top" constant="2" id="JnH-A8-nE7"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Z2t-QM-IPY" secondAttribute="bottom" constant="10" id="UgB-Jk-d1n"/>
+                                                    <constraint firstItem="Z2t-QM-IPY" firstAttribute="leading" secondItem="Pxh-ZF-Zg5" secondAttribute="leading" constant="10" id="u84-Q0-v0a"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="laZ-HC-2to">
+                                                <rect key="frame" x="0.0" y="2529" width="393" height="60"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="For your Father knows what you need, even before you ask him. (Matt 6:8)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smr-Y5-mUE">
+                                                        <rect key="frame" x="10" y="2" width="373" height="48"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="smr-Y5-mUE" secondAttribute="bottom" constant="10" id="LpV-bO-1SC"/>
+                                                    <constraint firstAttribute="trailing" secondItem="smr-Y5-mUE" secondAttribute="trailing" constant="10" id="c5h-yu-hRD"/>
+                                                    <constraint firstItem="smr-Y5-mUE" firstAttribute="top" secondItem="laZ-HC-2to" secondAttribute="top" constant="2" id="hqk-59-Kq1"/>
+                                                    <constraint firstItem="smr-Y5-mUE" firstAttribute="leading" secondItem="laZ-HC-2to" secondAttribute="leading" constant="10" id="pSe-ff-Ypv"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="vfE-rR-0Mc"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9V7-hi-BeQ">
+                                                <rect key="frame" x="0.0" y="2589" width="393" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POQ-s4-QbY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="Pp5-Mv-u9O"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="POQ-s4-QbY" firstAttribute="top" secondItem="9V7-hi-BeQ" secondAttribute="top" id="Dm0-m0-Dgq"/>
+                                                    <constraint firstItem="POQ-s4-QbY" firstAttribute="leading" secondItem="9V7-hi-BeQ" secondAttribute="leading" id="NDF-At-Wgc"/>
+                                                    <constraint firstAttribute="trailing" secondItem="POQ-s4-QbY" secondAttribute="trailing" id="ZUG-cn-awm"/>
+                                                    <constraint firstAttribute="bottom" secondItem="POQ-s4-QbY" secondAttribute="bottom" id="h3B-oz-RqP"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="m39-Ac-4rC"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AdF-lh-HJ5">
+                                                <rect key="frame" x="0.0" y="2629" width="393" height="64.666666666666515"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="We must trust God for our financial needs" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7Y-S4-ho9">
+                                                        <rect key="frame" x="10" y="2" width="373" height="52.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="W7Y-S4-ho9" firstAttribute="leading" secondItem="AdF-lh-HJ5" secondAttribute="leading" constant="10" id="2u4-kH-mTN"/>
+                                                    <constraint firstAttribute="trailing" secondItem="W7Y-S4-ho9" secondAttribute="trailing" constant="10" id="e75-Wk-cjV"/>
+                                                    <constraint firstItem="W7Y-S4-ho9" firstAttribute="top" secondItem="AdF-lh-HJ5" secondAttribute="top" constant="2" id="eNe-gA-LlQ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="W7Y-S4-ho9" secondAttribute="bottom" constant="10" id="yJO-NL-bu5"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="ypE-8b-GSE"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="peO-LD-eod">
+                                                <rect key="frame" x="0.0" y="2693.6666666666665" width="393" height="346.33333333333348"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQg-Ah-UeG">
+                                                        <rect key="frame" x="10" y="2" width="373" height="334.33333333333331"/>
+                                                        <string key="text">Trust in the Lord and do good, so you will live in the land, and so you shall be pastured with its riches. Delight in the Lord, and he will grant to you the desires of your heart. (Ps 37:3-4)
+
+My God will fulfill all your needs, according to his riches in glory in Christ Jesus. (Phil 4:19)
+
+The Lord will not afflict with famine the soul of the just. (Pro 10:3)
+
+Matt 6:25-32, Jer 17:7-8, Ps 22:4-5</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="pQg-Ah-UeG" firstAttribute="leading" secondItem="peO-LD-eod" secondAttribute="leading" constant="10" id="BeM-rh-evS"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="Lw5-IR-qW2"/>
+                                                    <constraint firstAttribute="bottom" secondItem="pQg-Ah-UeG" secondAttribute="bottom" constant="10" id="cPj-Mw-OCn"/>
+                                                    <constraint firstItem="pQg-Ah-UeG" firstAttribute="top" secondItem="peO-LD-eod" secondAttribute="top" constant="2" id="cPt-Tw-348"/>
+                                                    <constraint firstAttribute="trailing" secondItem="pQg-Ah-UeG" secondAttribute="trailing" constant="10" id="dCj-aT-Ran"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aJZ-27-OgH">
+                                                <rect key="frame" x="0.0" y="3040" width="393" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Nw-B7-n1g">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="EIZ-Vz-U7s"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="0g0-nq-DFI"/>
+                                                    <constraint firstAttribute="bottom" secondItem="1Nw-B7-n1g" secondAttribute="bottom" id="KCC-Hv-guz"/>
+                                                    <constraint firstItem="1Nw-B7-n1g" firstAttribute="top" secondItem="aJZ-27-OgH" secondAttribute="top" id="Rd1-sL-GW5"/>
+                                                    <constraint firstAttribute="trailing" secondItem="1Nw-B7-n1g" secondAttribute="trailing" id="iDc-9v-STV"/>
+                                                    <constraint firstItem="1Nw-B7-n1g" firstAttribute="leading" secondItem="aJZ-27-OgH" secondAttribute="leading" id="t5U-aE-zHa"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5PA-rb-WkQ">
+                                                <rect key="frame" x="0.0" y="3080" width="393" height="38.333333333333485"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Trust God during financial difficulties" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ArK-xS-quw">
+                                                        <rect key="frame" x="10" y="2" width="373" height="26.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="ArK-xS-quw" firstAttribute="top" secondItem="5PA-rb-WkQ" secondAttribute="top" constant="2" id="1CL-kB-975"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ArK-xS-quw" secondAttribute="bottom" constant="10" id="7Ci-So-AfQ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ArK-xS-quw" secondAttribute="trailing" constant="10" id="Pfl-Mv-eB8"/>
+                                                    <constraint firstItem="ArK-xS-quw" firstAttribute="leading" secondItem="5PA-rb-WkQ" secondAttribute="leading" constant="10" id="piO-5z-Cbb"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="t1K-Cj-2To"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dlo-o6-ceV">
+                                                <rect key="frame" x="0.0" y="3118.3333333333335" width="393" height="871.33333333333348"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fry-Lb-Jgw">
+                                                        <rect key="frame" x="10" y="2" width="373" height="859.33333333333337"/>
+                                                        <mutableString key="text">The Lord your God has blessed you in every work of your hands. The Lord your God, dwelling with you, knows your journey, how you crossed through this great wilderness over forty years, and how you have been lacking in nothing. (Deut 2:7)
+
+The Lord will give you rest continually, and he will fill your soul with splendor, and he will free your bones, and you will be like a watered garden and like a fountain of water whose waters will not fail. And places that have been desolate for ages will be built up by you. You will raise a foundation for generation after generation. And you will be called the repairer of hedges, who turns the roadways into quiet places. (Is 58:11-12)
+
+There is a debilitated man in need of recovery, who is lacking in strength and abundant in poverty. Yet the eye of God has looked with favor upon him for his benefit, and he has lifted him up from his humiliation, and he has exalted his head. And many have wondered at him, and they have honored God. (Sir 11:12-13)
+
+You did not withhold your manna from their mouth, and you gave them water in their thirst. For forty years, you fed them in the desert, and nothing was lacking to them; their garments did not grow old, and their feet were not worn down. (Neh 9:20-21)</mutableString>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="Fry-Lb-Jgw" secondAttribute="bottom" constant="10" id="8IS-z4-bgD"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Fry-Lb-Jgw" secondAttribute="trailing" constant="10" id="EQC-Hb-dB5"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="ieJ-Ph-CNZ"/>
+                                                    <constraint firstItem="Fry-Lb-Jgw" firstAttribute="leading" secondItem="dlo-o6-ceV" secondAttribute="leading" constant="10" id="tMf-LO-C3S"/>
+                                                    <constraint firstItem="Fry-Lb-Jgw" firstAttribute="top" secondItem="dlo-o6-ceV" secondAttribute="top" constant="2" id="vfg-L2-b3u"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jcg-a3-OQM">
+                                                <rect key="frame" x="0.0" y="3989.6666666666665" width="393" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMr-QR-CxY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="5jj-hm-ZeA"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="rMr-QR-CxY" firstAttribute="top" secondItem="Jcg-a3-OQM" secondAttribute="top" id="GHb-oR-11d"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="hYV-EH-TLH"/>
+                                                    <constraint firstAttribute="trailing" secondItem="rMr-QR-CxY" secondAttribute="trailing" id="keZ-z0-6EP"/>
+                                                    <constraint firstAttribute="bottom" secondItem="rMr-QR-CxY" secondAttribute="bottom" id="p5n-8c-jXI"/>
+                                                    <constraint firstItem="rMr-QR-CxY" firstAttribute="leading" secondItem="Jcg-a3-OQM" secondAttribute="leading" id="wKk-GW-fdF"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gLO-ZB-yzv">
+                                                <rect key="frame" x="0.0" y="4029.666666666667" width="393" height="64.666666666666515"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="It is not the will of God for his people to be in debt" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6h-gX-Xfk">
+                                                        <rect key="frame" x="10" y="2" width="373" height="52.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="14D-hH-WxQ"/>
+                                                    <constraint firstItem="i6h-gX-Xfk" firstAttribute="top" secondItem="gLO-ZB-yzv" secondAttribute="top" constant="2" id="5vH-Kc-ohJ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="i6h-gX-Xfk" secondAttribute="trailing" constant="10" id="AV7-L8-bhc"/>
+                                                    <constraint firstAttribute="bottom" secondItem="i6h-gX-Xfk" secondAttribute="bottom" constant="10" id="UYR-T8-ZDd"/>
+                                                    <constraint firstItem="i6h-gX-Xfk" firstAttribute="leading" secondItem="gLO-ZB-yzv" secondAttribute="leading" constant="10" id="t4e-4V-9im"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Sf-oa-Uwz">
+                                                <rect key="frame" x="0.0" y="4094.3333333333326" width="393" height="131.66666666666652"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89Y-4g-7yt">
+                                                        <rect key="frame" x="10" y="2" width="373" height="119.66666666666667"/>
+                                                        <string key="text">You shall lend money to many nations, and you yourselves shall borrow in return from no one. You shall rule over very many nations, and no one shall rule over you. (Deut 15:6)</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="89Y-4g-7yt" secondAttribute="bottom" constant="10" id="DI7-C9-gue"/>
+                                                    <constraint firstItem="89Y-4g-7yt" firstAttribute="top" secondItem="9Sf-oa-Uwz" secondAttribute="top" constant="2" id="V8J-dW-yyN"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="kz3-qs-BpD"/>
+                                                    <constraint firstItem="89Y-4g-7yt" firstAttribute="leading" secondItem="9Sf-oa-Uwz" secondAttribute="leading" constant="10" id="sdw-AO-atF"/>
+                                                    <constraint firstAttribute="trailing" secondItem="89Y-4g-7yt" secondAttribute="trailing" constant="10" id="uJT-40-NLg"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vEo-Nk-O5r">
+                                                <rect key="frame" x="0.0" y="4226" width="393" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgv-O7-mzT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="ytd-Io-b7l"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="mgv-O7-mzT" firstAttribute="leading" secondItem="vEo-Nk-O5r" secondAttribute="leading" id="3iw-L3-683"/>
+                                                    <constraint firstItem="mgv-O7-mzT" firstAttribute="top" secondItem="vEo-Nk-O5r" secondAttribute="top" id="G1z-xe-1yw"/>
+                                                    <constraint firstAttribute="trailing" secondItem="mgv-O7-mzT" secondAttribute="trailing" id="JeK-c2-cmS"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="Qas-eU-0Z3"/>
+                                                    <constraint firstAttribute="bottom" secondItem="mgv-O7-mzT" secondAttribute="bottom" id="ege-u7-0Sh"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HV7-D5-nFJ">
+                                                <rect key="frame" x="0.0" y="4266" width="393" height="38.33333333333303"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="God's plan of restoration for us" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7z-2h-QhQ">
+                                                        <rect key="frame" x="10" y="2" width="373" height="26.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="O7z-2h-QhQ" firstAttribute="top" secondItem="HV7-D5-nFJ" secondAttribute="top" constant="2" id="MdT-Jg-7vi"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="O4f-ue-QMi"/>
+                                                    <constraint firstItem="O7z-2h-QhQ" firstAttribute="leading" secondItem="HV7-D5-nFJ" secondAttribute="leading" constant="10" id="Wpv-xq-ptV"/>
+                                                    <constraint firstAttribute="trailing" secondItem="O7z-2h-QhQ" secondAttribute="trailing" constant="10" id="fmX-NY-2L1"/>
+                                                    <constraint firstAttribute="bottom" secondItem="O7z-2h-QhQ" secondAttribute="bottom" constant="10" id="mrc-Gf-fQs"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X2w-Or-P4P">
+                                                <rect key="frame" x="0.0" y="4304.333333333333" width="393" height="609"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTe-VP-WWZ">
+                                                        <rect key="frame" x="10" y="2" width="373" height="597"/>
+                                                        <mutableString key="text">I will repay you for the years which the locust, and the beetle, and the mildew, and the caterpillar consumed: my great strength which I sent upon you. And you will eat with enjoyment, and you will be satisfied, and you will praise the name of the Lord your God, who has worked miracles with you, and my people will not be confounded forever. And you will know that I am in the midst of Israel, and I am the Lord your God, and there is no other, and my people will not be confounded forever. (Joel 2:25-27)
+
+I will turn back the captivity of my people Israel. And they will rebuild the deserted cities and inhabit them. And they will plant vineyards and drink their wine. And they will create gardens and eat their fruits. And I will plant them on their own soil. And I will no longer root them out of their own land, which I have given them, says the Lord your God. (Amos 9:14-15)
+
+Amos 9:11</mutableString>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="uTe-VP-WWZ" secondAttribute="trailing" constant="10" id="22e-4o-c8p"/>
+                                                    <constraint firstItem="uTe-VP-WWZ" firstAttribute="top" secondItem="X2w-Or-P4P" secondAttribute="top" constant="2" id="5UD-Kr-Pud"/>
+                                                    <constraint firstAttribute="bottom" secondItem="uTe-VP-WWZ" secondAttribute="bottom" constant="10" id="66t-zg-B98"/>
+                                                    <constraint firstItem="uTe-VP-WWZ" firstAttribute="leading" secondItem="X2w-Or-P4P" secondAttribute="leading" constant="10" id="hHS-BZ-ocK"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="vCP-mx-AlD"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="crU-MJ-mRC">
+                                                <rect key="frame" x="0.0" y="4913.333333333333" width="393" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLd-EH-ehO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="hFg-uv-Kjo"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="nLd-EH-ehO" firstAttribute="top" secondItem="crU-MJ-mRC" secondAttribute="top" id="15A-V6-e1M"/>
+                                                    <constraint firstItem="nLd-EH-ehO" firstAttribute="leading" secondItem="crU-MJ-mRC" secondAttribute="leading" id="J2I-NK-5JX"/>
+                                                    <constraint firstAttribute="bottom" secondItem="nLd-EH-ehO" secondAttribute="bottom" id="brq-Go-ver"/>
+                                                    <constraint firstAttribute="trailing" secondItem="nLd-EH-ehO" secondAttribute="trailing" id="f2u-GZ-Zew"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="xtI-3j-9sa"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="body_background"/>
+                                <constraints>
+                                    <constraint firstItem="ESc-3R-B0d" firstAttribute="top" secondItem="jbz-5v-Nom" secondAttribute="top" id="DFq-Gz-bka"/>
+                                    <constraint firstItem="ESc-3R-B0d" firstAttribute="leading" secondItem="jbz-5v-Nom" secondAttribute="leading" id="gLX-WM-giZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="ESc-3R-B0d" secondAttribute="trailing" id="kQ7-Hm-xTn"/>
+                                    <constraint firstItem="ESc-3R-B0d" firstAttribute="width" secondItem="jbz-5v-Nom" secondAttribute="width" id="p6R-KX-NRw"/>
+                                    <constraint firstAttribute="bottom" secondItem="ESc-3R-B0d" secondAttribute="bottom" id="xnd-j5-IWo"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XjD-6P-Ja4"/>
+                        <color key="backgroundColor" name="nav_background"/>
+                        <constraints>
+                            <constraint firstItem="jbz-5v-Nom" firstAttribute="top" secondItem="XjD-6P-Ja4" secondAttribute="top" id="6VP-MJ-AS1"/>
+                            <constraint firstItem="jbz-5v-Nom" firstAttribute="trailing" secondItem="XjD-6P-Ja4" secondAttribute="trailing" id="CqV-7T-307"/>
+                            <constraint firstItem="XjD-6P-Ja4" firstAttribute="bottom" secondItem="jbz-5v-Nom" secondAttribute="bottom" id="RdQ-NF-fw5"/>
+                            <constraint firstItem="jbz-5v-Nom" firstAttribute="leading" secondItem="XjD-6P-Ja4" secondAttribute="leading" id="j9Q-xK-WJw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="God and Money" id="TxV-kq-Xy5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kGk-45-gMk" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8312" y="-466"/>
         </scene>
     </scenes>
     <resources>
+        <image name="pencil.circle.fill" catalog="system" width="128" height="123"/>
         <namedColor name="body_background">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
