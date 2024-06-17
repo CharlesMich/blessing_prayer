@@ -43,7 +43,7 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="0ZL-Cq-85S">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="772"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="833"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Onv-No-6pa">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="60"/>
@@ -69,8 +69,32 @@
                                                     <constraint firstItem="RNz-Bb-Blf" firstAttribute="leading" secondItem="Onv-No-6pa" secondAttribute="leading" constant="10" id="zEU-k4-6M9"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="43Q-QI-yqv">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uSg-lN-Jf4">
                                                 <rect key="frame" x="0.0" y="61" width="393" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaJ-zP-ZPU">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="60"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Who should use this App">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                            <color key="baseForegroundColor" name="title_text"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="TDt-Zn-efO" kind="show" id="9Bs-ri-0CC"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="NOo-jM-5MA"/>
+                                                    <constraint firstItem="CaJ-zP-ZPU" firstAttribute="top" secondItem="uSg-lN-Jf4" secondAttribute="top" id="XS5-Ef-nlN"/>
+                                                    <constraint firstAttribute="bottom" secondItem="CaJ-zP-ZPU" secondAttribute="bottom" id="YFz-ZZ-qBd"/>
+                                                    <constraint firstItem="CaJ-zP-ZPU" firstAttribute="leading" secondItem="uSg-lN-Jf4" secondAttribute="leading" constant="10" id="kj6-0Y-Jtn"/>
+                                                    <constraint firstAttribute="trailing" secondItem="CaJ-zP-ZPU" secondAttribute="trailing" constant="10" id="tlI-ob-Kak"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="43Q-QI-yqv">
+                                                <rect key="frame" x="0.0" y="122" width="393" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GfU-bX-4z1">
                                                         <rect key="frame" x="10" y="0.0" width="373" height="60"/>
@@ -94,7 +118,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4JU-6c-6FP">
-                                                <rect key="frame" x="0.0" y="122" width="393" height="60"/>
+                                                <rect key="frame" x="0.0" y="183" width="393" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8c-Ta-YwZ">
                                                         <rect key="frame" x="10" y="0.0" width="373" height="60"/>
@@ -118,7 +142,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iJz-Qh-coF">
-                                                <rect key="frame" x="0.0" y="183" width="393" height="60"/>
+                                                <rect key="frame" x="0.0" y="244" width="393" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RfE-dV-Bqf">
                                                         <rect key="frame" x="10" y="0.0" width="373" height="60"/>
@@ -142,7 +166,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NqF-de-AOt">
-                                                <rect key="frame" x="0.0" y="244" width="393" height="60"/>
+                                                <rect key="frame" x="0.0" y="305" width="393" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JrC-fg-ekd">
                                                         <rect key="frame" x="10" y="0.0" width="373" height="60"/>
@@ -166,7 +190,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4XW-JF-gfE">
-                                                <rect key="frame" x="0.0" y="305" width="393" height="60"/>
+                                                <rect key="frame" x="0.0" y="366" width="393" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmn-oK-xwz">
                                                         <rect key="frame" x="10" y="0.0" width="373" height="60"/>
@@ -190,7 +214,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bup-Dz-9nL">
-                                                <rect key="frame" x="0.0" y="366" width="393" height="60"/>
+                                                <rect key="frame" x="0.0" y="427" width="393" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hpp-oa-j4X">
                                                         <rect key="frame" x="10" y="0.0" width="373" height="60"/>
@@ -214,7 +238,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uEa-31-amV">
-                                                <rect key="frame" x="0.0" y="427" width="393" height="60"/>
+                                                <rect key="frame" x="0.0" y="488" width="393" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xis-YD-HhV">
                                                         <rect key="frame" x="10" y="0.0" width="373" height="60"/>
@@ -238,7 +262,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KBB-5G-Prm">
-                                                <rect key="frame" x="0.0" y="488" width="393" height="60"/>
+                                                <rect key="frame" x="0.0" y="549" width="393" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mD2-lb-yo3">
                                                         <rect key="frame" x="10" y="0.0" width="373" height="60"/>
@@ -262,7 +286,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yE6-21-xug">
-                                                <rect key="frame" x="0.0" y="549" width="393" height="60"/>
+                                                <rect key="frame" x="0.0" y="610" width="393" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZH4-Fv-enX">
                                                         <rect key="frame" x="10" y="0.0" width="373" height="60"/>
@@ -286,7 +310,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFB-rd-nGz">
-                                                <rect key="frame" x="0.0" y="610" width="393" height="60"/>
+                                                <rect key="frame" x="0.0" y="671" width="393" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hk3-gR-AK7">
                                                         <rect key="frame" x="10" y="0.0" width="373" height="60"/>
@@ -310,7 +334,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LFU-MN-6va">
-                                                <rect key="frame" x="0.0" y="671" width="393" height="60"/>
+                                                <rect key="frame" x="0.0" y="732" width="393" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4BQ-Oz-BGu">
                                                         <rect key="frame" x="10" y="0.0" width="373" height="60"/>
@@ -334,7 +358,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q39-vf-HFf">
-                                                <rect key="frame" x="0.0" y="732" width="393" height="40"/>
+                                                <rect key="frame" x="0.0" y="793" width="393" height="40"/>
                                                 <color key="backgroundColor" name="body_background"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="9lp-tJ-9wD"/>
@@ -7787,7 +7811,7 @@ Gen 13:5, Gen 24:1, Gen 24:34, Gen 26:12-13</string>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bs-lt-KUi">
                                                         <rect key="frame" x="10" y="2" width="373" height="1384.3333333333333"/>
-                                                        <mutableString key="text">Isaac sowed in that land, and he reaped, in that same year, one hundredfold. And the Lord blessed him.  And the man was enriched, and he continued prospering as well as increasing, until he became very wealthy. (Gen 26:12-13)
+                                                        <string key="text">Isaac sowed in that land, and he reaped, in that same year, one hundredfold. And the Lord blessed him.  And the man was enriched, and he continued prospering as well as increasing, until he became very wealthy. (Gen 26:12-13)
 
 The Lord was with him, and he was a man who prospered in everything that he did. And he lived in the house of his lord, who knew very well that the Lord was with him, and that all the things that were done by him were directed by his hand. (Gen 39:2-3)
 
@@ -7807,7 +7831,7 @@ The gift of God remains with the just man, and his advancement will have success
 
 The Lord has been zealous for his land, and he has spared his people. And the Lord responded, and he said to his people: “Behold, I will send you grain and wine and oil, and you will again be filled with them. And I will no longer give you disgrace among the Gentiles.” (Joel 2:18-19)
 
-Deut 2:36, Is 54:11-12, Sir 2:3, Gen 39:23, Ps 68:6, Ps 68:9-10, Deut 8:18</mutableString>
+Deut 2:36, Is 54:11-12, Sir 2:3, Gen 39:23, Ps 68:6, Ps 68:9-10, Deut 8:18</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -8102,13 +8126,13 @@ Matt 6:25-32, Jer 17:7-8, Ps 22:4-5</string>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fry-Lb-Jgw">
                                                         <rect key="frame" x="10" y="2" width="373" height="859.33333333333337"/>
-                                                        <mutableString key="text">The Lord your God has blessed you in every work of your hands. The Lord your God, dwelling with you, knows your journey, how you crossed through this great wilderness over forty years, and how you have been lacking in nothing. (Deut 2:7)
+                                                        <string key="text">The Lord your God has blessed you in every work of your hands. The Lord your God, dwelling with you, knows your journey, how you crossed through this great wilderness over forty years, and how you have been lacking in nothing. (Deut 2:7)
 
 The Lord will give you rest continually, and he will fill your soul with splendor, and he will free your bones, and you will be like a watered garden and like a fountain of water whose waters will not fail. And places that have been desolate for ages will be built up by you. You will raise a foundation for generation after generation. And you will be called the repairer of hedges, who turns the roadways into quiet places. (Is 58:11-12)
 
 There is a debilitated man in need of recovery, who is lacking in strength and abundant in poverty. Yet the eye of God has looked with favor upon him for his benefit, and he has lifted him up from his humiliation, and he has exalted his head. And many have wondered at him, and they have honored God. (Sir 11:12-13)
 
-You did not withhold your manna from their mouth, and you gave them water in their thirst. For forty years, you fed them in the desert, and nothing was lacking to them; their garments did not grow old, and their feet were not worn down. (Neh 9:20-21)</mutableString>
+You did not withhold your manna from their mouth, and you gave them water in their thirst. For forty years, you fed them in the desert, and nothing was lacking to them; their garments did not grow old, and their feet were not worn down. (Neh 9:20-21)</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -8224,11 +8248,11 @@ You did not withhold your manna from their mouth, and you gave them water in the
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTe-VP-WWZ">
                                                         <rect key="frame" x="10" y="2" width="373" height="597"/>
-                                                        <mutableString key="text">I will repay you for the years which the locust, and the beetle, and the mildew, and the caterpillar consumed: my great strength which I sent upon you. And you will eat with enjoyment, and you will be satisfied, and you will praise the name of the Lord your God, who has worked miracles with you, and my people will not be confounded forever. And you will know that I am in the midst of Israel, and I am the Lord your God, and there is no other, and my people will not be confounded forever. (Joel 2:25-27)
+                                                        <string key="text">I will repay you for the years which the locust, and the beetle, and the mildew, and the caterpillar consumed: my great strength which I sent upon you. And you will eat with enjoyment, and you will be satisfied, and you will praise the name of the Lord your God, who has worked miracles with you, and my people will not be confounded forever. And you will know that I am in the midst of Israel, and I am the Lord your God, and there is no other, and my people will not be confounded forever. (Joel 2:25-27)
 
 I will turn back the captivity of my people Israel. And they will rebuild the deserted cities and inhabit them. And they will plant vineyards and drink their wine. And they will create gardens and eat their fruits. And I will plant them on their own soil. And I will no longer root them out of their own land, which I have given them, says the Lord your God. (Amos 9:14-15)
 
-Amos 9:11</mutableString>
+Amos 9:11</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -8290,6 +8314,117 @@ Amos 9:11</mutableString>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kGk-45-gMk" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8312" y="-466"/>
+        </scene>
+        <!--How to use this App-->
+        <scene sceneID="CKW-fr-i4M">
+            <objects>
+                <viewController title="How to use this App" id="TDt-Zn-efO" customClass="ViewController" customModule="Blessing_Prayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="US6-Kz-b9I">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="csJ-Ui-dmD">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="g5M-iT-e5O">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1166.3333333333333"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lsv-kb-IRy">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="20"/>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="d3i-VK-QZz"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0JO-xa-KDA">
+                                                <rect key="frame" x="0.0" y="20" width="393" height="80"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who should use this App?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8k-oh-AjT">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="80"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                        <color key="textColor" red="0.1764705882" green="0.45882352939999999" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="23i-TN-fch"/>
+                                                    <constraint firstItem="p8k-oh-AjT" firstAttribute="leading" secondItem="0JO-xa-KDA" secondAttribute="leading" constant="10" id="6ce-Lj-i6m"/>
+                                                    <constraint firstAttribute="trailing" secondItem="p8k-oh-AjT" secondAttribute="trailing" constant="10" id="oVI-hX-FMP"/>
+                                                    <constraint firstItem="p8k-oh-AjT" firstAttribute="top" secondItem="0JO-xa-KDA" secondAttribute="top" id="uI4-5c-onX"/>
+                                                    <constraint firstAttribute="bottom" secondItem="p8k-oh-AjT" secondAttribute="bottom" id="uf2-ta-aQM"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iIy-Ax-cHe">
+                                                <rect key="frame" x="0.0" y="100" width="393" height="1026.3333333333333"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pum-l3-ehc">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="1026.3333333333333"/>
+                                                        <mutableString key="text">•	This app can be used by families that are undergoing a financial crisit
+
+•	This app can be used by individuals who have any money related addictions such as gambling, lottery, stock trading.
+
+•	If you are seeking a financial breakthrough for yourself or your family, It is recommended that the prayers be prayed everyday or whenever possible. 
+
+•	This app can be used in situations such as job loss, unable to land a job, credit card debts, loans, inability to save money, etc.
+
+•	If a family is going through financial problems, it is suggested that all the family members come together and pray. Jesus said that when two of us agree on earth about anything we ask, it will be done for us by our father in heaven ( Matt 18:19)
+
+•	The first time, you use this app, read the notes about each section of the prayer. Why we should forgive or why we should repent before seeking any kind of blessing from God is mentioned in the notes section of this app. 
+
+•	Pray in the order given in the app. For example, it is important that we begin with praise and worship because it is the biblical way. We enter God’s presence through praising him (Ps 100:4, Ps 22:3). 
+
+•	In addition to using this app, attend daily mass if possible, and go for confession regularly</mutableString>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="textColor" red="0.1764705882" green="0.45882352939999999" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="8vU-Z1-13C"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Pum-l3-ehc" secondAttribute="trailing" constant="10" id="Mu4-F3-dKF"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Pum-l3-ehc" secondAttribute="bottom" id="hmA-zP-eeV"/>
+                                                    <constraint firstItem="Pum-l3-ehc" firstAttribute="top" secondItem="iIy-Ax-cHe" secondAttribute="top" id="nhp-pD-PfL"/>
+                                                    <constraint firstItem="Pum-l3-ehc" firstAttribute="leading" secondItem="iIy-Ax-cHe" secondAttribute="leading" constant="10" id="ogm-Xo-OUj"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3pA-8E-Vyz">
+                                                <rect key="frame" x="0.0" y="1126.3333333333333" width="393" height="40"/>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="3BM-nd-3cU"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" name="stack_background"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="body_background"/>
+                                <constraints>
+                                    <constraint firstItem="g5M-iT-e5O" firstAttribute="width" secondItem="csJ-Ui-dmD" secondAttribute="width" id="5yK-ed-S2o"/>
+                                    <constraint firstAttribute="trailing" secondItem="g5M-iT-e5O" secondAttribute="trailing" id="6Qq-uG-oXu"/>
+                                    <constraint firstAttribute="bottom" secondItem="g5M-iT-e5O" secondAttribute="bottom" id="NQF-8r-p2Q"/>
+                                    <constraint firstItem="g5M-iT-e5O" firstAttribute="top" secondItem="csJ-Ui-dmD" secondAttribute="top" id="fH9-MU-wZ5"/>
+                                    <constraint firstItem="g5M-iT-e5O" firstAttribute="leading" secondItem="csJ-Ui-dmD" secondAttribute="leading" id="sOj-Ix-KbS"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PDQ-YH-S4N"/>
+                        <color key="backgroundColor" name="nav_background"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="csJ-Ui-dmD" firstAttribute="top" secondItem="PDQ-YH-S4N" secondAttribute="top" id="DxC-dI-TcX"/>
+                            <constraint firstItem="PDQ-YH-S4N" firstAttribute="trailing" secondItem="csJ-Ui-dmD" secondAttribute="trailing" id="GtW-jp-bb3"/>
+                            <constraint firstItem="csJ-Ui-dmD" firstAttribute="leading" secondItem="PDQ-YH-S4N" secondAttribute="leading" id="dQs-tH-wuI"/>
+                            <constraint firstItem="PDQ-YH-S4N" firstAttribute="bottom" secondItem="csJ-Ui-dmD" secondAttribute="bottom" id="jlv-n8-Dkv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="How to use this App" largeTitleDisplayMode="always" id="4Kl-UK-TIR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SoO-3g-0z9" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7378" y="-820"/>
         </scene>
     </scenes>
     <resources>

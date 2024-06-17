@@ -1262,10 +1262,10 @@ Glory be ...</string>
             </objects>
             <point key="canvasLocation" x="2860" y="1062"/>
         </scene>
-        <!--Intercession-->
+        <!--Washing in Jesus' Blood-->
         <scene sceneID="vgT-Sg-UH7">
             <objects>
-                <viewController title="Intercession" id="hHw-21-WDx" customClass="ViewController" customModule="Blessing_Prayer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Washing in Jesus' Blood" id="hHw-21-WDx" customClass="ViewController" customModule="Blessing_Prayer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VeV-Qz-cmW">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1376,10 +1376,10 @@ Glory be ...</string>
             </objects>
             <point key="canvasLocation" x="3579" y="1062"/>
         </scene>
-        <!--Intercession-->
+        <!--Petition-->
         <scene sceneID="PaC-aP-vMX">
             <objects>
-                <viewController title="Intercession" id="t17-Tq-Xk4" customClass="ViewController" customModule="Blessing_Prayer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Petition" id="t17-Tq-Xk4" customClass="ViewController" customModule="Blessing_Prayer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tqs-mz-uaz">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
