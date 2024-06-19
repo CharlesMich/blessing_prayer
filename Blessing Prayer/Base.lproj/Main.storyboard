@@ -65,7 +65,7 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="666"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="tE3-td-ljm">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="589"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="711"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mvQ-uV-RFK">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="60"/>
@@ -211,8 +211,29 @@
                                                     <constraint firstAttribute="height" constant="60" id="sF7-St-uXh"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M4G-OV-vny">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nw7-EN-zj3">
                                                 <rect key="frame" x="0.0" y="366" width="393" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJe-v0-ZAw">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="60"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Surrender Prayer">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                            <color key="baseForegroundColor" name="title_text"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="yJe-v0-ZAw" secondAttribute="trailing" constant="10" id="3bB-V4-O0v"/>
+                                                    <constraint firstItem="yJe-v0-ZAw" firstAttribute="top" secondItem="nw7-EN-zj3" secondAttribute="top" id="J5s-lr-vbK"/>
+                                                    <constraint firstAttribute="bottom" secondItem="yJe-v0-ZAw" secondAttribute="bottom" id="OGo-QK-AzH"/>
+                                                    <constraint firstAttribute="height" constant="60" id="c9n-C4-I8R"/>
+                                                    <constraint firstItem="yJe-v0-ZAw" firstAttribute="leading" secondItem="nw7-EN-zj3" secondAttribute="leading" constant="10" id="xHa-6C-H7g"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M4G-OV-vny">
+                                                <rect key="frame" x="0.0" y="427" width="393" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phR-YG-vl9">
                                                         <rect key="frame" x="10" y="0.0" width="373" height="60"/>
@@ -235,8 +256,29 @@
                                                     <constraint firstAttribute="bottom" secondItem="phR-YG-vl9" secondAttribute="bottom" id="yJ0-yz-Ic9"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3l9-5a-UXZ">
+                                                <rect key="frame" x="0.0" y="488" width="393" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhQ-Qg-X1N">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="60"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Deliverance">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                            <color key="baseForegroundColor" name="title_text"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstItem="PhQ-Qg-X1N" firstAttribute="top" secondItem="3l9-5a-UXZ" secondAttribute="top" id="6zf-BB-HV0"/>
+                                                    <constraint firstAttribute="trailing" secondItem="PhQ-Qg-X1N" secondAttribute="trailing" constant="10" id="B0o-vJ-UZK"/>
+                                                    <constraint firstItem="PhQ-Qg-X1N" firstAttribute="leading" secondItem="3l9-5a-UXZ" secondAttribute="leading" constant="10" id="GxC-wy-24u"/>
+                                                    <constraint firstAttribute="height" constant="60" id="O1m-X0-axL"/>
+                                                    <constraint firstAttribute="bottom" secondItem="PhQ-Qg-X1N" secondAttribute="bottom" id="uZK-wF-DpV"/>
+                                                </constraints>
+                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YvL-Rh-F9O">
-                                                <rect key="frame" x="0.0" y="427" width="393" height="60"/>
+                                                <rect key="frame" x="0.0" y="549" width="393" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Fo-V1-LFx">
                                                         <rect key="frame" x="10" y="0.0" width="373" height="60"/>
@@ -257,7 +299,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5aZ-ng-CyJ">
-                                                <rect key="frame" x="0.0" y="488" width="393" height="60"/>
+                                                <rect key="frame" x="0.0" y="610" width="393" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzx-f1-t5l">
                                                         <rect key="frame" x="10" y="0.0" width="373" height="60"/>
@@ -267,7 +309,7 @@
                                                             <color key="baseForegroundColor" name="title_text"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <segue destination="t17-Tq-Xk4" kind="show" id="IVk-eh-YkS"/>
+                                                            <segue destination="ziI-ff-6zG" kind="show" id="zAc-mS-THN"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -281,7 +323,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z0f-De-YBC">
-                                                <rect key="frame" x="0.0" y="549" width="393" height="40"/>
+                                                <rect key="frame" x="0.0" y="671" width="393" height="40"/>
                                                 <color key="backgroundColor" name="body_background"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="bRP-B7-Mcj"/>
@@ -315,7 +357,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a3k-ga-Eea" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="785" y="368"/>
+            <point key="canvasLocation" x="1836" y="-746"/>
         </scene>
         <!--mainmenu-->
         <scene sceneID="ou2-Kx-cOg">
@@ -1032,7 +1074,7 @@ Glory be ...</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3wg-D2-84w" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1092" y="1074"/>
+            <point key="canvasLocation" x="1111" y="1074"/>
         </scene>
         <!--Faith in Jesus-->
         <scene sceneID="qE3-9G-Kin">
@@ -1146,7 +1188,7 @@ Glory be ...</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KHT-fI-fR4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1946" y="1062"/>
+            <point key="canvasLocation" x="1836" y="1074"/>
         </scene>
         <!--Intercession-->
         <scene sceneID="Lfm-bk-GfH">
@@ -1260,7 +1302,7 @@ Glory be ...</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V5Z-va-Hsg" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2860" y="1062"/>
+            <point key="canvasLocation" x="2576" y="1074"/>
         </scene>
         <!--Washing in Jesus' Blood-->
         <scene sceneID="vgT-Sg-UH7">
@@ -1374,7 +1416,7 @@ Glory be ...</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HDY-Ev-8Az" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3579" y="1062"/>
+            <point key="canvasLocation" x="3269" y="1074"/>
         </scene>
         <!--Petition-->
         <scene sceneID="PaC-aP-vMX">
@@ -1485,17 +1527,733 @@ Glory be ...</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="StB-dK-edB" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4323" y="1062"/>
+            <point key="canvasLocation" x="4005" y="1074"/>
+        </scene>
+        <!--Finances-->
+        <scene sceneID="qS6-45-gdA">
+            <objects>
+                <viewController id="ziI-ff-6zG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cz6-6b-G5r">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2sQ-5U-tmQ">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AR9-R0-fvP">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="2762"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eOQ-Gf-qNN">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="F4E-sk-hu7"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ds-Ql-fpF">
+                                                <rect key="frame" x="0.0" y="40" width="393" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decade 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dA6-pm-bth">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="40"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="dA6-pm-bth" firstAttribute="top" secondItem="0ds-Ql-fpF" secondAttribute="top" id="24H-Na-Kc0"/>
+                                                    <constraint firstAttribute="trailing" secondItem="dA6-pm-bth" secondAttribute="trailing" constant="10" id="IJ7-s6-3oA"/>
+                                                    <constraint firstAttribute="bottom" secondItem="dA6-pm-bth" secondAttribute="bottom" id="eZ0-pq-N6b"/>
+                                                    <constraint firstAttribute="height" constant="40" id="hMN-yS-hnj"/>
+                                                    <constraint firstItem="dA6-pm-bth" firstAttribute="leading" secondItem="0ds-Ql-fpF" secondAttribute="leading" constant="10" id="iTb-qO-hU2"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vPJ-cK-XVQ">
+                                                <rect key="frame" x="0.0" y="80" width="393" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="793-XD-Wfc"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUV-h7-Nhg">
+                                                <rect key="frame" x="0.0" y="120" width="393" height="2492"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMx-pF-EIw">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="2492"/>
+                                                        <string key="text">Our Father…
+
+Trust in the Lord, and do good; so you will live in the land, and enjoy security. Take delight in the Lord, and he will give you the desires of your heart. (Ps 37:3-4, NRSVCE)
+Hail Mary...
+
+Keep your lives free from the love of money, and be satisfied with what you have. For God has said, “I will never leave you; I will never abandon you.” (Heb 13:5, GNT)
+Hail Mary...
+
+There is great gain in godliness combined with contentment;  for we brought nothing into the world, so that we can take nothing out of it;  but if we have food and clothing, we will be content with these. (1 Tim 6:6-8, NRSVCE)
+Hail Mary...
+
+Those who want to get rich fall into temptation and are caught in the trap of many foolish and harmful desires, which pull them down to ruin and destruction. For the love of money is a source of all kinds of evil. Some have been so eager to have it that they have wandered away from the faith and have broken their hearts with many sorrows. (1 Tim 6:9-10, GNT)
+Hail Mary...
+
+Instruct the wealthy of this age not to have a superior attitude, nor to hope in the uncertainty of riches, but in the living God, who offers us everything in abundance to enjoy. (1 Tim 6:17)
+Hail Mary...
+
+Blessed is the man who trusts in the Lord, for the Lord will be his confidence. And he will be like a tree planted beside waters, which sends out its roots to moist soil. And it will not fear when the heat arrives. And its leaves will be green. And in the time of drought, it will not be anxious, nor will it cease at any time to bear fruit. (Jer 17:7-8)
+Hail Mary...
+
+In you our ancestors trusted; they trusted, and you delivered them.  To you they cried, and were saved; in you they trusted, and were not put to shame. (Ps 22:4-5, NRSVCE)
+Hail Mary...
+
+What do you have that you have not received? But if you have received it, why do you glory, as if you had not received it? (1 Cor 4:7)
+Hail Mary...
+
+O Jerusalem, you suffering, helpless city, with no one to comfort you, I will rebuild your foundations with precious stones. I will build your towers with rubies, your gates with stones that glow like fire, and the wall around you with jewels. (Is 54:11-12, GNT)
+Hail Mary...
+
+Stay with the Lord; never abandon him, and you will be prosperous at the end of your days. (Sir 2:3, GNT)
+Hail Mary...
+
+Glory Be…</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="hMx-pF-EIw" firstAttribute="top" secondItem="BUV-h7-Nhg" secondAttribute="top" id="728-2Y-34g"/>
+                                                    <constraint firstAttribute="trailing" secondItem="hMx-pF-EIw" secondAttribute="trailing" constant="10" id="MBe-0y-3pL"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="dl0-M8-PR9"/>
+                                                    <constraint firstAttribute="bottom" secondItem="hMx-pF-EIw" secondAttribute="bottom" id="l6T-HH-MQ7"/>
+                                                    <constraint firstItem="hMx-pF-EIw" firstAttribute="leading" secondItem="BUV-h7-Nhg" secondAttribute="leading" constant="10" id="qDd-Qc-DdG"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O2J-kB-Jiy">
+                                                <rect key="frame" x="0.0" y="2612" width="393" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="ARq-0Z-MLa"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jeo-xd-FeG">
+                                                <rect key="frame" x="0.0" y="2652" width="393" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vid-LE-DAp">
+                                                        <rect key="frame" x="20" y="0.0" width="353" height="40"/>
+                                                        <color key="backgroundColor" red="0.39607843139999999" green="0.15686274510000001" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Decade 2">
+                                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="21"/>
+                                                        </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath=" layer.masksToBounds" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="IAd-Oq-1Gz" kind="show" id="YyP-1O-O2I"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="vid-LE-DAp" secondAttribute="bottom" id="0vd-FJ-afD"/>
+                                                    <constraint firstItem="vid-LE-DAp" firstAttribute="top" secondItem="jeo-xd-FeG" secondAttribute="top" id="4kF-Z6-bmN"/>
+                                                    <constraint firstAttribute="trailing" secondItem="vid-LE-DAp" secondAttribute="trailing" constant="20" id="Z4F-Jz-6Eo"/>
+                                                    <constraint firstAttribute="height" constant="40" id="a0s-rm-bBK"/>
+                                                    <constraint firstItem="vid-LE-DAp" firstAttribute="leading" secondItem="jeo-xd-FeG" secondAttribute="leading" constant="20" id="zR0-CJ-VtN"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hvm-FS-d2c">
+                                                <rect key="frame" x="0.0" y="2692" width="393" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="A2u-dc-t2C"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="body_background"/>
+                                <constraints>
+                                    <constraint firstItem="AR9-R0-fvP" firstAttribute="width" secondItem="2sQ-5U-tmQ" secondAttribute="width" id="5WB-TY-ID2"/>
+                                    <constraint firstAttribute="trailing" secondItem="AR9-R0-fvP" secondAttribute="trailing" id="Dcw-pq-awv"/>
+                                    <constraint firstItem="AR9-R0-fvP" firstAttribute="leading" secondItem="2sQ-5U-tmQ" secondAttribute="leading" id="M8y-o9-928"/>
+                                    <constraint firstItem="AR9-R0-fvP" firstAttribute="top" secondItem="2sQ-5U-tmQ" secondAttribute="top" id="YCD-38-6AZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="AR9-R0-fvP" secondAttribute="bottom" id="pEF-xo-ujl"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yXF-Yn-Rie"/>
+                        <color key="backgroundColor" name="nav_background"/>
+                        <constraints>
+                            <constraint firstItem="yXF-Yn-Rie" firstAttribute="bottom" secondItem="2sQ-5U-tmQ" secondAttribute="bottom" id="0EI-xt-PTZ"/>
+                            <constraint firstItem="yXF-Yn-Rie" firstAttribute="trailing" secondItem="2sQ-5U-tmQ" secondAttribute="trailing" id="0sy-Xq-lai"/>
+                            <constraint firstItem="2sQ-5U-tmQ" firstAttribute="top" secondItem="yXF-Yn-Rie" secondAttribute="top" id="1Uc-F2-mhP"/>
+                            <constraint firstItem="2sQ-5U-tmQ" firstAttribute="leading" secondItem="yXF-Yn-Rie" secondAttribute="leading" id="7Xo-Aa-UTG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Finances" id="gk8-tr-Ni6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GHP-nr-Wbc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3369" y="-746"/>
+        </scene>
+        <!--Decade 2-->
+        <scene sceneID="zt4-60-f7g">
+            <objects>
+                <viewController id="IAd-Oq-1Gz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B2Q-D3-YtP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUP-rp-Sh5">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bAW-eQ-Oah">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="2882.3333333333335"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cUP-F4-U9V">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="6lw-xu-0g2"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mDd-76-NJD">
+                                                <rect key="frame" x="0.0" y="40" width="393" height="2692.3333333333335"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcS-2y-Ll6">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="2692.3333333333335"/>
+                                                        <string key="text">Our Father…
+
+No one is able to serve two masters. For either he will have hatred for the one, and love the other, or he will persevere with the one, and despise the other. You cannot serve God and wealth. (Matt 6:24)
+Hail Mary...
+
+Do not worry about tomorrow; it will have enough worries of its own. There is no need to add to the troubles each day brings. (Matt 6:34, GNT)
+Hail Mary...
+
+Sell what you possess, and give alms. Make for yourselves purses that will not wear out, a treasure that will not fall short, in heaven, where no thief approaches, and no moth corrupts. For where your treasure is, there will your heart be also. (Luk 12:33-34)
+Hail Mary...
+
+I will repay you for the years which the locust, and the beetle, and the mildew, and the caterpillar consumed: my great strength which I sent upon you. And you will eat with enjoyment, and you will be satisfied, and you will praise the name of the Lord your God, who has worked miracles with you. (Joel 2:25-26)
+Hail Mary...
+
+I have learned to be content with whatever I have.  I know what it is to have little, and I know what it is to have plenty. In any and all circumstances I have learned the secret of being well-fed and of going hungry, of having plenty and of being in need. (Phil 4:11-12, NRSVCE)
+Hail Mary...
+
+My God will fully satisfy every need of yours according to his riches in glory in Christ Jesus. (Phil 4:19, NRSVCE)
+Hail Mary...
+
+If you obey God and avoid sin, he will be pleased with you and make you prosperous. (Tob 4:21, GNT)
+Hail Mary...
+
+The Lord your God has blessed you in every work of your hands. The Lord your God, dwelling with you, knows your journey, how you crossed through this great wilderness over forty years, and how you have been lacking in nothing. (Deut 2:7)
+Hail Mary...
+
+During these forty years your clothes have not worn out, nor have your feet swollen up. Remember that the Lord your God corrects and punishes you just as parents discipline their children. So then, do as the Lord has commanded you: live according to his laws and obey him. (Deut 8:4-6, GNT)
+Hail Mary...
+
+The Lord your God is bringing you into a fertile land—a land that has rivers and springs, and underground streams gushing out into the valleys and hills; a land that produces wheat and barley, grapes, figs, pomegranates, olives, and honey. There you will never go hungry or ever be in need. (Deut 8:7-9, GNT)
+Hail Mary...
+
+Glory Be…</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="GcS-2y-Ll6" secondAttribute="trailing" constant="10" id="LcA-g5-YQe"/>
+                                                    <constraint firstItem="GcS-2y-Ll6" firstAttribute="top" secondItem="mDd-76-NJD" secondAttribute="top" id="cSt-8u-N8a"/>
+                                                    <constraint firstItem="GcS-2y-Ll6" firstAttribute="leading" secondItem="mDd-76-NJD" secondAttribute="leading" constant="10" id="h68-51-94L"/>
+                                                    <constraint firstAttribute="bottom" secondItem="GcS-2y-Ll6" secondAttribute="bottom" id="u8g-bx-nV2"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="vhd-45-4N6"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="idI-w6-6ix">
+                                                <rect key="frame" x="0.0" y="2732.3333333333335" width="393" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="3jo-PF-kBc"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="awb-BA-4CA">
+                                                <rect key="frame" x="0.0" y="2772.3333333333335" width="393" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUr-8G-Qae">
+                                                        <rect key="frame" x="20" y="0.0" width="353" height="40"/>
+                                                        <color key="backgroundColor" red="0.39607843139999999" green="0.15686274510000001" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Decade 3">
+                                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="21"/>
+                                                        </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath=" layer.masksToBounds" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="fWD-jU-QKF" kind="show" id="fIL-2C-I4E"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="WUr-8G-Qae" firstAttribute="leading" secondItem="awb-BA-4CA" secondAttribute="leading" constant="20" id="ajP-1a-Ydq"/>
+                                                    <constraint firstAttribute="bottom" secondItem="WUr-8G-Qae" secondAttribute="bottom" id="fpc-BW-9M7"/>
+                                                    <constraint firstAttribute="trailing" secondItem="WUr-8G-Qae" secondAttribute="trailing" constant="20" id="li5-a7-bcN"/>
+                                                    <constraint firstItem="WUr-8G-Qae" firstAttribute="top" secondItem="awb-BA-4CA" secondAttribute="top" id="onB-BR-reP"/>
+                                                    <constraint firstAttribute="height" constant="40" id="xyK-wg-XmE"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x77-nf-xyz">
+                                                <rect key="frame" x="0.0" y="2812.3333333333335" width="393" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="UxK-DX-6Qm"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="body_background"/>
+                                <constraints>
+                                    <constraint firstItem="bAW-eQ-Oah" firstAttribute="top" secondItem="gUP-rp-Sh5" secondAttribute="top" id="2sS-ar-FAT"/>
+                                    <constraint firstItem="bAW-eQ-Oah" firstAttribute="leading" secondItem="gUP-rp-Sh5" secondAttribute="leading" id="6zJ-dc-X1e"/>
+                                    <constraint firstAttribute="trailing" secondItem="bAW-eQ-Oah" secondAttribute="trailing" id="mRR-Hz-KuL"/>
+                                    <constraint firstItem="bAW-eQ-Oah" firstAttribute="width" secondItem="gUP-rp-Sh5" secondAttribute="width" id="u3x-si-Oh6"/>
+                                    <constraint firstAttribute="bottom" secondItem="bAW-eQ-Oah" secondAttribute="bottom" id="x7K-W1-bSh"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eQc-dR-ezm"/>
+                        <color key="backgroundColor" name="nav_background"/>
+                        <constraints>
+                            <constraint firstItem="gUP-rp-Sh5" firstAttribute="leading" secondItem="eQc-dR-ezm" secondAttribute="leading" id="2QH-nn-TQ3"/>
+                            <constraint firstItem="gUP-rp-Sh5" firstAttribute="top" secondItem="eQc-dR-ezm" secondAttribute="top" id="Uzw-uT-yLo"/>
+                            <constraint firstItem="eQc-dR-ezm" firstAttribute="trailing" secondItem="gUP-rp-Sh5" secondAttribute="trailing" id="bLM-YW-J7V"/>
+                            <constraint firstItem="eQc-dR-ezm" firstAttribute="bottom" secondItem="gUP-rp-Sh5" secondAttribute="bottom" id="kjd-2B-eGO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Decade 2" id="gFj-AP-AZk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dmm-cO-hSp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4132" y="-746"/>
+        </scene>
+        <!--Decade 3-->
+        <scene sceneID="Ucl-AX-ixv">
+            <objects>
+                <viewController id="fWD-jU-QKF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="76v-EC-dqi">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dTv-v5-uUw">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2de-bt-HEO">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="2481.3333333333335"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HDz-GX-i70">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="NCi-AH-Eij"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ZW-3C-T6X">
+                                                <rect key="frame" x="0.0" y="40" width="393" height="2291.3333333333335"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5h-ZE-B45">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="2291.3333333333335"/>
+                                                        <string key="text">Our Father…
+
+Remember that it is the Lord your God who gives you the power to become rich. He does this because he is still faithful today to the covenant that he made with your ancestors. (Deut 8:18, GNT)
+Hail Mary...
+
+Bring all the tithes into the storehouse, and let there be food in my house. And test me about this, says the Lord, as to whether I will not open to you the floodgates of heaven, and pour out to you a blessing, all the way to abundance. (Mal 3:10)
+Hail Mary...
+
+I have been young, and now am old, yet I have not seen the righteous forsaken or their children begging bread.  They are ever giving liberally and lending, and their children become a blessing. (Ps 37:25-26, NRSVCE)
+Hail Mary...
+
+He will love you and multiply you. And he will bless the fruit of your womb, and the fruit of your land: your grain as well as your vintage, oil, and herds, and the flocks of your sheep, upon the land about which he swore to your fathers that he would give it to you. (Deut 7:13)
+Hail Mary...
+
+Give your help to the poor, and the Lord will give you his perfect blessing. (Sir 7:32, GNT)
+Hail Mary...
+
+I will rebuke for your sakes the devourer, and he will not corrupt the fruit of your land. Neither will the vine in the field be barren, says the Lord of hosts. (Mal 3:11)
+Hail Mary...
+
+If my people who are called by my name humble themselves, pray, seek my face, and turn from their wicked ways, then I will hear from heaven, and will forgive their sin and heal their land. (2 Chron 7:13-14, NRSVCE)
+Hail Mary...
+
+The Lord their God will be mindful of them and restore their fortunes. (Zeph 2:7, NRSVCE)
+Hail Mary...
+
+The time is coming! I will bring your scattered people home; I will make you famous throughout the world and make you prosperous once again.(Zeph 3:20, GNT)
+Hail Mary...
+
+Return, you exiles who now have hope; return to your place of safety. Now I tell you that I will repay you twice over with blessing for all you have suffered. (Zech 9:12, GNT)
+Hail Mary…
+
+Glory Be…</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="o5h-ZE-B45" secondAttribute="bottom" id="12y-ae-zyh"/>
+                                                    <constraint firstAttribute="trailing" secondItem="o5h-ZE-B45" secondAttribute="trailing" constant="10" id="G2t-Y0-3Hq"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="fVh-eD-vog"/>
+                                                    <constraint firstItem="o5h-ZE-B45" firstAttribute="leading" secondItem="7ZW-3C-T6X" secondAttribute="leading" constant="10" id="vbi-f1-349"/>
+                                                    <constraint firstItem="o5h-ZE-B45" firstAttribute="top" secondItem="7ZW-3C-T6X" secondAttribute="top" id="z2m-3h-2fJ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LgF-Pf-Ye8">
+                                                <rect key="frame" x="0.0" y="2331.3333333333335" width="393" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="nZf-Sv-jkj"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iUJ-H0-WKj">
+                                                <rect key="frame" x="0.0" y="2371.3333333333335" width="393" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNe-CT-E7D">
+                                                        <rect key="frame" x="20" y="0.0" width="353" height="40"/>
+                                                        <color key="backgroundColor" red="0.39607843139999999" green="0.15686274510000001" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Decade 4">
+                                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="21"/>
+                                                        </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath=" layer.masksToBounds" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="uHn-MQ-sfq" kind="show" id="tuS-SF-m8O"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="iNe-CT-E7D" firstAttribute="leading" secondItem="iUJ-H0-WKj" secondAttribute="leading" constant="20" id="GU5-ME-wZi"/>
+                                                    <constraint firstAttribute="height" constant="40" id="Q4e-Bv-skN"/>
+                                                    <constraint firstItem="iNe-CT-E7D" firstAttribute="top" secondItem="iUJ-H0-WKj" secondAttribute="top" id="Vgb-de-G3U"/>
+                                                    <constraint firstAttribute="trailing" secondItem="iNe-CT-E7D" secondAttribute="trailing" constant="20" id="tHm-dg-xqu"/>
+                                                    <constraint firstAttribute="bottom" secondItem="iNe-CT-E7D" secondAttribute="bottom" id="yGU-vs-b6j"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Chz-wv-KCM">
+                                                <rect key="frame" x="0.0" y="2411.3333333333335" width="393" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="YCS-wx-0Zw"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="body_background"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="2de-bt-HEO" secondAttribute="bottom" id="IzU-zB-S5D"/>
+                                    <constraint firstItem="2de-bt-HEO" firstAttribute="leading" secondItem="dTv-v5-uUw" secondAttribute="leading" id="YWO-hZ-j1Z"/>
+                                    <constraint firstAttribute="trailing" secondItem="2de-bt-HEO" secondAttribute="trailing" id="ZzB-pz-pC0"/>
+                                    <constraint firstItem="2de-bt-HEO" firstAttribute="width" secondItem="dTv-v5-uUw" secondAttribute="width" id="qFq-h9-fTj"/>
+                                    <constraint firstItem="2de-bt-HEO" firstAttribute="top" secondItem="dTv-v5-uUw" secondAttribute="top" id="y8d-6R-76I"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OFj-Rh-5JK"/>
+                        <color key="backgroundColor" name="nav_background"/>
+                        <constraints>
+                            <constraint firstItem="dTv-v5-uUw" firstAttribute="leading" secondItem="OFj-Rh-5JK" secondAttribute="leading" id="P9v-mh-UCH"/>
+                            <constraint firstItem="dTv-v5-uUw" firstAttribute="top" secondItem="OFj-Rh-5JK" secondAttribute="top" id="g9g-3B-67M"/>
+                            <constraint firstItem="OFj-Rh-5JK" firstAttribute="trailing" secondItem="dTv-v5-uUw" secondAttribute="trailing" id="i5p-ce-Fwf"/>
+                            <constraint firstItem="OFj-Rh-5JK" firstAttribute="bottom" secondItem="dTv-v5-uUw" secondAttribute="bottom" id="pEK-JK-dUE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Decade 3" id="wQh-9w-anY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YAm-tj-alL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4865" y="-746"/>
+        </scene>
+        <!--Decade 4-->
+        <scene sceneID="1b8-pY-s5c">
+            <objects>
+                <viewController id="uHn-MQ-sfq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jQy-Ad-54X">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJB-sL-bBi">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XHP-Rl-1ka">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="2567.3333333333335"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kVk-t9-jtT">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="4NJ-0k-3c4"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yYF-r4-JiD">
+                                                <rect key="frame" x="0.0" y="40" width="393" height="2377.3333333333335"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUG-FE-KTt">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="2377.3333333333335"/>
+                                                        <string key="text">Our Father...
+
+God, who supplies seed for the sower and bread to eat, will also supply you with all the seed you need and will make it grow and produce a rich harvest from your generosity. (2 Cor 9:10, GNT)
+Hail Mary...
+
+You will be enriched in every way for your great generosity, which will produce thanksgiving to God through us. (2 Cor 9:11, NRSVCE)
+Hail Mary...
+
+I will bring my people back to their land. They will rebuild their ruined cities and live there; they will plant vineyards and drink the wine; they will plant gardens and eat what they grow. I will plant my people on the land I gave them, and they will not be pulled up again. (Amos 9:14-15, GNT)
+Hail Mary...
+
+I will restore them to the land which I pledged to their fathers, Abraham, Isaac, and Jacob, and they will rule over it, and I will multiply them, and they will not be diminished. (Bar 2:34)
+Hail Mary...
+
+I will save you from all your filth. And I will call for grain, and I will multiply it, and I will not impose a famine upon you. And I will multiply the fruit of the tree and the produce of the field, so that you may no longer bear the disgrace of famine among the nations. (Eze 36:29-30)
+Hail Mary...
+
+God gives the desolate a home to live in; he leads out the prisoners to prosperity. (Ps 68:6, NRSVCE)
+Hail Mary...
+
+Rain in abundance, O God, you showered abroad; you restored your heritage when it languished; your flock found a dwelling in it; in your goodness, O God, you provided for the needy. (Ps 68:9-10, NRSVCE)
+Hail Mary...
+
+The Lord will send forth a blessing upon your cellars, and upon all the works of your hands. And he will bless you in the land that you shall receive. (Deut 28:8)
+Hail Mary…
+
+Honor the Lord with your substance, and give to him from the first of all your fruits, and then your storehouses will be filled with abundance, and your presses shall overflow with wine. (Pro 3:9-10)
+Hail Mary…
+
+Do not choose to be anxious, saying: ‘What shall we eat, and what shall we drink, and with what shall we be clothed?’ For the Gentiles seek all these things. Yet your Father knows that you need all these things. (Matt 6:31-32)
+Hail Mary...
+
+Glory Be…</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="WUG-FE-KTt" firstAttribute="leading" secondItem="yYF-r4-JiD" secondAttribute="leading" constant="10" id="D3o-Ii-qk6"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="Dj0-K2-U75"/>
+                                                    <constraint firstAttribute="trailing" secondItem="WUG-FE-KTt" secondAttribute="trailing" constant="10" id="RdR-Pf-Szo"/>
+                                                    <constraint firstAttribute="bottom" secondItem="WUG-FE-KTt" secondAttribute="bottom" id="Zma-cV-roD"/>
+                                                    <constraint firstItem="WUG-FE-KTt" firstAttribute="top" secondItem="yYF-r4-JiD" secondAttribute="top" id="qL6-pZ-P6r"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fr-4X-2Pt">
+                                                <rect key="frame" x="0.0" y="2417.3333333333335" width="393" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="2hZ-pd-MUk"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zrm-Wc-gt3">
+                                                <rect key="frame" x="0.0" y="2457.3333333333335" width="393" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgZ-zn-Lg7">
+                                                        <rect key="frame" x="20" y="0.0" width="353" height="40"/>
+                                                        <color key="backgroundColor" red="0.39607843139999999" green="0.15686274510000001" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Decade 5">
+                                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="21"/>
+                                                        </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath=" layer.masksToBounds" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="C04-ix-sNy" kind="show" id="gyU-u9-Jnq"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="tgZ-zn-Lg7" secondAttribute="bottom" id="7aD-Kn-OTn"/>
+                                                    <constraint firstItem="tgZ-zn-Lg7" firstAttribute="leading" secondItem="Zrm-Wc-gt3" secondAttribute="leading" constant="20" id="9H7-FH-taQ"/>
+                                                    <constraint firstItem="tgZ-zn-Lg7" firstAttribute="top" secondItem="Zrm-Wc-gt3" secondAttribute="top" id="EmL-sv-pGa"/>
+                                                    <constraint firstAttribute="height" constant="40" id="UAZ-Ea-7fd"/>
+                                                    <constraint firstAttribute="trailing" secondItem="tgZ-zn-Lg7" secondAttribute="trailing" constant="20" id="uVV-CG-pgr"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DnR-4E-SNM">
+                                                <rect key="frame" x="0.0" y="2497.3333333333335" width="393" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="Wy6-UO-ysG"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="body_background"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="XHP-Rl-1ka" secondAttribute="bottom" id="HMm-E6-HSB"/>
+                                    <constraint firstItem="XHP-Rl-1ka" firstAttribute="top" secondItem="YJB-sL-bBi" secondAttribute="top" id="S3d-gS-KVp"/>
+                                    <constraint firstItem="XHP-Rl-1ka" firstAttribute="width" secondItem="YJB-sL-bBi" secondAttribute="width" id="TfT-hj-Ulv"/>
+                                    <constraint firstAttribute="trailing" secondItem="XHP-Rl-1ka" secondAttribute="trailing" id="dIX-ld-PzL"/>
+                                    <constraint firstItem="XHP-Rl-1ka" firstAttribute="leading" secondItem="YJB-sL-bBi" secondAttribute="leading" id="ga1-JO-p2T"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NlP-gP-lVr"/>
+                        <color key="backgroundColor" name="nav_background"/>
+                        <constraints>
+                            <constraint firstItem="YJB-sL-bBi" firstAttribute="top" secondItem="NlP-gP-lVr" secondAttribute="top" id="0Qx-0F-kyK"/>
+                            <constraint firstItem="YJB-sL-bBi" firstAttribute="leading" secondItem="NlP-gP-lVr" secondAttribute="leading" id="8fa-zg-6WD"/>
+                            <constraint firstItem="NlP-gP-lVr" firstAttribute="trailing" secondItem="YJB-sL-bBi" secondAttribute="trailing" id="Kpx-g2-KYU"/>
+                            <constraint firstItem="NlP-gP-lVr" firstAttribute="bottom" secondItem="YJB-sL-bBi" secondAttribute="bottom" id="Yff-SU-imb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Decade 4" id="gUp-uj-8rr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H0r-Rv-l8N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5643" y="-746"/>
+        </scene>
+        <!--Decade 5-->
+        <scene sceneID="HvB-Gh-4ql">
+            <objects>
+                <viewController id="C04-ix-sNy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cy5-oG-s2P">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kgg-zL-0Dc">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="epg-q6-quL">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="2269.6666666666665"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BBR-J4-Zif">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="xhm-hh-wcx"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JuG-dD-8W2">
+                                                <rect key="frame" x="0.0" y="40" width="393" height="2062.3333333333335"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwR-2b-NKv">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="2062.3333333333335"/>
+                                                        <string key="text">Our Father…
+
+May the Lord give you increase, both you and your children. May you be blessed by the Lord, who made heaven and earth. (Ps 115:14-15, NRSVCE)
+Hail Mary…
+
+The young lions suffer want and hunger, but those who seek the Lord lack no good thing. (Ps 34:10, NRSVCE)
+Hail Mary…
+
+The blessing of the Lord causes riches. Affliction will not be a companion to them. (Pro 10:22)
+Hail Mary…
+
+You open your hand, satisfying the desire of every living thing. (Ps 145:16, NRSVCE) 
+Hail Mary…
+
+The Lord will cause you to be abundant in every good thing: in the fruit of your womb, and in the fruit of your cattle, and in the fruit of your land, which the Lord swore to your fathers that he would give to you. (Deut 28:11)
+Hail Mary…
+
+The Lord will open his excellent treasury, the heavens, so that it may distribute rain in due time. And he will bless all the works of your hands. And you shall lend to many nations, but you yourself will borrow nothing from anyone. (Deut 28:12)
+Hail Mary…
+
+If only they would always feel this way! If only they would always honor me and obey all my commands, so that everything would go well with them and their descendants forever. (Deut 5:29, GNT)
+Hail Mary…
+
+Whoever trusts in his riches will fall. But the just shall spring up like a green leaf. (Pro 11:28)
+Hail Mary…
+
+The Lord was moved by the repentance of Job, when he prayed for his friends. And the Lord gave to Job twice as much as he had before. (Job 42:10)
+Hail Mary…
+
+God is able to make every grace abound in you, so that, always having what you need in all things, you may abound unto every good work. (2 Cor 9:8)
+Hail Mary…
+
+Glory Be…</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="lwR-2b-NKv" firstAttribute="top" secondItem="JuG-dD-8W2" secondAttribute="top" id="1cF-D5-to4"/>
+                                                    <constraint firstAttribute="trailing" secondItem="lwR-2b-NKv" secondAttribute="trailing" constant="10" id="Ig2-NA-whm"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="haR-Pi-9qm"/>
+                                                    <constraint firstItem="lwR-2b-NKv" firstAttribute="leading" secondItem="JuG-dD-8W2" secondAttribute="leading" constant="10" id="ihQ-Wt-Vmf"/>
+                                                    <constraint firstAttribute="bottom" secondItem="lwR-2b-NKv" secondAttribute="bottom" id="nqd-0m-1Gl"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E0P-iP-aWZ">
+                                                <rect key="frame" x="0.0" y="2102.3333333333335" width="393" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="9QL-Gr-IaO"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="axi-ZI-SmN">
+                                                <rect key="frame" x="0.0" y="2142.3333333333335" width="393" height="57.333333333333485"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="In the name of the Father, and of the Son, and of the Holy Spirit. Amen" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNu-Dw-0AU">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="57.333333333333336"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="WNu-Dw-0AU" firstAttribute="top" secondItem="axi-ZI-SmN" secondAttribute="top" id="Pxc-ZR-iun"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="Vkj-BI-mfI"/>
+                                                    <constraint firstAttribute="bottom" secondItem="WNu-Dw-0AU" secondAttribute="bottom" id="nRM-dz-KP1"/>
+                                                    <constraint firstItem="WNu-Dw-0AU" firstAttribute="leading" secondItem="axi-ZI-SmN" secondAttribute="leading" constant="10" id="rMO-eO-q80"/>
+                                                    <constraint firstAttribute="trailing" secondItem="WNu-Dw-0AU" secondAttribute="trailing" constant="10" id="zdT-2z-x2n"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8E2-4M-jmo">
+                                                <rect key="frame" x="0.0" y="2199.6666666666665" width="393" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="dcN-BE-v6w"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="body_background"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="epg-q6-quL" secondAttribute="trailing" id="2ln-Ts-LR0"/>
+                                    <constraint firstItem="epg-q6-quL" firstAttribute="width" secondItem="kgg-zL-0Dc" secondAttribute="width" id="OYA-4X-aEa"/>
+                                    <constraint firstAttribute="bottom" secondItem="epg-q6-quL" secondAttribute="bottom" id="RtH-9o-Rcp"/>
+                                    <constraint firstItem="epg-q6-quL" firstAttribute="top" secondItem="kgg-zL-0Dc" secondAttribute="top" id="Sfj-Qo-9hB"/>
+                                    <constraint firstItem="epg-q6-quL" firstAttribute="leading" secondItem="kgg-zL-0Dc" secondAttribute="leading" id="ek5-RX-bla"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wfF-1v-byg"/>
+                        <color key="backgroundColor" name="nav_background"/>
+                        <constraints>
+                            <constraint firstItem="wfF-1v-byg" firstAttribute="bottom" secondItem="kgg-zL-0Dc" secondAttribute="bottom" id="8DW-8I-5Zx"/>
+                            <constraint firstItem="kgg-zL-0Dc" firstAttribute="top" secondItem="wfF-1v-byg" secondAttribute="top" id="GD7-XX-vsc"/>
+                            <constraint firstItem="kgg-zL-0Dc" firstAttribute="leading" secondItem="wfF-1v-byg" secondAttribute="leading" id="q27-hv-Bth"/>
+                            <constraint firstItem="wfF-1v-byg" firstAttribute="trailing" secondItem="kgg-zL-0Dc" secondAttribute="trailing" id="zRa-gT-f5Z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Decade 5" id="mBp-jQ-E1H"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v62-kU-DH9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6380" y="-746"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ba2-ac-cRl"/>
-        <segue reference="eFd-Oc-GwD"/>
-        <segue reference="5QS-Bk-bo2"/>
-        <segue reference="0eH-Zf-aFK"/>
-        <segue reference="08C-wD-5HT"/>
-        <segue reference="BDV-eq-wQh"/>
-        <segue reference="vxM-wE-oAV"/>
+        <segue reference="YDc-fw-bk2"/>
+        <segue reference="I2e-Qr-dYM"/>
+        <segue reference="6wo-Py-3MQ"/>
+        <segue reference="IJI-t2-6Z9"/>
+        <segue reference="hFc-mM-7cI"/>
+        <segue reference="bLB-7K-091"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="praying_hand" width="21.333333969116211" height="21.333333969116211"/>
