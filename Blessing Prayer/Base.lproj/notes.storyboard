@@ -43,7 +43,7 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="0ZL-Cq-85S">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="833"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="894"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Onv-No-6pa">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="60"/>
@@ -357,8 +357,32 @@
                                                     <constraint firstAttribute="bottom" secondItem="4BQ-Oz-BGu" secondAttribute="bottom" id="u0l-19-iyg"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sH6-ug-B83">
+                                                <rect key="frame" x="0.0" y="793" width="393" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yS8-bq-KsV">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="60"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Sin and Financial Problems">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                            <color key="baseForegroundColor" name="title_text"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="1Wp-XT-NaO" kind="show" id="VBB-nS-q6a"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="body_background"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="yS8-bq-KsV" secondAttribute="bottom" id="8Yj-x9-4xe"/>
+                                                    <constraint firstItem="yS8-bq-KsV" firstAttribute="top" secondItem="sH6-ug-B83" secondAttribute="top" id="9fy-Fp-48M"/>
+                                                    <constraint firstItem="yS8-bq-KsV" firstAttribute="leading" secondItem="sH6-ug-B83" secondAttribute="leading" constant="10" id="J6c-Rz-ZNV"/>
+                                                    <constraint firstAttribute="height" constant="60" id="Pl6-Ry-bOA"/>
+                                                    <constraint firstAttribute="trailing" secondItem="yS8-bq-KsV" secondAttribute="trailing" constant="10" id="i21-98-kK3"/>
+                                                </constraints>
+                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q39-vf-HFf">
-                                                <rect key="frame" x="0.0" y="793" width="393" height="40"/>
+                                                <rect key="frame" x="0.0" y="854" width="393" height="40"/>
                                                 <color key="backgroundColor" name="body_background"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="9lp-tJ-9wD"/>
@@ -421,7 +445,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to use the prayers in this App" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfO-SI-JcR">
                                                         <rect key="frame" x="10" y="0.0" width="373" height="80"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                        <color key="textColor" red="0.1764705882" green="0.45882352939999999" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="textColor" name="title_text"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -455,7 +479,6 @@
 
 •	In addition to using this app, attend daily mass if possible, and go for confession regularly</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                        <color key="textColor" red="0.1764705882" green="0.45882352939999999" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -8342,7 +8365,7 @@ Amos 9:11</string>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who should use this App?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8k-oh-AjT">
                                                         <rect key="frame" x="10" y="0.0" width="373" height="80"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                        <color key="textColor" red="0.1764705882" green="0.45882352939999999" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="textColor" name="title_text"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -8371,7 +8394,6 @@ Amos 9:11</string>
 •	This app can be used when a person or family is in financial debt 
 </string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                        <color key="textColor" red="0.1764705882" green="0.45882352939999999" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -8415,11 +8437,199 @@ Amos 9:11</string>
                             <constraint firstItem="PDQ-YH-S4N" firstAttribute="bottom" secondItem="csJ-Ui-dmD" secondAttribute="bottom" id="jlv-n8-Dkv"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="How to use this App" largeTitleDisplayMode="always" id="4Kl-UK-TIR"/>
+                    <navigationItem key="navigationItem" title="Who should use this App?" largeTitleDisplayMode="always" id="4Kl-UK-TIR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SoO-3g-0z9" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7378" y="-820"/>
+        </scene>
+        <!--God and Money-->
+        <scene sceneID="KZ6-nZ-Rtm">
+            <objects>
+                <viewController title="God and Money" id="1Wp-XT-NaO" customClass="ViewController" customModule="Blessing_Prayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WdK-mf-Zbf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QyE-3i-g0x">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="heP-rv-KOi">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1851.3333333333333"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mHJ-01-AqP">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="68.666666666666671"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Sin and Financial Problems" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xo9-bZ-nIF">
+                                                        <rect key="frame" x="10" y="20" width="373" height="28.666666666666671"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                                        <color key="textColor" name="title_text"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="xo9-bZ-nIF" firstAttribute="top" secondItem="mHJ-01-AqP" secondAttribute="top" constant="20" id="Khc-9H-rQm"/>
+                                                    <constraint firstAttribute="trailing" secondItem="xo9-bZ-nIF" secondAttribute="trailing" constant="10" id="hRy-LH-U0p"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="lj5-OY-MoL"/>
+                                                    <constraint firstAttribute="bottom" secondItem="xo9-bZ-nIF" secondAttribute="bottom" constant="20" id="v4D-eh-o0X"/>
+                                                    <constraint firstItem="xo9-bZ-nIF" firstAttribute="leading" secondItem="mHJ-01-AqP" secondAttribute="leading" constant="10" id="xkC-x2-04P"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wqa-69-i0E">
+                                                <rect key="frame" x="0.0" y="68.666666666666657" width="393" height="38.333333333333343"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Sin robs our God given blessings" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9G5-1x-Zwr">
+                                                        <rect key="frame" x="10" y="2" width="373" height="26.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="9G5-1x-Zwr" secondAttribute="bottom" constant="10" id="5Ot-w7-B1b"/>
+                                                    <constraint firstItem="9G5-1x-Zwr" firstAttribute="top" secondItem="Wqa-69-i0E" secondAttribute="top" constant="2" id="UMH-1y-kPE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="9G5-1x-Zwr" secondAttribute="trailing" constant="10" id="c7a-u6-0Tm"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="jcq-8P-AlV"/>
+                                                    <constraint firstItem="9G5-1x-Zwr" firstAttribute="leading" secondItem="Wqa-69-i0E" secondAttribute="leading" constant="10" id="ovt-hB-RNc"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vhs-oS-Eek">
+                                                <rect key="frame" x="0.0" y="107" width="393" height="728.33333333333337"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPI-7M-43P">
+                                                        <rect key="frame" x="10" y="2" width="373" height="716.33333333333337"/>
+                                                        <mutableString key="text">After he had consumed it all, a great famine occurred in that region, and he began to be in need. And he went and attached himself to one of the citizens of that region. And he sent him to his farm, in order to feed the swine. And he wanted to fill his belly with the scraps that the swine ate. But no one would give it to him. (Luk 15:14-16) 
+Whoever nurtures promiscuous women will lose his substance. (Pro 29:3) 
+They have not said in their heart: ‘Let us dread the Lord our God, who gives us the timely and the late rains, in their proper time, who guards the full measure of the yearly harvest for us.’ Your iniquities have turned these things away, and your sins have held back good things from you. (Jer 5:24-25) 
+Her filth is on her feet, and her end has not been remembered. She has been vehemently put down, having no consolation. O Lord, look upon my affliction, for the adversary has been lifted up. (Lam 1:9) 
+Sir 47:24, Sir 48:15, 2 Kgs 17:19, Jer 4:18</mutableString>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="vPI-7M-43P" firstAttribute="top" secondItem="Vhs-oS-Eek" secondAttribute="top" constant="2" id="0h6-1Y-cH1"/>
+                                                    <constraint firstAttribute="trailing" secondItem="vPI-7M-43P" secondAttribute="trailing" constant="10" id="ESe-Hh-od1"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="kEF-Hk-PGq"/>
+                                                    <constraint firstItem="vPI-7M-43P" firstAttribute="leading" secondItem="Vhs-oS-Eek" secondAttribute="leading" constant="10" id="maR-h9-A1d"/>
+                                                    <constraint firstAttribute="bottom" secondItem="vPI-7M-43P" secondAttribute="bottom" constant="10" id="sHJ-G1-jAA"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KK1-7B-PU2">
+                                                <rect key="frame" x="0.0" y="835.33333333333337" width="393" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Adb-cZ-jqn">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="mHQ-A0-grM"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Adb-cZ-jqn" firstAttribute="top" secondItem="KK1-7B-PU2" secondAttribute="top" id="B3O-s6-Ilh"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Adb-cZ-jqn" secondAttribute="bottom" id="CDo-Ik-9hf"/>
+                                                    <constraint firstItem="Adb-cZ-jqn" firstAttribute="leading" secondItem="KK1-7B-PU2" secondAttribute="leading" id="fzD-Oy-w41"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Adb-cZ-jqn" secondAttribute="trailing" id="jGQ-N3-gaQ"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="kiM-3H-4lr"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1uc-Bh-6cD">
+                                                <rect key="frame" x="0.0" y="875.33333333333337" width="393" height="64.666666666666629"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Sin closes doors of blessings (opens doors to curses)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Snk-tn-nKR">
+                                                        <rect key="frame" x="10" y="2" width="373" height="52.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="Snk-tn-nKR" secondAttribute="trailing" constant="10" id="Rtr-Oh-vnN"/>
+                                                    <constraint firstItem="Snk-tn-nKR" firstAttribute="top" secondItem="1uc-Bh-6cD" secondAttribute="top" constant="2" id="T16-zn-nmU"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="VCc-OL-ryI"/>
+                                                    <constraint firstItem="Snk-tn-nKR" firstAttribute="leading" secondItem="1uc-Bh-6cD" secondAttribute="leading" constant="10" id="b87-xE-EDI"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Snk-tn-nKR" secondAttribute="bottom" constant="10" id="k7O-pA-EVv"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="68g-I1-xrW">
+                                                <rect key="frame" x="0.0" y="940" width="393" height="871.33333333333348"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAZ-PE-S6f">
+                                                        <rect key="frame" x="10" y="2" width="373" height="859.33333333333337"/>
+                                                        <mutableString key="text">Behold, the hand of the Lord has not been shortened, so that it cannot save, and his ear has not been blocked, so that it cannot hear. But your iniquities have made a division between you and your God, and your sins have concealed his face from you, so that he would not hear. (Is 59:1-2)
+
+Let us dread the Lord our God, who gives us the timely and the late rains, in their proper time, who guards the full measure of the yearly harvest for us.’ Your iniquities have turned these things away, and your sins have held back good things from you. (Jer 5:24-25)
+
+He said to him: “What have you done? The voice of your brother’s blood cries out to me from the land. Now, therefore, you will be cursed upon the land, which opened its mouth and received the blood of your brother at your hand. When you work it, it will not give you its fruit; a vagrant and a fugitive shall you be upon the land.” (Gen 4:10-12)
+
+Lift your eyes straight up, and see where you did not debase yourself. You were sitting in the roadways, waiting for them, like a robber in the wilderness. And you have polluted the land by your fornications and by your wickedness. For this reason, the rain showers were withheld, and there were no late season rains. (Jer 3:2-3)
+
+Is 1:7, Lev 26:16, Is 50:1, Is 50:2, Hos 11:7</mutableString>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="FOJ-Dl-56c"/>
+                                                    <constraint firstItem="uAZ-PE-S6f" firstAttribute="leading" secondItem="68g-I1-xrW" secondAttribute="leading" constant="10" id="IvA-OJ-tQH"/>
+                                                    <constraint firstAttribute="trailing" secondItem="uAZ-PE-S6f" secondAttribute="trailing" constant="10" id="Lum-dA-2nm"/>
+                                                    <constraint firstItem="uAZ-PE-S6f" firstAttribute="top" secondItem="68g-I1-xrW" secondAttribute="top" constant="2" id="ctk-0F-lkY"/>
+                                                    <constraint firstAttribute="bottom" secondItem="uAZ-PE-S6f" secondAttribute="bottom" constant="10" id="qu4-7u-GKa"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ry-Qh-FjL">
+                                                <rect key="frame" x="0.0" y="1811.3333333333333" width="393" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Iv-QO-T9a">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="iJt-TX-pik"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="1Iv-QO-T9a" secondAttribute="trailing" id="6qg-Jm-TIc"/>
+                                                    <constraint firstItem="1Iv-QO-T9a" firstAttribute="top" secondItem="0Ry-Qh-FjL" secondAttribute="top" id="Pfb-yL-RRE"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="QT4-DA-GeA"/>
+                                                    <constraint firstAttribute="bottom" secondItem="1Iv-QO-T9a" secondAttribute="bottom" id="bTi-Y1-8S6"/>
+                                                    <constraint firstItem="1Iv-QO-T9a" firstAttribute="leading" secondItem="0Ry-Qh-FjL" secondAttribute="leading" id="dE9-0I-bpR"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="body_background"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="heP-rv-KOi" secondAttribute="bottom" id="0l5-iA-8g5"/>
+                                    <constraint firstItem="heP-rv-KOi" firstAttribute="top" secondItem="QyE-3i-g0x" secondAttribute="top" id="NOP-6J-Fsg"/>
+                                    <constraint firstAttribute="trailing" secondItem="heP-rv-KOi" secondAttribute="trailing" id="bVm-jP-uIE"/>
+                                    <constraint firstItem="heP-rv-KOi" firstAttribute="width" secondItem="QyE-3i-g0x" secondAttribute="width" id="bgk-9o-JZh"/>
+                                    <constraint firstItem="heP-rv-KOi" firstAttribute="leading" secondItem="QyE-3i-g0x" secondAttribute="leading" id="hMD-eB-cwv"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7jv-0o-SXK"/>
+                        <color key="backgroundColor" name="nav_background"/>
+                        <constraints>
+                            <constraint firstItem="QyE-3i-g0x" firstAttribute="top" secondItem="7jv-0o-SXK" secondAttribute="top" id="ETy-dc-3hh"/>
+                            <constraint firstItem="QyE-3i-g0x" firstAttribute="trailing" secondItem="7jv-0o-SXK" secondAttribute="trailing" id="SCD-da-5Ba"/>
+                            <constraint firstItem="QyE-3i-g0x" firstAttribute="leading" secondItem="7jv-0o-SXK" secondAttribute="leading" id="V4a-ks-6ot"/>
+                            <constraint firstItem="7jv-0o-SXK" firstAttribute="bottom" secondItem="QyE-3i-g0x" secondAttribute="bottom" id="gpL-1R-6xi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sin and Financial Problems" id="Msl-Iu-W0b"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gdi-Kw-QNI" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9146" y="-479"/>
         </scene>
     </scenes>
     <resources>

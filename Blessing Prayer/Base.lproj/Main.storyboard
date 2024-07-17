@@ -29,7 +29,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HyE-W7-EeW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-876" y="-415"/>
+            <point key="canvasLocation" x="-2147" y="-976"/>
         </scene>
         <!--Prayer-->
         <scene sceneID="NtU-mN-SEM">
@@ -51,7 +51,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DqW-e8-3cM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1801" y="404"/>
+            <point key="canvasLocation" x="772" y="-746"/>
         </scene>
         <!--Blessing Prayer-->
         <scene sceneID="Biz-1S-3wX">
@@ -221,6 +221,9 @@
                                                             <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
                                                             <color key="baseForegroundColor" name="title_text"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="yff-jc-W4m" kind="show" id="XyN-Ua-hyw"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" name="body_background"/>
@@ -367,7 +370,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="INg-LZ-UsS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="381" y="-820"/>
+            <point key="canvasLocation" x="-1257" y="-1175"/>
         </scene>
         <!--UINavigationController-FDU-Sw-siW-->
         <scene sceneID="HxL-XE-4Cf">
@@ -377,7 +380,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UvR-Or-fIH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="502" y="-771"/>
+            <point key="canvasLocation" x="-1258" y="-1037"/>
         </scene>
         <!--Praise and Worship-->
         <scene sceneID="mAF-YR-OF6">
@@ -1247,12 +1250,12 @@ Glory be ...</string>
                                                         <rect key="frame" x="10" y="10" width="373" height="58"/>
                                                         <color key="backgroundColor" name="button_background"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Continue to Washing in Jesus' Blood">
+                                                        <buttonConfiguration key="configuration" style="plain" title="Continue to Surrender Prayer">
                                                             <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <segue destination="hHw-21-WDx" kind="show" id="eFd-Oc-GwD"/>
+                                                            <segue destination="yff-jc-W4m" kind="show" id="B6H-bC-1VL"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1416,7 +1419,7 @@ Glory be ...</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HDY-Ev-8Az" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3269" y="1074"/>
+            <point key="canvasLocation" x="4885" y="1063"/>
         </scene>
         <!--Petition-->
         <scene sceneID="PaC-aP-vMX">
@@ -1527,7 +1530,7 @@ Glory be ...</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="StB-dK-edB" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4005" y="1074"/>
+            <point key="canvasLocation" x="5619" y="1063"/>
         </scene>
         <!--Finances-->
         <scene sceneID="qS6-45-gdA">
@@ -2246,14 +2249,182 @@ Glory Be…</string>
             </objects>
             <point key="canvasLocation" x="6380" y="-746"/>
         </scene>
+        <!--Surrender-->
+        <scene sceneID="3Bx-Zp-ijs">
+            <objects>
+                <viewController title="Surrender" id="yff-jc-W4m" customClass="ViewController" customModule="Blessing_Prayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IhS-nb-Q1O">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mGY-91-xtk">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Orb-ce-TKw">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1774"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZD-Nz-Von">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="68.666666666666671"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Surrender Prayer" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3f-Vo-TeR">
+                                                        <rect key="frame" x="10" y="20" width="373" height="28.666666666666671"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                                        <color key="textColor" name="title_text"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="w3f-Vo-TeR" secondAttribute="trailing" constant="10" id="4u9-67-xZs"/>
+                                                    <constraint firstItem="w3f-Vo-TeR" firstAttribute="leading" secondItem="hZD-Nz-Von" secondAttribute="leading" constant="10" id="EKp-Bl-8XT"/>
+                                                    <constraint firstItem="w3f-Vo-TeR" firstAttribute="top" secondItem="hZD-Nz-Von" secondAttribute="top" constant="20" id="Os0-Nz-EnI"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="iS5-xy-VJN"/>
+                                                    <constraint firstAttribute="bottom" secondItem="w3f-Vo-TeR" secondAttribute="bottom" constant="20" id="l3g-WO-i1h"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vsn-hn-rs4">
+                                                <rect key="frame" x="0.0" y="68.666666666666657" width="393" height="12"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcm-l1-FVr">
+                                                        <rect key="frame" x="10" y="2" width="373" height="0.0"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="wcm-l1-FVr" firstAttribute="leading" secondItem="Vsn-hn-rs4" secondAttribute="leading" constant="10" id="7bb-QZ-8vi"/>
+                                                    <constraint firstItem="wcm-l1-FVr" firstAttribute="top" secondItem="Vsn-hn-rs4" secondAttribute="top" constant="2" id="X5e-YI-oL8"/>
+                                                    <constraint firstAttribute="bottom" secondItem="wcm-l1-FVr" secondAttribute="bottom" constant="10" id="fs8-lr-1F7"/>
+                                                    <constraint firstAttribute="trailing" secondItem="wcm-l1-FVr" secondAttribute="trailing" constant="10" id="hLv-Ia-twm"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="o67-gV-2yZ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MiJ-IB-KxL">
+                                                <rect key="frame" x="0.0" y="80.666666666666629" width="393" height="1575.3333333333335"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwm-SU-BR2">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="1575.3333333333333"/>
+                                                        <string key="text">All my worries, … Jesus, I surrender to you
+
+All my fears…, Jesus I surrender to you
+
+All my anxieties, … Jesus, I surrender to you
+
+My future, … Jesus, I surrender to you
+
+My bills, loans, and debts, … Jesus, I surrender to you
+
+My plans, ambitions, and desires, … Jesus, I surrender to you
+
+My victories, … Jesus, I surrender to you
+
+My failures, … Jesus, I surrender to you
+
+My pain, … Jesus, I surrender to you
+
+My suffering, … Jesus, I surrender to you
+
+My weaknesses, … Jesus, I surrender to you
+
+My mistakes, … Jesus, I surrender to you
+
+My sins, … Jesus, I surrender to you
+
+My bad habits, … Jesus, I surrender to you
+
+All unhealthy desires, … Jesus, I surrender to you
+
+My doubts and confusions, … Jesus, I surrender to you
+
+My family members, … Jesus, I surrender to you
+
+My blessings, … Jesus, I surrender to you
+
+My life, … Jesus, I surrender to you
+
+Glory be…</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="bwm-SU-BR2" secondAttribute="bottom" id="Fau-Co-iJt"/>
+                                                    <constraint firstItem="bwm-SU-BR2" firstAttribute="leading" secondItem="MiJ-IB-KxL" secondAttribute="leading" constant="10" id="Qhq-HD-UXN"/>
+                                                    <constraint firstAttribute="trailing" secondItem="bwm-SU-BR2" secondAttribute="trailing" constant="10" id="edt-io-9U8"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="frK-dS-cCC"/>
+                                                    <constraint firstItem="bwm-SU-BR2" firstAttribute="top" secondItem="MiJ-IB-KxL" secondAttribute="top" id="yUe-Gz-Y7v"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Vv-Cz-6fd">
+                                                <rect key="frame" x="0.0" y="1656" width="393" height="78"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdm-TD-CkD">
+                                                        <rect key="frame" x="10" y="10" width="373" height="58"/>
+                                                        <color key="backgroundColor" name="button_background"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Continue to Washing in Jesus' Blood">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Gdm-TD-CkD" firstAttribute="leading" secondItem="1Vv-Cz-6fd" secondAttribute="leading" constant="10" id="PJC-wY-1gm"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="Yhe-lz-TbS"/>
+                                                    <constraint firstItem="Gdm-TD-CkD" firstAttribute="top" secondItem="1Vv-Cz-6fd" secondAttribute="top" constant="10" id="aGQ-oQ-WJX"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Gdm-TD-CkD" secondAttribute="bottom" constant="10" id="kS0-oo-qrU"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Gdm-TD-CkD" secondAttribute="trailing" constant="10" id="xlW-TC-5vT"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8L-2O-tFt">
+                                                <rect key="frame" x="0.0" y="1734" width="393" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="tzQ-za-dTk"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="T8L-2O-tFt" secondAttribute="bottom" id="7cg-VW-4bL"/>
+                                            <constraint firstItem="T8L-2O-tFt" firstAttribute="top" secondItem="1Vv-Cz-6fd" secondAttribute="bottom" id="fpv-0N-FBw"/>
+                                            <constraint firstItem="T8L-2O-tFt" firstAttribute="leading" secondItem="Orb-ce-TKw" secondAttribute="leading" id="i1D-Ab-gpb"/>
+                                            <constraint firstAttribute="trailing" secondItem="T8L-2O-tFt" secondAttribute="trailing" id="ynf-wh-WzC"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="body_background"/>
+                                <constraints>
+                                    <constraint firstItem="Orb-ce-TKw" firstAttribute="top" secondItem="mGY-91-xtk" secondAttribute="top" id="JAC-Z6-mgU"/>
+                                    <constraint firstItem="Orb-ce-TKw" firstAttribute="width" secondItem="mGY-91-xtk" secondAttribute="width" id="MPj-Ml-lnZ"/>
+                                    <constraint firstItem="Orb-ce-TKw" firstAttribute="leading" secondItem="mGY-91-xtk" secondAttribute="leading" id="YAd-kd-cAP"/>
+                                    <constraint firstAttribute="trailing" secondItem="Orb-ce-TKw" secondAttribute="trailing" id="blr-Io-Vgl"/>
+                                    <constraint firstAttribute="bottom" secondItem="Orb-ce-TKw" secondAttribute="bottom" id="lI2-jK-Mtg"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MCa-Vr-tsb"/>
+                        <color key="backgroundColor" name="nav_background"/>
+                        <constraints>
+                            <constraint firstItem="MCa-Vr-tsb" firstAttribute="bottom" secondItem="mGY-91-xtk" secondAttribute="bottom" id="3jG-By-c06"/>
+                            <constraint firstItem="mGY-91-xtk" firstAttribute="top" secondItem="MCa-Vr-tsb" secondAttribute="top" id="HVA-ol-1ue"/>
+                            <constraint firstItem="mGY-91-xtk" firstAttribute="leading" secondItem="MCa-Vr-tsb" secondAttribute="leading" id="fGu-kt-GxX"/>
+                            <constraint firstItem="mGY-91-xtk" firstAttribute="trailing" secondItem="MCa-Vr-tsb" secondAttribute="trailing" id="qzY-02-dOO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Surrender Prayer" id="Oxf-cR-nsi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DcM-k1-kLJ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3311" y="1074"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="YDc-fw-bk2"/>
+        <segue reference="XyN-Ua-hyw"/>
         <segue reference="I2e-Qr-dYM"/>
         <segue reference="6wo-Py-3MQ"/>
         <segue reference="IJI-t2-6Z9"/>
-        <segue reference="hFc-mM-7cI"/>
-        <segue reference="bLB-7K-091"/>
+        <segue reference="BDV-eq-wQh"/>
+        <segue reference="vxM-wE-oAV"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="praying_hand" width="21.333333969116211" height="21.333333969116211"/>
