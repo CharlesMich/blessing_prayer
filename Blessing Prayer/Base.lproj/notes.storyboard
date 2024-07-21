@@ -8498,11 +8498,11 @@ Amos 9:11</string>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPI-7M-43P">
                                                         <rect key="frame" x="10" y="2" width="373" height="716.33333333333337"/>
-                                                        <mutableString key="text">After he had consumed it all, a great famine occurred in that region, and he began to be in need. And he went and attached himself to one of the citizens of that region. And he sent him to his farm, in order to feed the swine. And he wanted to fill his belly with the scraps that the swine ate. But no one would give it to him. (Luk 15:14-16) 
+                                                        <string key="text">After he had consumed it all, a great famine occurred in that region, and he began to be in need. And he went and attached himself to one of the citizens of that region. And he sent him to his farm, in order to feed the swine. And he wanted to fill his belly with the scraps that the swine ate. But no one would give it to him. (Luk 15:14-16) 
 Whoever nurtures promiscuous women will lose his substance. (Pro 29:3) 
 They have not said in their heart: ‘Let us dread the Lord our God, who gives us the timely and the late rains, in their proper time, who guards the full measure of the yearly harvest for us.’ Your iniquities have turned these things away, and your sins have held back good things from you. (Jer 5:24-25) 
 Her filth is on her feet, and her end has not been remembered. She has been vehemently put down, having no consolation. O Lord, look upon my affliction, for the adversary has been lifted up. (Lam 1:9) 
-Sir 47:24, Sir 48:15, 2 Kgs 17:19, Jer 4:18</mutableString>
+Sir 47:24, Sir 48:15, 2 Kgs 17:19, Jer 4:18</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -8560,7 +8560,7 @@ Sir 47:24, Sir 48:15, 2 Kgs 17:19, Jer 4:18</mutableString>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAZ-PE-S6f">
                                                         <rect key="frame" x="10" y="2" width="373" height="859.33333333333337"/>
-                                                        <mutableString key="text">Behold, the hand of the Lord has not been shortened, so that it cannot save, and his ear has not been blocked, so that it cannot hear. But your iniquities have made a division between you and your God, and your sins have concealed his face from you, so that he would not hear. (Is 59:1-2)
+                                                        <string key="text">Behold, the hand of the Lord has not been shortened, so that it cannot save, and his ear has not been blocked, so that it cannot hear. But your iniquities have made a division between you and your God, and your sins have concealed his face from you, so that he would not hear. (Is 59:1-2)
 
 Let us dread the Lord our God, who gives us the timely and the late rains, in their proper time, who guards the full measure of the yearly harvest for us.’ Your iniquities have turned these things away, and your sins have held back good things from you. (Jer 5:24-25)
 
@@ -8568,7 +8568,7 @@ He said to him: “What have you done? The voice of your brother’s blood cries
 
 Lift your eyes straight up, and see where you did not debase yourself. You were sitting in the roadways, waiting for them, like a robber in the wilderness. And you have polluted the land by your fornications and by your wickedness. For this reason, the rain showers were withheld, and there were no late season rains. (Jer 3:2-3)
 
-Is 1:7, Lev 26:16, Is 50:1, Is 50:2, Hos 11:7</mutableString>
+Is 1:7, Lev 26:16, Is 50:1, Is 50:2, Hos 11:7</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
