@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Pz-ZW-dcg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Pz-ZW-dcg">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -290,6 +290,9 @@
                                                             <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
                                                             <color key="baseForegroundColor" name="title_text"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="t17-Tq-Xk4" kind="show" id="bOv-Bl-aAT"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" name="body_background"/>
@@ -956,7 +959,7 @@ Glory be…</string>
                                 <rect key="frame" x="0.0" y="103" width="393" height="666"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aYq-bU-LGx">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="198.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="3934"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZx-zo-SWI">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="68.666666666666671"/>
@@ -976,8 +979,129 @@ Glory be…</string>
                                                     <constraint firstItem="MEC-64-Qp1" firstAttribute="top" secondItem="qZx-zo-SWI" secondAttribute="top" constant="20" id="eri-ni-qfg"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kGX-vL-mQh">
+                                                <rect key="frame" x="0.0" y="68.666666666666742" width="393" height="3735.333333333333"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boP-eJ-Uye">
+                                                        <rect key="frame" x="10" y="2" width="373" height="3723.3333333333335"/>
+                                                        <string key="text">For the sin of idolatry, … Jesus, have mercy on me and forgive me 
+
+For the sin of disobedience, … Jesus, have mercy on me and forgive me 
+
+For the sin of stubbornness, … Jesus, have mercy on me and forgive me
+
+For the sin of rebelliousness, … Jesus, have mercy on me and forgive me
+
+For the sin of blasphemy, … Jesus, have mercy on me and forgive me
+
+For the sin of unbelief, … Jesus, have mercy on me and forgive me
+
+For not praying every day, … Jesus, have mercy on me and forgive me
+
+For not reading the Bible every day, … Jesus, have mercy on me and forgive me
+
+For my superstitious beliefs, … Jesus, have mercy on me and forgive me
+
+For engaging in occult activities, … Jesus, have mercy on me and forgive me
+
+For loving anything more than you, … Jesus, have mercy on me and forgive me 
+
+For taking the Lord’s name in vain, … Jesus, have mercy on me and forgive me
+
+For not using my talents for the glory of God, … Jesus, have mercy on me and forgive me
+
+For profaning the Lord’s day, … Jesus, have mercy on me and forgive me
+
+For missing Mass on Sundays, … Jesus, have mercy on me and forgive me
+
+For dishonoring my parents, … Jesus, have mercy on me and forgive me
+
+For not loving others unconditionally, … Jesus, have mercy on me and forgive me
+
+For the sin of abortion, … Jesus, have mercy on me and forgive me
+
+For the sin of murder, … Jesus, have mercy on me and forgive me
+
+For the sin of racism, … Jesus, have mercy on me and forgive me
+
+For the sin of discrimination and favoritism, … Jesus, have mercy on me and forgive me
+
+For the sin of smoking, … Jesus, have mercy on me and forgive me
+
+For the sin of alcohol addiction, …Jesus, have mercy on me and forgive me
+
+For the sin of drug addiction, …Jesus, have mercy on me and forgive me
+
+For the sins of the flesh, …Jesus, have mercy on me and forgive me
+
+For being worldly, …Jesus, have mercy on me and forgive me
+
+For wasting or misusing time, …Jesus, have mercy on me and forgive me
+
+For entertaining wrong desires, …Jesus, have mercy on me and forgive me
+
+For not tithing, …Jesus, have mercy on me and forgive me
+
+For being stingy and miserly, …Jesus, have mercy on me and forgive me
+
+For living lavishly and wasting money, …Jesus, have mercy on me and forgive me
+
+For the sin of lying, …Jesus, have mercy on me and forgive me
+
+For the sin of boasting, …Jesus, have mercy on me and forgive me
+
+For the sin of gossiping, …Jesus, have mercy on me and forgive me
+
+For the sin of false accusation, …Jesus, have mercy on me and forgive me
+
+For the sin of false witnessing, …Jesus, have mercy on me and forgive me
+
+For not helping the poor, …Jesus, have mercy on me and forgive me
+
+For coveting others’ property, …Jesus, have mercy on me and forgive me
+
+For desiring what is not mine, …Jesus, have mercy on me and forgive me
+
+For the sin of pride, …Jesus, have mercy on me and forgive me
+
+For the sin of envy, …Jesus, have mercy on me and forgive me
+
+For the sin of anger, …Jesus, have mercy on me and forgive me
+
+For the sin of sloth, …Jesus, have mercy on me and forgive me
+
+For the sin of lust, …Jesus, have mercy on me and forgive me
+
+For the sin of gluttony, …Jesus, have mercy on me and forgive me
+
+For the sin of greed, …Jesus, have mercy on me and forgive me
+
+For all my hidden sins, …Jesus, have mercy on me and forgive me
+
+For sins of omission, …Jesus, have mercy on me and forgive me
+
+For my sinful thoughts, …Jesus, have mercy on me and forgive me
+
+For my sinful words, …Jesus, have mercy on me and forgive me
+
+For my sinful actions, …Jesus, have mercy on me and forgive me
+
+Glory be ...</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="boP-eJ-Uye" secondAttribute="trailing" constant="10" id="5Ln-kb-RB3"/>
+                                                    <constraint firstItem="boP-eJ-Uye" firstAttribute="top" secondItem="kGX-vL-mQh" secondAttribute="top" constant="2" id="fKj-66-QZ4"/>
+                                                    <constraint firstItem="boP-eJ-Uye" firstAttribute="leading" secondItem="kGX-vL-mQh" secondAttribute="leading" constant="10" id="kaT-bW-czc"/>
+                                                    <constraint firstAttribute="bottom" secondItem="boP-eJ-Uye" secondAttribute="bottom" constant="10" id="r09-AA-niA"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="zeQ-4S-06W"/>
+                                                </constraints>
+                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k4U-Hg-9ZZ">
-                                                <rect key="frame" x="0.0" y="68.666666666666657" width="393" height="12"/>
+                                                <rect key="frame" x="0.0" y="3804" width="393" height="12"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zT5-Uo-q76">
                                                         <rect key="frame" x="10" y="2" width="373" height="0.0"/>
@@ -995,7 +1119,7 @@ Glory be…</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kfR-Lw-1x5">
-                                                <rect key="frame" x="0.0" y="80.666666666666657" width="393" height="78"/>
+                                                <rect key="frame" x="0.0" y="3816" width="393" height="78"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uid-Nw-6Gc">
                                                         <rect key="frame" x="10" y="10" width="373" height="58"/>
@@ -1019,7 +1143,7 @@ Glory be…</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9xG-ZK-Bch">
-                                                <rect key="frame" x="0.0" y="158.66666666666669" width="393" height="40"/>
+                                                <rect key="frame" x="0.0" y="3894" width="393" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="RQl-rY-l6J"/>
                                                 </constraints>
@@ -1070,7 +1194,7 @@ Glory be…</string>
                                 <rect key="frame" x="0.0" y="103" width="393" height="666"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UY8-rg-NPc">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="198.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="3561.6666666666665"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="exd-xg-lqC">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="68.666666666666671"/>
@@ -1090,8 +1214,81 @@ Glory be…</string>
                                                     <constraint firstAttribute="bottom" secondItem="AQc-CK-GEh" secondAttribute="bottom" constant="20" id="yiW-6P-s9d"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="omL-fN-GDA">
+                                                <rect key="frame" x="0.0" y="68.666666666666629" width="393" height="1969.3333333333335"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMp-ls-bxV">
+                                                        <rect key="frame" x="10" y="2" width="373" height="1957.3333333333333"/>
+                                                        <string key="text">All those who mocked me, …Jesus, I forgive
+
+All those who rejected me, …Jesus, I forgive
+
+All those who hate me, …Jesus, I forgive
+
+All those who hurt me physically, …Jesus, I forgive
+
+All those who hurt me emotionally, … Jesus, I forgive
+
+All those who condemned me, …Jesus, I forgive
+
+All those who misunderstood me, …Jesus, I forgive
+
+All those who discriminated me, …Jesus, I forgive
+
+All those who cheated me, … Jesus, I forgive
+
+All those who abused me, … Jesus, I forgive
+
+All those who ignored me, …Jesus, I forgive
+
+All those who neglected me, …Jesus, I forgive
+
+All those who slandered me, …Jesus, I forgive
+
+All those who abandoned me, … Jesus, I forgive
+
+All those who deceived me, … Jesus, I forgive
+
+All those who conspired against me, … Jesus, I forgive
+
+All those who stole from me, … Jesus, I forgive
+
+All those who gossiped against me, …Jesus, I forgive
+
+All those who falsely accused me, …Jesus, I forgive
+
+All those who treat me as enemies, …Jesus, I forgive
+
+For all the sins that my parents committed against me, …Jesus, I forgive
+
+For all the sins that my spouse committed against me, …Jesus, I forgive 
+
+For all the sins that my children committed against me, …Jesus, I forgive
+
+For all the sins that my friends committed against me, …Jesus, I forgive
+
+For all sins that my coworkers committed against me, …Jesus, I forgive
+
+For all the sins that my superiors committed against me, …Jesus, I forgive
+
+For all the sins that the Church (religious people) committed against me, …Jesus, I forgive… 
+
+Glory be…</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="bMp-ls-bxV" firstAttribute="top" secondItem="omL-fN-GDA" secondAttribute="top" constant="2" id="BVQ-Bb-pPb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="bMp-ls-bxV" secondAttribute="trailing" constant="10" id="Ed4-Hw-Vjj"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="Y9J-ck-Llc"/>
+                                                    <constraint firstItem="bMp-ls-bxV" firstAttribute="leading" secondItem="omL-fN-GDA" secondAttribute="leading" constant="10" id="l3H-fw-U6U"/>
+                                                    <constraint firstAttribute="bottom" secondItem="bMp-ls-bxV" secondAttribute="bottom" constant="10" id="vom-97-gO4"/>
+                                                </constraints>
+                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ER9-g1-jQi">
-                                                <rect key="frame" x="0.0" y="68.666666666666657" width="393" height="12"/>
+                                                <rect key="frame" x="0.0" y="2038" width="393" height="12"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmc-v7-nkv">
                                                         <rect key="frame" x="10" y="2" width="373" height="0.0"/>
@@ -1108,8 +1305,81 @@ Glory be…</string>
                                                     <constraint firstItem="qmc-v7-nkv" firstAttribute="top" secondItem="ER9-g1-jQi" secondAttribute="top" constant="2" id="tmd-cb-YXx"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KNr-YN-JYr">
+                                                <rect key="frame" x="0.0" y="2050" width="393" height="68.666666666666515"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Prayer for enemies" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlQ-14-drD">
+                                                        <rect key="frame" x="10" y="20" width="373" height="28.666666666666671"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                                        <color key="textColor" name="title_text"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="6kR-Rk-Nnh"/>
+                                                    <constraint firstItem="jlQ-14-drD" firstAttribute="top" secondItem="KNr-YN-JYr" secondAttribute="top" constant="20" id="F64-Vf-cXk"/>
+                                                    <constraint firstAttribute="trailing" secondItem="jlQ-14-drD" secondAttribute="trailing" constant="10" id="FFH-NW-Ac2"/>
+                                                    <constraint firstAttribute="bottom" secondItem="jlQ-14-drD" secondAttribute="bottom" constant="20" id="VQu-iR-xzA"/>
+                                                    <constraint firstItem="jlQ-14-drD" firstAttribute="leading" secondItem="KNr-YN-JYr" secondAttribute="leading" constant="10" id="ffx-Uv-cBK"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iMo-3L-2di">
+                                                <rect key="frame" x="0.0" y="2118.6666666666665" width="393" height="1325"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flI-PN-02R">
+                                                        <rect key="frame" x="10" y="2" width="373" height="1313"/>
+                                                        <string key="text">Jesus have mercy on my enemies, … and bless them
+
+Jesus have mercy on those who hate me, … and bless them
+
+Jesus have mercy on those who abuse me, … and bless them
+
+Jesus have mercy on all who persecute me, … and bless them
+
+Jesus have mercy on all who cheated me, … and bless them
+
+Jesus have mercy on all who ignore me, … and bless them
+
+Jesus have mercy on all who plot and conspire against me, … and bless them
+
+Jesus have mercy on those who mocked me, … and bless them
+
+Jesus have mercy on those who discriminate me, … and bless them
+
+Jesus have mercy on those who hurt me, … and bless them
+
+Jesus have mercy on those who rejected me, … and bless them
+
+Jesus have mercy on those who slandered against me, … and bless them
+
+Jesus have mercy on those who rejoiced at my downfall, … and bless them
+
+Jesus have mercy on those who maligned me, … and bless them
+
+Jesus have mercy on those who obstructed my success, … and bless them
+
+Jesus have mercy on those who betrayed me, … and bless them
+
+Jesus have mercy on those who insulted me, … and bless them
+
+Jesus have mercy on those who spread falsehood about me, … and bless them. … 
+
+Glory be…</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="08g-hx-q1O"/>
+                                                    <constraint firstAttribute="bottom" secondItem="flI-PN-02R" secondAttribute="bottom" constant="10" id="2Cf-5f-jTk"/>
+                                                    <constraint firstItem="flI-PN-02R" firstAttribute="leading" secondItem="iMo-3L-2di" secondAttribute="leading" constant="10" id="Jrv-VA-Aa1"/>
+                                                    <constraint firstItem="flI-PN-02R" firstAttribute="top" secondItem="iMo-3L-2di" secondAttribute="top" constant="2" id="aQE-mh-9da"/>
+                                                    <constraint firstAttribute="trailing" secondItem="flI-PN-02R" secondAttribute="trailing" constant="10" id="qbn-HS-BWL"/>
+                                                </constraints>
+                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dpl-VT-uYS">
-                                                <rect key="frame" x="0.0" y="80.666666666666657" width="393" height="78"/>
+                                                <rect key="frame" x="0.0" y="3443.6666666666665" width="393" height="78"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMM-9V-YVh">
                                                         <rect key="frame" x="10" y="10" width="373" height="58"/>
@@ -1133,7 +1403,7 @@ Glory be…</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nFO-4L-cgd">
-                                                <rect key="frame" x="0.0" y="158.66666666666669" width="393" height="40"/>
+                                                <rect key="frame" x="0.0" y="3521.6666666666665" width="393" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="shY-fE-jWS"/>
                                                 </constraints>
@@ -1512,7 +1782,7 @@ Glory be…</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HDY-Ev-8Az" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4885" y="1063"/>
+            <point key="canvasLocation" x="4024" y="1074"/>
         </scene>
         <!--Petition-->
         <scene sceneID="PaC-aP-vMX">
@@ -1623,7 +1893,7 @@ Glory be…</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="StB-dK-edB" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5619" y="1063"/>
+            <point key="canvasLocation" x="4735" y="1074"/>
         </scene>
         <!--Finances-->
         <scene sceneID="qS6-45-gdA">
@@ -2513,11 +2783,12 @@ Glory be…</string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="XyN-Ua-hyw"/>
+        <segue reference="bOv-Bl-aAT"/>
         <segue reference="I2e-Qr-dYM"/>
-        <segue reference="6wo-Py-3MQ"/>
-        <segue reference="IJI-t2-6Z9"/>
-        <segue reference="BDV-eq-wQh"/>
-        <segue reference="vxM-wE-oAV"/>
+        <segue reference="0eH-Zf-aFK"/>
+        <segue reference="08C-wD-5HT"/>
+        <segue reference="hFc-mM-7cI"/>
+        <segue reference="bLB-7K-091"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="praying_hand" width="21.333333969116211" height="21.333333969116211"/>
