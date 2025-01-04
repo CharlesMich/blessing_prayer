@@ -65,7 +65,7 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="666"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="tE3-td-ljm">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="711"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="650"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mvQ-uV-RFK">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="60"/>
@@ -235,32 +235,8 @@
                                                     <constraint firstItem="yJe-v0-ZAw" firstAttribute="leading" secondItem="nw7-EN-zj3" secondAttribute="leading" constant="10" id="xHa-6C-H7g"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M4G-OV-vny">
-                                                <rect key="frame" x="0.0" y="427" width="393" height="60"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phR-YG-vl9">
-                                                        <rect key="frame" x="10" y="0.0" width="373" height="60"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Washing in Jesus' Blood">
-                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                                            <color key="baseForegroundColor" name="title_text"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <segue destination="hHw-21-WDx" kind="show" id="YDc-fw-bk2"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" name="body_background"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="1rS-ZK-h0C"/>
-                                                    <constraint firstAttribute="trailing" secondItem="phR-YG-vl9" secondAttribute="trailing" constant="10" id="Hox-4R-qty"/>
-                                                    <constraint firstItem="phR-YG-vl9" firstAttribute="top" secondItem="M4G-OV-vny" secondAttribute="top" id="hah-5z-y6f"/>
-                                                    <constraint firstItem="phR-YG-vl9" firstAttribute="leading" secondItem="M4G-OV-vny" secondAttribute="leading" constant="10" id="kf0-qb-fcc"/>
-                                                    <constraint firstAttribute="bottom" secondItem="phR-YG-vl9" secondAttribute="bottom" id="yJ0-yz-Ic9"/>
-                                                </constraints>
-                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3l9-5a-UXZ">
-                                                <rect key="frame" x="0.0" y="488" width="393" height="60"/>
+                                                <rect key="frame" x="0.0" y="427" width="393" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhQ-Qg-X1N">
                                                         <rect key="frame" x="10" y="0.0" width="373" height="60"/>
@@ -281,7 +257,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YvL-Rh-F9O">
-                                                <rect key="frame" x="0.0" y="549" width="393" height="60"/>
+                                                <rect key="frame" x="0.0" y="488" width="393" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Fo-V1-LFx">
                                                         <rect key="frame" x="10" y="0.0" width="373" height="60"/>
@@ -305,7 +281,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5aZ-ng-CyJ">
-                                                <rect key="frame" x="0.0" y="610" width="393" height="60"/>
+                                                <rect key="frame" x="0.0" y="549" width="393" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzx-f1-t5l">
                                                         <rect key="frame" x="10" y="0.0" width="373" height="60"/>
@@ -329,7 +305,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z0f-De-YBC">
-                                                <rect key="frame" x="0.0" y="671" width="393" height="40"/>
+                                                <rect key="frame" x="0.0" y="610" width="393" height="40"/>
                                                 <color key="backgroundColor" name="body_background"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="bRP-B7-Mcj"/>
@@ -1848,120 +1824,6 @@ Glory be…</string>
             </objects>
             <point key="canvasLocation" x="2576" y="1074"/>
         </scene>
-        <!--Washing in Jesus' Blood-->
-        <scene sceneID="vgT-Sg-UH7">
-            <objects>
-                <viewController title="Washing in Jesus' Blood" id="hHw-21-WDx" customClass="ViewController" customModule="Blessing_Prayer" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VeV-Qz-cmW">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8dZ-Gf-2AR">
-                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="u6I-ec-lqz">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="198.66666666666666"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XaT-Zz-jTh">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="68.666666666666671"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Washing in Jesus' Blood" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14I-xR-odd">
-                                                        <rect key="frame" x="10" y="20" width="373" height="28.666666666666671"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
-                                                        <color key="textColor" name="title_text"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="1Wy-Xi-Kag"/>
-                                                    <constraint firstItem="14I-xR-odd" firstAttribute="leading" secondItem="XaT-Zz-jTh" secondAttribute="leading" constant="10" id="3dl-2R-dEk"/>
-                                                    <constraint firstAttribute="bottom" secondItem="14I-xR-odd" secondAttribute="bottom" constant="20" id="EB5-ns-hwY"/>
-                                                    <constraint firstAttribute="trailing" secondItem="14I-xR-odd" secondAttribute="trailing" constant="10" id="ZiQ-x3-SoN"/>
-                                                    <constraint firstItem="14I-xR-odd" firstAttribute="top" secondItem="XaT-Zz-jTh" secondAttribute="top" constant="20" id="hqe-Cg-ESL"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q46-Qb-9DM">
-                                                <rect key="frame" x="0.0" y="68.666666666666657" width="393" height="12"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybI-rH-lm4">
-                                                        <rect key="frame" x="10" y="2" width="373" height="0.0"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="ybI-rH-lm4" firstAttribute="top" secondItem="Q46-Qb-9DM" secondAttribute="top" constant="2" id="2uq-ff-zU1"/>
-                                                    <constraint firstAttribute="bottom" secondItem="ybI-rH-lm4" secondAttribute="bottom" constant="10" id="Uoi-J4-Og1"/>
-                                                    <constraint firstAttribute="trailing" secondItem="ybI-rH-lm4" secondAttribute="trailing" constant="10" id="mPg-Xw-xOR"/>
-                                                    <constraint firstItem="ybI-rH-lm4" firstAttribute="leading" secondItem="Q46-Qb-9DM" secondAttribute="leading" constant="10" id="sKP-ZW-Iob"/>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="xsr-1U-D07"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DYw-2A-NML">
-                                                <rect key="frame" x="0.0" y="80.666666666666657" width="393" height="78"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3m-Wv-7Jm">
-                                                        <rect key="frame" x="10" y="10" width="373" height="58"/>
-                                                        <color key="backgroundColor" name="button_background"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Continue to Petition Prayer">
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
-                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <segue destination="t17-Tq-Xk4" kind="show" id="ba2-ac-cRl"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="0gd-EI-onz"/>
-                                                    <constraint firstAttribute="bottom" secondItem="e3m-Wv-7Jm" secondAttribute="bottom" constant="10" id="3JI-J5-sfB"/>
-                                                    <constraint firstAttribute="trailing" secondItem="e3m-Wv-7Jm" secondAttribute="trailing" constant="10" id="VWi-oe-iJp"/>
-                                                    <constraint firstItem="e3m-Wv-7Jm" firstAttribute="leading" secondItem="DYw-2A-NML" secondAttribute="leading" constant="10" id="bzx-5z-3dg"/>
-                                                    <constraint firstItem="e3m-Wv-7Jm" firstAttribute="top" secondItem="DYw-2A-NML" secondAttribute="top" constant="10" id="pBf-HI-Plj"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NOq-GG-fN8">
-                                                <rect key="frame" x="0.0" y="158.66666666666669" width="393" height="40"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="Usl-7H-D1j"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="NOq-GG-fN8" secondAttribute="trailing" id="Ttb-zt-7Kt"/>
-                                            <constraint firstItem="NOq-GG-fN8" firstAttribute="top" secondItem="DYw-2A-NML" secondAttribute="bottom" id="ZtK-9t-4cD"/>
-                                            <constraint firstAttribute="bottom" secondItem="NOq-GG-fN8" secondAttribute="bottom" id="gal-WT-2ys"/>
-                                            <constraint firstItem="NOq-GG-fN8" firstAttribute="leading" secondItem="u6I-ec-lqz" secondAttribute="leading" id="rST-MC-i3g"/>
-                                        </constraints>
-                                    </stackView>
-                                </subviews>
-                                <color key="backgroundColor" name="body_background"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="u6I-ec-lqz" secondAttribute="trailing" id="1KY-hT-Ck7"/>
-                                    <constraint firstItem="u6I-ec-lqz" firstAttribute="width" secondItem="8dZ-Gf-2AR" secondAttribute="width" id="3Jl-TE-VnS"/>
-                                    <constraint firstItem="u6I-ec-lqz" firstAttribute="top" secondItem="8dZ-Gf-2AR" secondAttribute="top" id="EgT-QB-4Ky"/>
-                                    <constraint firstItem="u6I-ec-lqz" firstAttribute="leading" secondItem="8dZ-Gf-2AR" secondAttribute="leading" id="bSg-yE-BmD"/>
-                                    <constraint firstAttribute="bottom" secondItem="u6I-ec-lqz" secondAttribute="bottom" id="ihe-5c-US6"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="1h8-2t-fSy"/>
-                        <color key="backgroundColor" name="nav_background"/>
-                        <constraints>
-                            <constraint firstItem="8dZ-Gf-2AR" firstAttribute="leading" secondItem="1h8-2t-fSy" secondAttribute="leading" id="23p-xk-gUj"/>
-                            <constraint firstItem="8dZ-Gf-2AR" firstAttribute="top" secondItem="1h8-2t-fSy" secondAttribute="top" id="Vk8-u7-0Qa"/>
-                            <constraint firstItem="8dZ-Gf-2AR" firstAttribute="trailing" secondItem="1h8-2t-fSy" secondAttribute="trailing" id="h9K-vN-Kr4"/>
-                            <constraint firstItem="1h8-2t-fSy" firstAttribute="bottom" secondItem="8dZ-Gf-2AR" secondAttribute="bottom" id="veV-mU-cF1"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Washing in Jesus' Blood" id="KWt-IE-ftc"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HDY-Ev-8Az" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4024" y="1074"/>
-        </scene>
         <!--Petition-->
         <scene sceneID="PaC-aP-vMX">
             <objects>
@@ -1974,7 +1836,7 @@ Glory be…</string>
                                 <rect key="frame" x="0.0" y="103" width="393" height="666"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cux-86-KjK">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1087"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="944"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PMy-7n-hCp">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="68.666666666666671"/>
@@ -1995,17 +1857,11 @@ Glory be…</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rer-za-rlS">
-                                                <rect key="frame" x="0.0" y="68.666666666666629" width="393" height="487"/>
+                                                <rect key="frame" x="0.0" y="68.666666666666643" width="393" height="143.33333333333337"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsR-Vq-ArH">
-                                                        <rect key="frame" x="10" y="0.0" width="373" height="487"/>
-                                                        <mutableString key="text">In this section, we will use the power of God’s Word to seek and claim our financial restoration. Read aloud the below given Bible verse 50 times. 
-The young lions suffer want and hunger, but those who seek the Lord lack no good thing. (Ps 34:10) (Repeat 50 times)
-
-Closing Prayer
-Father, I thank you that you have heard me.  And I know that you always hear and answer me.
-
-In the name of the Father, and of the Son, and of the Holy Spirit. Amen</mutableString>
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="143.33333333333334"/>
+                                                        <string key="text">In this section, we will use the power of God’s Word to seek and claim our financial restoration. Read aloud the below given Bible verse 50 times. </string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -2020,7 +1876,7 @@ In the name of the Father, and of the Son, and of the Holy Spirit. Amen</mutable
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qeU-tw-UJe">
-                                                <rect key="frame" x="0.0" y="555.66666666666663" width="393" height="172"/>
+                                                <rect key="frame" x="0.0" y="212" width="393" height="172"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTI-vG-Edt">
                                                         <rect key="frame" x="10" y="0.0" width="373" height="172"/>
@@ -2040,8 +1896,30 @@ The young lions suffer want and hunger, but those who seek the Lord lack no good
                                                     <constraint firstAttribute="trailing" secondItem="DTI-vG-Edt" secondAttribute="trailing" constant="10" id="zdv-9T-uqr"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hJ-jW-cN2">
+                                                <rect key="frame" x="0.0" y="384" width="393" height="200.66666666666663"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8oW-6S-osz">
+                                                        <rect key="frame" x="10" y="0.0" width="373" height="200.66666666666666"/>
+                                                        <string key="text">Closing Prayer
+Father, I thank you that you have heard me.  And I know that you always hear and answer me.
+
+In the name of the Father, and of the Son, and of the Holy Spirit. Amen</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="8oW-6S-osz" secondAttribute="trailing" constant="10" id="1LO-KV-sle"/>
+                                                    <constraint firstAttribute="bottom" secondItem="8oW-6S-osz" secondAttribute="bottom" id="1pT-aK-xlt"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="J2h-ww-EvT"/>
+                                                    <constraint firstItem="8oW-6S-osz" firstAttribute="leading" secondItem="9hJ-jW-cN2" secondAttribute="leading" constant="10" id="Ouk-CM-ntT"/>
+                                                    <constraint firstItem="8oW-6S-osz" firstAttribute="top" secondItem="9hJ-jW-cN2" secondAttribute="top" id="tXz-Qh-ZGK"/>
+                                                </constraints>
+                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Da0-UT-4F2">
-                                                <rect key="frame" x="0.0" y="727.66666666666663" width="393" height="57.333333333333371"/>
+                                                <rect key="frame" x="0.0" y="584.66666666666663" width="393" height="57.333333333333371"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlq-xP-8Ng">
                                                         <rect key="frame" x="10" y="0.0" width="373" height="57.333333333333336"/>
@@ -2061,7 +1939,7 @@ Closing Prayer</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M4u-EY-gaH">
-                                                <rect key="frame" x="0.0" y="785" width="393" height="172"/>
+                                                <rect key="frame" x="0.0" y="642" width="393" height="172"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xtm-sy-ei1">
                                                         <rect key="frame" x="10" y="0.0" width="373" height="172"/>
@@ -2082,7 +1960,7 @@ In the name of the Father, and of the Son, and of the Holy Spirit. Amen</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m9p-c6-2zt">
-                                                <rect key="frame" x="0.0" y="957" width="393" height="12"/>
+                                                <rect key="frame" x="0.0" y="814" width="393" height="12"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Fz-Ea-ugy">
                                                         <rect key="frame" x="10" y="2" width="373" height="0.0"/>
@@ -2100,7 +1978,7 @@ In the name of the Father, and of the Son, and of the Holy Spirit. Amen</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jcg-5W-9aP">
-                                                <rect key="frame" x="0.0" y="969" width="393" height="78"/>
+                                                <rect key="frame" x="0.0" y="826" width="393" height="78"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AaF-HK-Wd3">
                                                         <rect key="frame" x="10" y="10" width="373" height="58"/>
@@ -2121,7 +1999,7 @@ In the name of the Father, and of the Son, and of the Holy Spirit. Amen</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JhO-j2-Q92">
-                                                <rect key="frame" x="0.0" y="1047" width="393" height="40"/>
+                                                <rect key="frame" x="0.0" y="904" width="393" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="ZHu-It-GLs"/>
                                                 </constraints>
@@ -2991,15 +2869,18 @@ Glory be…</string>
                                                         <rect key="frame" x="10" y="10" width="373" height="58"/>
                                                         <color key="backgroundColor" name="button_background"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Continue to Washing in Jesus' Blood">
+                                                        <buttonConfiguration key="configuration" style="plain" title="Continue to petition prayer">
                                                             <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="t17-Tq-Xk4" kind="show" id="sPn-to-h9Y"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstItem="Gdm-TD-CkD" firstAttribute="leading" secondItem="1Vv-Cz-6fd" secondAttribute="leading" constant="10" id="PJC-wY-1gm"/>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="Yhe-lz-TbS"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="Yhe-lz-TbS"/>
                                                     <constraint firstItem="Gdm-TD-CkD" firstAttribute="top" secondItem="1Vv-Cz-6fd" secondAttribute="top" constant="10" id="aGQ-oQ-WJX"/>
                                                     <constraint firstAttribute="bottom" secondItem="Gdm-TD-CkD" secondAttribute="bottom" constant="10" id="kS0-oo-qrU"/>
                                                     <constraint firstAttribute="trailing" secondItem="Gdm-TD-CkD" secondAttribute="trailing" constant="10" id="xlW-TC-5vT"/>
@@ -3048,12 +2929,12 @@ Glory be…</string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="B6H-bC-1VL"/>
-        <segue reference="bOv-Bl-aAT"/>
-        <segue reference="5QS-Bk-bo2"/>
-        <segue reference="0eH-Zf-aFK"/>
-        <segue reference="08C-wD-5HT"/>
+        <segue reference="sPn-to-h9Y"/>
+        <segue reference="I2e-Qr-dYM"/>
+        <segue reference="6wo-Py-3MQ"/>
+        <segue reference="IJI-t2-6Z9"/>
         <segue reference="hFc-mM-7cI"/>
-        <segue reference="bLB-7K-091"/>
+        <segue reference="vxM-wE-oAV"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="praying_hand" width="21.333333969116211" height="21.333333969116211"/>
