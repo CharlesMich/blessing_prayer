@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		346162FD2C17945700146576 /* notes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346162FB2C17945700146576 /* notes.storyboard */; };
 		3461A0E12C13C5EA00D6088A /* mainmenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3461A0DF2C13C5EA00D6088A /* mainmenu.storyboard */; };
 		3461A0E32C14DE1A00D6088A /* website.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3461A0E22C14DE1A00D6088A /* website.swift */; };
 		3461A0E72C14E04900D6088A /* mainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3461A0E62C14E04900D6088A /* mainMenuViewController.swift */; };
@@ -40,7 +39,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		346162FC2C17945700146576 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Blessing Prayer/Base.lproj/notes.storyboard"; sourceTree = "<group>"; };
 		3461A0E02C13C5EA00D6088A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Blessing Prayer/Base.lproj/mainmenu.storyboard"; sourceTree = "<group>"; };
 		3461A0E22C14DE1A00D6088A /* website.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = website.swift; sourceTree = "<group>"; };
 		3461A0E62C14E04900D6088A /* mainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainMenuViewController.swift; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 		34B65B772C050F8C0032D422 = {
 			isa = PBXGroup;
 			children = (
-				346162FB2C17945700146576 /* notes.storyboard */,
 				3461A0DF2C13C5EA00D6088A /* mainmenu.storyboard */,
 				3461A0E62C14E04900D6088A /* mainMenuViewController.swift */,
 				34B65B822C050F8C0032D422 /* Blessing Prayer */,
@@ -246,7 +243,6 @@
 				3461A0E12C13C5EA00D6088A /* mainmenu.storyboard in Resources */,
 				34B65B8D2C050F8D0032D422 /* Assets.xcassets in Resources */,
 				34B65B902C050F8D0032D422 /* Base in Resources */,
-				346162FD2C17945700146576 /* notes.storyboard in Resources */,
 				34B65B8B2C050F8C0032D422 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,14 +309,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		346162FB2C17945700146576 /* notes.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				346162FC2C17945700146576 /* Base */,
-			);
-			name = notes.storyboard;
-			sourceTree = "<group>";
-		};
 		3461A0DF2C13C5EA00D6088A /* mainmenu.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
